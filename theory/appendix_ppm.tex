@@ -1,0 +1,111 @@
+% Appendix: PPM moment calculations.
+
+\section{PPM moment calculations}\label{app:ppm-moments}
+
+This appendix works out the leading-order moments of the
+degree, homophily, and clustering coefficient functionals on the
+feature-perturbed planted-partition model $\ppm(p, q, \sigma)$ used
+in the obstacle analysis of Section~\ref{sec:obstacle}.
+
+Fix $n$, $p, q \in [0, 1]$, and $\sigma \in [0, 1/2]$. The model
+partitions $[n]$ evenly into blocks $B_+, B_-$ of size $n/2$. For
+each pair of vertices, an edge is placed independently with
+probability $p$ if the pair belongs to the same block, and $q$
+otherwise. Features are drawn by setting $\tilde x_v = +1$ for $v
+\in B_+$ and $\tilde x_v = -1$ for $v \in B_-$, then independently
+flipping each $\tilde x_v$ with probability $\sigma$.
+
+\subsection*{Expected degree}
+
+Every vertex has $n/2 - 1$ potential same-block neighbours and
+$n/2$ potential different-block neighbours. The expected degree is
+\[
+\mathbb{E}[\deg(v)] = (n/2 - 1) p + (n/2) q = \frac{n(p + q)}{2} -
+p.
+\]
+Leading order in $n$ is $\bar d = n(p + q)/2$.
+
+\subsection*{Expected edge homophily}
+
+The probability that both endpoints of a same-block edge share the
+same feature is $(1 - \sigma)^2 + \sigma^2$; the probability that
+both endpoints of a different-block edge share the same feature is
+$2\sigma(1 - \sigma)$. Let $\rho = (1-\sigma)^2 + \sigma^2$ and
+$\mu = 2\sigma(1-\sigma)$; note $\rho + \mu = 1$.
+
+The expected number of same-block edges is $\binom{n/2}{2} p \cdot 2 =
+(n/2)(n/2 - 1) p / 2 \cdot 2 / 1 = \ldots$ (a leading-order
+computation gives approximately $(n^2/4) p / 2 = n^2 p / 8$; summing
+over both blocks: $n^2 p / 4$). Similarly the expected number of
+different-block edges is $(n/2)^2 q = n^2 q / 4$.
+
+Of the same-block edges, an expected $\rho$ fraction are same-feature.
+Of the different-block edges, an expected $\mu$ fraction are
+same-feature. The total expected same-feature edge count is $(n^2 p
+\rho + n^2 q \mu) / 4$, and the total expected edge count is $n^2 (p
++ q) / 4$. The expected edge homophily to leading order is
+\[
+\mathbb{E}[h(\gph, x)] = \frac{p \rho + q \mu}{p + q}.
+\]
+
+Substituting $\rho = (1-\sigma)^2 + \sigma^2$ and $\mu = 2\sigma(1
+- \sigma)$ and simplifying:
+\[
+\mathbb{E}[h(\gph, x)] = \frac{p + q}{2(p+q)} + \frac{(p - q)(1 -
+2\sigma)^2}{2(p + q)} = \frac{1}{2} + \frac{(p - q)(1 - 2\sigma)^2}{2(p+q)}.
+\]
+
+\subsection*{Expected local clustering coefficient}
+
+For a random vertex $v$ with $\deg(v) \ge 2$, the local clustering
+coefficient counts the fraction of neighbour pairs joined by an edge.
+On $\ppm(p, q, \sigma)$ in the dense regime $p, q = \Theta(1)$, a
+random neighbour $u$ of $v$ has block distribution $(p / (p + q), q /
+(p + q))$ for (same block as $v$, different block from $v$),
+approximately. Two independent random neighbours' block pair has
+distribution
+\[
+\Pr[\text{both same as } v] = \frac{p^2}{(p+q)^2},
+\qquad
+\Pr[\text{split}] = \frac{2 p q}{(p+q)^2},
+\qquad
+\Pr[\text{both other}] = \frac{q^2}{(p+q)^2}.
+\]
+The probability of an edge between two vertices with matching block
+pair is $p$; otherwise $q$. Summing:
+\[
+\mathbb{E}[C(v)] = \frac{p^2}{(p+q)^2} p + \frac{2 p q}{(p+q)^2} q + \frac{q^2}{(p+q)^2} p = \frac{p^3 + 2 p q^2 + p q^2}{(p+q)^2} = \frac{p^3 + 3 p q^2}{(p+q)^2}.
+\]
+The last equality collects like terms; note that $2 p q^2 + p q^2 = 3
+p q^2$ was obtained by combining the split contribution with the
+both-other one. Averaged over vertices, the expected clustering
+coefficient is
+\[
+\mathbb{E}[\Pi_{\clos}(\gph)] = \frac{p^3 + 3 p q^2}{(p + q)^2}.
+\]
+
+The expression is a function of $p$ and $q$ only; the feature-flip
+parameter $\sigma$ does not appear. This is the fact used in
+Section~\ref{sec:obstacle} to explain the closure gap under matched
+homophily: matching $\mathbb{E}[h]$ constrains $(p - q)(1 - 2
+\sigma)^2 / (p + q)$ but leaves the individual values of $p$ and $q$
+free within the constrained affine set, and the free direction moves
+$\mathbb{E}[\Pi_{\clos}]$.
+
+\subsection*{Constant-homophily-and-degree level set}
+
+Fix a target homophily $h_0$ and target degree $\bar d_0$. Matching
+$h_0$ and $\bar d_0$ constrains $(p + q)$ to $\bar d_0 \cdot 2 / n$
+and $(p - q)(1 - 2\sigma)^2 = (2 h_0 - 1)(p + q)$. Given the target
+$(p + q)$, we can write $p = ((p+q) + (p-q))/2$ and $q = ((p+q) - (p-q))/2$;
+setting $r = p - q$, we then have the constraint $r (1 - 2 \sigma)^2 =
+(2 h_0 - 1)(p + q)$. The pair $(r, \sigma)$ is one-parameter free.
+
+Along this one-parameter curve in $(p, q, \sigma)$ space, the
+clustering coefficient
+\[
+\mathbb{E}[\Pi_{\clos}] = \frac{p^3 + 3 p q^2}{(p+q)^2}
+\]
+is a non-constant function of $r$ (with $p + q$ fixed). The numerical
+sweep at $n = 1000$ described in Section~\ref{sec:obstacle} evaluates the
+expression along this level set and reports the range.

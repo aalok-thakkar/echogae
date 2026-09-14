@@ -1,0 +1,14 @@
+\DeclareFontFamily{OT1}{pcr}{\hyphenchar\font45}
+\DeclareFontShape{OT1}{pcr}{m}{n}{<->ssub * cmtt/m/n}{}
+\DeclareFontShape{OT1}{pcr}{m}{sl}{<->ssub * cmtt/m/sl}{}
+\DeclareFontShape{OT1}{pcr}{m}{it}{<->ssub * cmtt/m/it}{}
+\DeclareFontShape{OT1}{pcr}{m}{sc}{<->ssub * cmtt/m/n}{}
+\DeclareFontShape{OT1}{pcr}{b}{n}{<->ssub * cmtt/m/n}{}
+\DeclareFontShape{OT1}{pcr}{b}{sl}{<->ssub * cmtt/m/sl}{}
+\DeclareFontShape{OT1}{pcr}{b}{it}{<->ssub * cmtt/m/it}{}
+\DeclareFontShape{OT1}{pcr}{b}{sc}{<->ssub * cmtt/m/n}{}
+\DeclareFontShape{OT1}{pcr}{bx}{n}{<->ssub * cmtt/m/n}{}
+\DeclareFontShape{OT1}{pcr}{bx}{sl}{<->ssub * cmtt/m/sl}{}
+\DeclareFontShape{OT1}{pcr}{bx}{it}{<->ssub * cmtt/m/it}{}
+\DeclareFontShape{OT1}{pcr}{bx}{sc}{<->ssub * cmtt/m/n}{}
+\endinput

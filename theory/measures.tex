@@ -1,0 +1,232 @@
+% Polarisation measures and their 1-WL status.
+
+\section{Polarisation measures and 1-WL invariance}\label{sec:measures}
+
+This chapter defines each polarisation measure the paper works with
+and sorts it into either $\mathcal{F}_{\wl}(\mathcal{G})$ or its
+complement. The measures fall into two disjoint groups: measures that
+depend on the featured graph only through per-vertex quantities
+(degrees, own feature, neighbourhood feature composition) and are
+$1$-WL invariant, and measures that depend on the graph through
+closure statistics or the Laplacian spectrum and are not.
+
+\subsection{Measures that lie in $\mathcal{F}_{\wl}$}
+
+\begin{definition}[Edge homophily]\label{def:homophily}
+Fix a featured graph $(\gph, x)$ with binary or categorical
+features. The \emph{edge homophily coefficient} is the fraction of
+edges whose endpoints share the same feature:
+\[
+h(\gph, x) = \frac{|\{(u, v) \in \edges : x_u = x_v\}|}{|\edges|}.
+\]
+\end{definition}
+
+\begin{definition}[Attribute assortativity]\label{def:assortativity}
+Fix a featured graph $(\gph, x)$ with categorical features taking
+values in a finite set. The \emph{Newman attribute assortativity
+coefficient} is
+\[
+r(\gph, x) = \frac{\sum_i e_{ii} - \sum_i a_i b_i}{1 - \sum_i a_i
+b_i},
+\]
+where $e_{ij}$ is the fraction of edges from vertices of feature $i$
+to vertices of feature $j$, and $a_i, b_i$ are the row and column
+sums of the matrix $(e_{ij})$ \citep{Newman2003}.
+\end{definition}
+
+\begin{definition}[Modularity of a fixed partition]\label{def:modularity}
+Fix a graph $\gph$ and a partition $\mathcal{P}$ of $\vertices$ into
+disjoint communities. The \emph{modularity} of $\mathcal{P}$ is
+\[
+Q(\gph, \mathcal{P}) = \frac{1}{2|\edges|} \sum_{u, v \in \vertices}
+\left[ A_{uv} - \frac{\deg(u) \deg(v)}{2|\edges|}\right]
+\mathbb{1}[u, v \text{ in the same block of } \mathcal{P}],
+\]
+where $A_{uv}$ is the adjacency indicator \citep{Newman2004}.
+\end{definition}
+
+\begin{proposition}\label{prop:computable-measures}
+The edge homophily $h(\gph, x)$, attribute assortativity $r(\gph,
+x)$, and modularity $Q(\gph, \mathcal{P})$ of a fixed partition all
+lie in $\mathcal{F}_{\wl}(\mathcal{G})$ on every compact featured
+graph class $\mathcal{G}$. Any functional of the form
+\[
+\Psi(\gph, x) = \frac{1}{|\vertices|} \sum_{v \in \vertices} \phi\!\left(x_v,\ \deg(v),\ \{\!\{x_u : u \in \neigh{v}\}\!\}\right)
+\]
+for continuous $\phi$ also lies in $\mathcal{F}_{\wl}(\mathcal{G})$.
+\end{proposition}
+
+\begin{proof}
+Edge homophily rewrites as
+\[
+h(\gph, x) = \frac{1}{2|\edges|} \sum_{v \in \vertices} |\{u \in
+\neigh{v} : x_u = x_v\}|,
+\]
+which is a sum over vertices of a quantity determined by $x_v$ and
+the multiset $\{\!\{x_u : u \in \neigh{v}\}\!\}$: exactly the input
+to $1$-WL's round-one refinement. Two featured graphs with the same
+round-one $1$-WL colour distribution and the same $|\edges|$ give
+the same $h$; $|\edges| = \frac{1}{2} \sum_v \deg(v)$ is determined
+by the degree multiset, which is a coarser invariant than the
+$1$-WL colour multiset. Hence $h$ is $1$-WL invariant.
+
+Attribute assortativity rewrites as a ratio of quadratic forms in
+the edge-count matrix $(e_{ij})$, whose entries are determined by
+the multiset of $(x_v, \{\!\{x_u : u \in \neigh{v}\}\!\})$ tuples
+over $v$. The same argument gives modularity of a fixed partition
+(which rewrites through within-partition and cross-partition edge
+counts and vertex degrees). The general functional $\Psi$ is
+$1$-WL invariant by direct inspection.
+\end{proof}
+
+\subsection{Closure-based measures}
+
+Closure statistics count triangles or measure the density of local
+neighbourhood links.
+
+\begin{definition}[Local clustering coefficient]\label{def:clustering}
+For a vertex $v$ of degree $\deg(v) \ge 2$, the \emph{local
+clustering coefficient} is the fraction of pairs of neighbours of
+$v$ that are joined by an edge:
+\[
+C(v) = \frac{2 \cdot |\{\{u, w\} \subseteq \neigh{v} : \{u, w\} \in
+\edges\}|}{\deg(v) (\deg(v) - 1)}.
+\]
+The graph-level \emph{average local clustering} is
+\[
+\Pi_{\clos}(\gph) = \frac{1}{|\vertices'|} \sum_{v : \deg(v) \ge 2} C(v),
+\]
+with $\vertices'$ the set of vertices of degree at least $2$.
+\end{definition}
+
+\begin{definition}[Triangle density]\label{def:triangles}
+The \emph{triangle density} of $\gph$ is the number of triangles in
+$\gph$ divided by $\binom{|\vertices|}{3}$:
+\[
+t(\gph) = \frac{|\{S \in \binom{\vertices}{3} : S \text{ induces a
+triangle}\}|}{\binom{|\vertices|}{3}}.
+\]
+\end{definition}
+
+\subsection{Random-walk controversy and spectral measures}
+
+\begin{definition}[Random walk controversy]\label{def:rwc}
+Fix a graph $\gph$ and a bipartition $\{S_+, S_-\}$ of $\vertices$
+into two disjoint communities. Fix a small integer $k$ and identify
+\emph{authorities}: the $k$-highest-degree vertices of each side.
+For $\sigma, \tau \in \{+, -\}$, define $P_{\sigma\tau}$ as the
+probability that a simple random walk starting at a uniform vertex
+of $S_\sigma$ hits an authority of $S_\tau$ before any other
+authority. The \emph{random walk controversy} of $(\gph, \{S_+,
+S_-\})$ is
+\[
+\mathrm{RWC}(\gph, \{S_+, S_-\}) = P_{++} P_{--} - P_{+-} P_{-+}
+\in [-1, 1]
+\]
+\citep{Garimella18}.
+\end{definition}
+
+\begin{definition}[Generalised Euclidean distance]\label{def:ged}
+Fix a graph $\gph$ and an opinion vector $o \in [-1, +1]^{|\vertices|}$.
+Split $o$ into a non-negative part $o^+_v = \max(o_v, 0)$ and a
+non-positive part $o^-_v = \max(-o_v, 0)$. Let $L$ be the
+combinatorial Laplacian of $\gph$ and $L^\dagger$ its Moore-Penrose
+pseudoinverse. The \emph{generalised Euclidean distance} of
+\citet{HohmannGED2023} is
+\[
+\mathrm{GED}(\gph, o) = \sqrt{(o^+ - o^-)^\top L^\dagger (o^+ - o^-)}.
+\]
+On a disconnected graph, $L^\dagger$ is applied to each connected
+component separately; \citet{HohmannGED2023} restrict to connected
+graphs in their formulation.
+\end{definition}
+
+\subsection{Three closure and spectral measures are not $1$-WL invariant}
+
+\begin{proposition}\label{prop:noncomputable-measures}
+The functionals $\Pi_{\clos}$, $t$, and $\mathrm{GED}$ under a
+non-trivial opinion vector each fail $1$-WL invariance on any class
+$\mathcal{G}$ containing the pair $(A, B) = (C_3 \sqcup C_3, C_6)$
+of Section~\ref{sec:warmup}. In particular, none of the three lies in
+$\mathcal{F}_{\mpnn}(\mathcal{G})$ on such a class.
+\end{proposition}
+
+\begin{proof}
+Recall $A \sim_{\wl} B$ from Section~\ref{sec:warmup} in the unfeatured
+case. In the featured versions with a constant feature $\bot$, the
+same argument gives $(A, \bot) \sim_{\wl} (B, \bot)$.
+
+\emph{Parts (a), (b): clustering and triangle density.} $\Pi_{\clos}(A)
+= 1$ and $\Pi_{\clos}(B) = 0$ from Section~\ref{sec:warmup}; the triangle
+counts are $2$ and $0$, so $t(A) = 2/\binom{6}{3} = 1/10$ and $t(B)
+= 0$. The two graphs are $1$-WL equivalent and the functionals
+differ on them.
+
+\emph{Part (c): GED.} Take the opinion vector $o = (+1, +1, +1, -1,
+-1, -1)^\top$. The computation in Appendix~\ref{app:ged-witness} gives
+$\mathrm{GED}(A, o) = 0$ and $\mathrm{GED}(B, o) = \sqrt{11/18}$
+using the per-component convention of \citet{HohmannGED2023}. The
+values differ.
+
+By Proposition~\ref{prop:upper}, none of the three lies in
+$\mathcal{F}_{\mpnn}(\mathcal{G})$ on a class containing the
+witness $(A, B)$.
+\end{proof}
+
+\begin{remark}[Status of the random walk controversy score]
+\label{rem:rwc}
+The random walk controversy score of \citet{Garimella18} is a
+functional of a graph together with a bipartition, not of the
+graph alone. Whether $\mathrm{RWC}$ lies in
+$\mathcal{F}_{\wl}(\mathcal{G})$ depends on how the bipartition is
+supplied. If the bipartition is encoded as a $\{-1, +1\}$
+featured-graph attribute, the featured version of the natural
+witness pair $(C_3 \sqcup C_3, C_6)$ under matching bipartitions is
+not $1$-WL equivalent, so this pair does not witness non-invariance
+of $\mathrm{RWC}$. We attempted the alternative witness of the
+Shrikhande and $4 \times 4$ rook's graphs (both strongly regular with
+parameters $(16, 6, 2, 2)$, hence $1$-WL equivalent
+\citep{Shrikhande1959}). Under a bipartition into rows of size $8$
+that preserves featured $1$-WL equivalence, exact absorbing-chain
+computation gives $\mathrm{RWC}(R) = \mathrm{RWC}(S) = 0.0476$;
+the two values coincide. The apparent reason is that both graphs
+are vertex-transitive and cospectral, and the symmetry propagates
+to hitting probabilities under symmetric bipartitions. A rigorous
+witness for $\mathrm{RWC} \notin \mathcal{F}_{\mpnn}(\mathcal{G})$
+requires a pair of graphs, a bipartition-as-feature under which the
+pair is $1$-WL equivalent, and a computation on which $\mathrm{RWC}$
+differs. Constructing such a witness is left as an open technical
+problem; this paper does not treat $\mathrm{RWC}$'s $1$-WL
+invariance status as established.
+\end{remark}
+
+\subsection{The taxonomy}
+
+The consequence of Theorem~\ref{thm:dichotomy} for the polarisation
+measurement literature is a two-column taxonomy of the published
+measures.
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+$\mathcal{F}_{\wl}$-invariant (MPNN-computable) & Not $1$-WL invariant \\
+\hline
+Edge homophily $h$ & Local clustering $\Pi_{\clos}$ \\
+Attribute assortativity $r$ & Triangle density $t$ \\
+Modularity $Q$ (fixed partition) & Generalised Euclidean distance $\mathrm{GED}$ \\
+Any $\Psi$ from Proposition~\ref{prop:computable-measures} & \\
+\hline
+\multicolumn{2}{l}{Random walk controversy $\mathrm{RWC}$: status
+open; see Remark~\ref{rem:rwc}.} \\
+\hline
+\end{tabular}
+\end{center}
+
+A message-passing GNN estimator can approximate every functional in
+the left column arbitrarily well on the appropriate compact
+featured-graph class. No message-passing GNN can approximate any
+functional in the right column on any class containing the six-vertex
+pair $(A, B)$. The random walk controversy score plausibly belongs on
+the right, but this paper does not construct a witness. The next
+chapter shows the impossibility survives on random-graph ensembles
+of arbitrary size.

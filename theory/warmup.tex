@@ -1,0 +1,112 @@
+% Warmup: worked example of the base witness pair.
+
+\section{A worked example: two triangles versus the six-cycle}\label{sec:warmup}
+
+Before stating the dichotomy in general, this chapter works out one
+pair of graphs in complete detail. The pair will be used as a witness
+in every non-membership claim in Section~\ref{sec:measures} and as the
+building block for the distributional witness of
+Section~\ref{sec:entanglement}.
+
+\subsection{The two graphs}
+
+Fix the vertex set $\vertices = \{1, 2, 3, 4, 5, 6\}$. Let $A$ be the
+disjoint union of two triangles,
+\[
+A = C_3 \sqcup C_3, \qquad
+\edges(A) = \{\{1,2\},\ \{1,3\},\ \{2,3\},\ \{4,5\},\ \{4,6\},\ \{5,6\}\}.
+\]
+Let $B$ be the six-cycle,
+\[
+B = C_6, \qquad
+\edges(B) = \{\{1,2\},\ \{2,3\},\ \{3,4\},\ \{4,5\},\ \{5,6\},\ \{1,6\}\}.
+\]
+Both graphs have six vertices and six edges. Every vertex in either
+graph has degree two. The two graphs are not isomorphic: $A$ has
+two connected components while $B$ has one.
+
+\subsection{1-WL cannot distinguish $A$ from $B$}
+
+Assign the constant feature $x_v \equiv \bot$ to every vertex of
+either graph. Colour refinement proceeds as follows.
+
+\emph{Round zero.} Every vertex receives the initial colour
+$c_v^{(0)} = \tau(\bot) = \alpha$ on both $A$ and $B$.
+
+\emph{Round one.} A vertex $v$ of $A$ or $B$ has two neighbours, both
+coloured $\alpha$, so
+\[
+c_v^{(1)} = \tau(\alpha, \{\!\{\alpha, \alpha\}\!\}) = \beta.
+\]
+The colour $\beta$ is assigned to every vertex of either graph.
+
+\emph{Higher rounds.} Round two proceeds identically to round one with
+$\beta$ in place of $\alpha$. Refinement has stabilised.
+
+The graph-level fingerprints are
+\[
+\mathrm{hist}(A, \bot) = \{\!\{\beta,\beta,\beta,\beta,\beta,\beta\}\!\}
+= \mathrm{hist}(B, \bot),
+\]
+so $A \sim_{\wl} B$. Colour refinement cannot separate the two
+graphs.
+
+By the upper-bound direction of Theorem~\ref{thm:dichotomy}, no MPNN with
+continuous update and readout can separate them either. For every $M
+\in \mpnn$, $M(A, \bot) = M(B, \bot)$.
+
+\subsection{The two graphs are different in every closure-based sense}
+
+\emph{Local clustering.} The local clustering coefficient of a vertex
+$v$ of degree $d \ge 2$ is the fraction of pairs of neighbours of $v$
+that are joined by an edge. In $A$, every vertex has two neighbours,
+and those neighbours are joined (they are the other two vertices of
+the same triangle), so the local clustering is $1$ at every vertex.
+In $B$, every vertex has two neighbours, and those two neighbours are
+at distance two apart along the cycle, not joined, so the local
+clustering is $0$ at every vertex. Averaged:
+\[
+\Pi_{\clos}(A) = 1, \qquad \Pi_{\clos}(B) = 0.
+\]
+
+\emph{Triangle count.} A triangle in a graph is a set of three
+vertices any two of which are joined. $A$ contains exactly two
+triangles, namely $\{1, 2, 3\}$ and $\{4, 5, 6\}$. $B$ contains none.
+
+\emph{Laplacian spectrum.} The Laplacian $L_\gph$ of a graph $\gph$
+is the $|\vertices| \times |\vertices|$ matrix with entries
+\[
+(L_\gph)_{uv} =
+\begin{cases}
+\deg_\gph(v) & \text{if } u = v, \\
+-1 & \text{if } \{u, v\} \in \edges, \\
+0 & \text{otherwise.}
+\end{cases}
+\]
+For a cycle $C_n$ the eigenvalues of $L_{C_n}$ are $2 - 2\cos(2\pi k
+/ n)$ for $k \in \{0, 1, \dots, n-1\}$. Substituting gives
+\[
+\mathrm{spec}(L_A) = \{0, 0, 3, 3, 3, 3\},
+\qquad
+\mathrm{spec}(L_B) = \{0, 1, 1, 3, 3, 4\}.
+\]
+The multiplicities of the zero eigenvalue count the connected
+components of the graph, and match ($A$ has two, $B$ has one). The
+non-zero spectra differ.
+
+\emph{Laplacian pseudoinverse.} The Moore-Penrose pseudoinverse
+$L_\gph^\dagger$ is defined by inverting the non-zero eigenvalues of
+$L_\gph$ and leaving the zero eigenspace alone. Since the non-zero
+spectra of $L_A$ and $L_B$ differ, so do $L_A^\dagger$ and
+$L_B^\dagger$.
+
+\emph{Random walk mixing.} A simple random walk on $A$ starting at a
+vertex $v$ stays in $v$'s triangle for all time; on $B$ it explores
+the whole cycle. Any random-walk-based statistic that measures
+communication between the two natural partitions (each triangle on
+$A$, the two-colouring of $B$) separates the two graphs.
+
+The pair $(A, B)$ therefore satisfies $A \sim_{\wl} B$ but differs
+under every closure statistic and every spectral statistic on the
+graph. The next chapter formalises what this means for MPNN
+estimators.

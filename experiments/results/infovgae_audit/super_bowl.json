@@ -1,0 +1,17 @@
+{
+  "topic": "super_bowl",
+  "epochs": 200,
+  "n_nodes": 5473,
+  "n_edges": 8754,
+  "n_labeled": 195,
+  "community_score": 0.0,
+  "per_node_std": 0.0,
+  "graph_blind_r2_mean": 1.0,
+  "graph_blind_r2_std": 0.0,
+  "community_score_rewired": 0.0,
+  "delta_score": 0.0,
+  "triangles_before": 281,
+  "triangles_after": 0,
+  "clus_before": 0.04586161616010137,
+  "clus_after": 0.0
+}

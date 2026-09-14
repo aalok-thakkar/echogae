@@ -1,0 +1,67 @@
+{
+  "dataset": "PureP",
+  "task": "Classification",
+  "epochs": 300,
+  "n_seeds_total": 10,
+  "n_seeds_success": 10,
+  "accuracy_mean": 0.97545,
+  "accuracy_std": 0.02368906217364181,
+  "accuracy_range": [
+    0.9298,
+    1.0
+  ],
+  "f1_mean": 0.9751800000000002,
+  "f1_std": 0.023923386976856864,
+  "per_seed": [
+    {
+      "seed": 42,
+      "accuracy": 0.9649,
+      "f1_score": 0.9648
+    },
+    {
+      "seed": 43,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "seed": 44,
+      "accuracy": 0.9298,
+      "f1_score": 0.9287
+    },
+    {
+      "seed": 45,
+      "accuracy": 0.9825,
+      "f1_score": 0.9816
+    },
+    {
+      "seed": 46,
+      "accuracy": 0.9649,
+      "f1_score": 0.9646
+    },
+    {
+      "seed": 47,
+      "accuracy": 0.9825,
+      "f1_score": 0.9825
+    },
+    {
+      "seed": 48,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "seed": 49,
+      "accuracy": 0.9825,
+      "f1_score": 0.9823
+    },
+    {
+      "seed": 50,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "seed": 51,
+      "accuracy": 0.9474,
+      "f1_score": 0.9473
+    }
+  ]
+}

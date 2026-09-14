@@ -1,0 +1,29 @@
+{
+  "topic": "abortion",
+  "epochs": 300,
+  "n_nodes": 5088,
+  "n_edges": 10572,
+  "n_communities_non_singleton": 2,
+  "graph_level_ecs": 0.6068709492683411,
+  "per_community_ecs": {
+    "0": 0.5695127248764038,
+    "1": 0.6442291736602783
+  },
+  "graph_blind_r2_mean": 1.0,
+  "graph_blind_r2_std": 0.0,
+  "clus_before": 0.016692554297884254,
+  "clus_after": 0.00010721578753273161,
+  "triangles_before": 149,
+  "triangles_after": 4,
+  "graph_level_ecs_rewired": 0.633933037519455,
+  "delta_ecs": 0.02706208825111389,
+  "connectivity": {
+    "n_components_before": 2,
+    "n_components_after": 2,
+    "largest_component_size_before": 5087,
+    "largest_component_size_after": 5087,
+    "labelled_in_lcc_before": 5087,
+    "labelled_in_lcc_after": 5087,
+    "labelled_total": 5087
+  }
+}

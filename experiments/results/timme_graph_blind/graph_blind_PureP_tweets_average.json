@@ -1,0 +1,105 @@
+{
+  "dataset": "PureP",
+  "feature": "tweets_average",
+  "n_seeds": 10,
+  "accuracy_mean": 0.8912280701754385,
+  "accuracy_std": 0.0230975645124345,
+  "accuracy_range": [
+    0.8596491228070176,
+    0.9298245614035088
+  ],
+  "f1_mean": 0.8893883654380877,
+  "f1_std": 0.023002028615599076,
+  "per_seed": [
+    {
+      "seed": 42,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.9122807017543859,
+      "f1": 0.911297852474323
+    },
+    {
+      "seed": 43,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.9298245614035088,
+      "f1": 0.928030303030303
+    },
+    {
+      "seed": 44,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8771929824561403,
+      "f1": 0.8758169934640523
+    },
+    {
+      "seed": 45,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8947368421052632,
+      "f1": 0.888961038961039
+    },
+    {
+      "seed": 46,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8771929824561403,
+      "f1": 0.8765852149706155
+    },
+    {
+      "seed": 47,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8596491228070176,
+      "f1": 0.858560794044665
+    },
+    {
+      "seed": 48,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8596491228070176,
+      "f1": 0.858560794044665
+    },
+    {
+      "seed": 49,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8947368421052632,
+      "f1": 0.893125
+    },
+    {
+      "seed": 50,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.8947368421052632,
+      "f1": 0.8906649616368286
+    },
+    {
+      "seed": 51,
+      "feature": "tweets_average",
+      "n_labeled": 581,
+      "n_train": 465,
+      "n_test": 57,
+      "accuracy": 0.9122807017543859,
+      "f1": 0.9122807017543859
+    }
+  ]
+}

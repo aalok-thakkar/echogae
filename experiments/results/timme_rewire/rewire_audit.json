@@ -1,0 +1,688 @@
+{
+  "n_seeds": 10,
+  "n_swaps_target": 200000,
+  "max_seconds": 60.0,
+  "no_triangle_destroy": true,
+  "acc_orig_mean": 0.97545,
+  "acc_orig_std": 0.02368906217364181,
+  "acc_rewired_mean": 0.9702,
+  "acc_rewired_std": 0.01445452639602328,
+  "delta_mean": -0.005249999999999988,
+  "delta_std": 0.02032963081044239,
+  "delta_range": [
+    -0.03510000000000002,
+    0.03510000000000002
+  ],
+  "per_seed": [
+    {
+      "seed": 42,
+      "orig": {
+        "seed": 42,
+        "dataset": "PureP",
+        "accuracy": 0.9649,
+        "f1": 0.9648
+      },
+      "rewired": {
+        "seed": 42,
+        "dataset": "PureP_rewired_seed42",
+        "accuracy": 0.9649,
+        "f1": 0.9646
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35821,
+          "accepted": 33186,
+          "proposed": 1760694,
+          "dropped_cat_mismatch": 732587,
+          "dropped_multi_edge": 430595,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 6.030426979064941
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57608,
+          "accepted": 52590,
+          "proposed": 2375292,
+          "dropped_cat_mismatch": 1275448,
+          "dropped_multi_edge": 418186,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 8.241529703140259
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 527420,
+          "dropped_cat_mismatch": 333460,
+          "dropped_multi_edge": 159420,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.0849010944366455
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1607,
+          "accepted": 1613,
+          "proposed": 21981264,
+          "dropped_cat_mismatch": 4479,
+          "dropped_multi_edge": 281,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.00000309944153
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27192,
+          "accepted": 22369,
+          "proposed": 744324,
+          "dropped_cat_mismatch": 337699,
+          "dropped_multi_edge": 219918,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.6505632400512695
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "orig": {
+        "seed": 43,
+        "dataset": "PureP",
+        "accuracy": 1.0,
+        "f1": 1.0
+      },
+      "rewired": {
+        "seed": 43,
+        "dataset": "PureP_rewired_seed43",
+        "accuracy": 0.9825,
+        "f1": 0.9821
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35863,
+          "accepted": 33186,
+          "proposed": 1785495,
+          "dropped_cat_mismatch": 742553,
+          "dropped_multi_edge": 437325,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 6.027316331863403
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57707,
+          "accepted": 52590,
+          "proposed": 2382709,
+          "dropped_cat_mismatch": 1279173,
+          "dropped_multi_edge": 419584,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 8.384567975997925
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 526659,
+          "dropped_cat_mismatch": 334136,
+          "dropped_multi_edge": 158078,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.0894882678985596
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1620,
+          "accepted": 1543,
+          "proposed": 22322087,
+          "dropped_cat_mismatch": 4443,
+          "dropped_multi_edge": 281,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.000001192092896
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27175,
+          "accepted": 22369,
+          "proposed": 753920,
+          "dropped_cat_mismatch": 341382,
+          "dropped_multi_edge": 222658,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.7243690490722656
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "orig": {
+        "seed": 44,
+        "dataset": "PureP",
+        "accuracy": 0.9298,
+        "f1": 0.9287
+      },
+      "rewired": {
+        "seed": 44,
+        "dataset": "PureP_rewired_seed44",
+        "accuracy": 0.9649,
+        "f1": 0.9646
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35832,
+          "accepted": 33186,
+          "proposed": 1767919,
+          "dropped_cat_mismatch": 734846,
+          "dropped_multi_edge": 432942,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.6042869091033936
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57684,
+          "accepted": 52590,
+          "proposed": 2400132,
+          "dropped_cat_mismatch": 1289719,
+          "dropped_multi_edge": 422552,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.677020072937012
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 527790,
+          "dropped_cat_mismatch": 334350,
+          "dropped_multi_edge": 158894,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.9057869911193848
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1618,
+          "accepted": 1690,
+          "proposed": 24189725,
+          "dropped_cat_mismatch": 5007,
+          "dropped_multi_edge": 317,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.000000953674316
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27175,
+          "accepted": 22369,
+          "proposed": 747421,
+          "dropped_cat_mismatch": 339390,
+          "dropped_multi_edge": 221076,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.3252580165863037
+        }
+      }
+    },
+    {
+      "seed": 45,
+      "orig": {
+        "seed": 45,
+        "dataset": "PureP",
+        "accuracy": 0.9825,
+        "f1": 0.9816
+      },
+      "rewired": {
+        "seed": 45,
+        "dataset": "PureP_rewired_seed45",
+        "accuracy": 0.9825,
+        "f1": 0.9816
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35852,
+          "accepted": 33186,
+          "proposed": 1786409,
+          "dropped_cat_mismatch": 744348,
+          "dropped_multi_edge": 437084,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.446637868881226
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57639,
+          "accepted": 52590,
+          "proposed": 2387635,
+          "dropped_cat_mismatch": 1283278,
+          "dropped_multi_edge": 419622,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.536895990371704
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 521763,
+          "dropped_cat_mismatch": 329894,
+          "dropped_multi_edge": 157357,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.8010671138763428
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1623,
+          "accepted": 1810,
+          "proposed": 25334207,
+          "dropped_cat_mismatch": 5215,
+          "dropped_multi_edge": 342,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.00000190734863
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27176,
+          "accepted": 22369,
+          "proposed": 752609,
+          "dropped_cat_mismatch": 341398,
+          "dropped_multi_edge": 222482,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.3566882610321045
+        }
+      }
+    },
+    {
+      "seed": 46,
+      "orig": {
+        "seed": 46,
+        "dataset": "PureP",
+        "accuracy": 0.9649,
+        "f1": 0.9646
+      },
+      "rewired": {
+        "seed": 46,
+        "dataset": "PureP_rewired_seed46",
+        "accuracy": 0.9474,
+        "f1": 0.9473
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35801,
+          "accepted": 33186,
+          "proposed": 1767944,
+          "dropped_cat_mismatch": 735792,
+          "dropped_multi_edge": 431750,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.4414756298065186
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57602,
+          "accepted": 52590,
+          "proposed": 2377852,
+          "dropped_cat_mismatch": 1277565,
+          "dropped_multi_edge": 417803,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.762946844100952
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 522214,
+          "dropped_cat_mismatch": 329760,
+          "dropped_multi_edge": 158085,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.8341410160064697
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1624,
+          "accepted": 1777,
+          "proposed": 23801223,
+          "dropped_cat_mismatch": 4771,
+          "dropped_multi_edge": 308,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.000000953674316
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27163,
+          "accepted": 22369,
+          "proposed": 746927,
+          "dropped_cat_mismatch": 339154,
+          "dropped_multi_edge": 220247,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.409444808959961
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "orig": {
+        "seed": 47,
+        "dataset": "PureP",
+        "accuracy": 0.9825,
+        "f1": 0.9825
+      },
+      "rewired": {
+        "seed": 47,
+        "dataset": "PureP_rewired_seed47",
+        "accuracy": 0.9825,
+        "f1": 0.9825
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35836,
+          "accepted": 33186,
+          "proposed": 1763035,
+          "dropped_cat_mismatch": 733929,
+          "dropped_multi_edge": 432191,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.60212516784668
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57656,
+          "accepted": 52590,
+          "proposed": 2370970,
+          "dropped_cat_mismatch": 1272957,
+          "dropped_multi_edge": 417174,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.930537939071655
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 529997,
+          "dropped_cat_mismatch": 335869,
+          "dropped_multi_edge": 159640,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.8838160037994385
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1616,
+          "accepted": 1784,
+          "proposed": 23980369,
+          "dropped_cat_mismatch": 5019,
+          "dropped_multi_edge": 288,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.0
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27167,
+          "accepted": 22369,
+          "proposed": 755996,
+          "dropped_cat_mismatch": 342972,
+          "dropped_multi_edge": 223304,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.513591766357422
+        }
+      }
+    },
+    {
+      "seed": 48,
+      "orig": {
+        "seed": 48,
+        "dataset": "PureP",
+        "accuracy": 1.0,
+        "f1": 1.0
+      },
+      "rewired": {
+        "seed": 48,
+        "dataset": "PureP_rewired_seed48",
+        "accuracy": 0.9825,
+        "f1": 0.9824
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35882,
+          "accepted": 33186,
+          "proposed": 1759732,
+          "dropped_cat_mismatch": 732169,
+          "dropped_multi_edge": 431124,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.619127988815308
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57617,
+          "accepted": 52590,
+          "proposed": 2394252,
+          "dropped_cat_mismatch": 1286151,
+          "dropped_multi_edge": 421609,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.829854965209961
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 526854,
+          "dropped_cat_mismatch": 334064,
+          "dropped_multi_edge": 158259,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.9349067211151123
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1616,
+          "accepted": 1648,
+          "proposed": 23574211,
+          "dropped_cat_mismatch": 4768,
+          "dropped_multi_edge": 266,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.000000953674316
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27199,
+          "accepted": 22369,
+          "proposed": 760984,
+          "dropped_cat_mismatch": 344727,
+          "dropped_multi_edge": 225208,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.674626111984253
+        }
+      }
+    },
+    {
+      "seed": 49,
+      "orig": {
+        "seed": 49,
+        "dataset": "PureP",
+        "accuracy": 0.9825,
+        "f1": 0.9823
+      },
+      "rewired": {
+        "seed": 49,
+        "dataset": "PureP_rewired_seed49",
+        "accuracy": 0.9474,
+        "f1": 0.9471
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35886,
+          "accepted": 33186,
+          "proposed": 1755911,
+          "dropped_cat_mismatch": 731081,
+          "dropped_multi_edge": 429978,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.588566780090332
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57674,
+          "accepted": 52590,
+          "proposed": 2394751,
+          "dropped_cat_mismatch": 1285458,
+          "dropped_multi_edge": 422062,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 8.260799169540405
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 525471,
+          "dropped_cat_mismatch": 332403,
+          "dropped_multi_edge": 158603,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.9965219497680664
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1616,
+          "accepted": 1583,
+          "proposed": 22662229,
+          "dropped_cat_mismatch": 4590,
+          "dropped_multi_edge": 298,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.000000953674316
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27148,
+          "accepted": 22369,
+          "proposed": 732924,
+          "dropped_cat_mismatch": 332175,
+          "dropped_multi_edge": 215827,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.454155683517456
+        }
+      }
+    },
+    {
+      "seed": 50,
+      "orig": {
+        "seed": 50,
+        "dataset": "PureP",
+        "accuracy": 1.0,
+        "f1": 1.0
+      },
+      "rewired": {
+        "seed": 50,
+        "dataset": "PureP_rewired_seed50",
+        "accuracy": 0.9825,
+        "f1": 0.9816
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35861,
+          "accepted": 33186,
+          "proposed": 1766385,
+          "dropped_cat_mismatch": 734571,
+          "dropped_multi_edge": 433340,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 5.4832048416137695
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57686,
+          "accepted": 52590,
+          "proposed": 2374338,
+          "dropped_cat_mismatch": 1276236,
+          "dropped_multi_edge": 417399,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 7.468712329864502
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 528660,
+          "dropped_cat_mismatch": 334938,
+          "dropped_multi_edge": 159119,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.9161159992218018
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1618,
+          "accepted": 1657,
+          "proposed": 23646513,
+          "dropped_cat_mismatch": 4746,
+          "dropped_multi_edge": 308,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.00000190734863
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27192,
+          "accepted": 22369,
+          "proposed": 749377,
+          "dropped_cat_mismatch": 340750,
+          "dropped_multi_edge": 220514,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.5235562324523926
+        }
+      }
+    },
+    {
+      "seed": 51,
+      "orig": {
+        "seed": 51,
+        "dataset": "PureP",
+        "accuracy": 0.9474,
+        "f1": 0.9473
+      },
+      "rewired": {
+        "seed": 51,
+        "dataset": "PureP_rewired_seed51",
+        "accuracy": 0.9649,
+        "f1": 0.9649
+      },
+      "rewire_stats": {
+        "retweet_list.csv": {
+          "n_edges": 66373,
+          "n_unique_edges": 35810,
+          "accepted": 33186,
+          "proposed": 1807913,
+          "dropped_cat_mismatch": 751540,
+          "dropped_multi_edge": 444713,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 6.114387035369873
+        },
+        "mention_list.csv": {
+          "n_edges": 105180,
+          "n_unique_edges": 57682,
+          "accepted": 52590,
+          "proposed": 2372375,
+          "dropped_cat_mismatch": 1274569,
+          "dropped_multi_edge": 416967,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 8.284038782119751
+        },
+        "friend_list.csv": {
+          "n_edges": 59073,
+          "n_unique_edges": 59073,
+          "accepted": 29536,
+          "proposed": 524245,
+          "dropped_cat_mismatch": 331948,
+          "dropped_multi_edge": 157883,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 1.9924650192260742
+        },
+        "reply_list.csv": {
+          "n_edges": 68462,
+          "n_unique_edges": 1614,
+          "accepted": 1604,
+          "proposed": 22592999,
+          "dropped_cat_mismatch": 4595,
+          "dropped_multi_edge": 273,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 60.0
+        },
+        "favorite_list.csv": {
+          "n_edges": 44738,
+          "n_unique_edges": 27114,
+          "accepted": 22369,
+          "proposed": 743792,
+          "dropped_cat_mismatch": 337505,
+          "dropped_multi_edge": 219358,
+          "dropped_no_triangle_decrease": 0,
+          "elapsed_seconds": 2.6257100105285645
+        }
+      }
+    }
+  ]
+}

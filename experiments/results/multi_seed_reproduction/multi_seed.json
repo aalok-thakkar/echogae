@@ -1,0 +1,258 @@
+{
+  "gun": {
+    "topic": "gun",
+    "sbert_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "n_seeds": 10,
+    "published": 0.714,
+    "ecs_mean": 0.42746382802724836,
+    "ecs_std": 0.03127091962706722,
+    "ecs_min": 0.3897521197795868,
+    "ecs_max": 0.4856601655483246,
+    "gap_mean_to_published": -0.2865361719727516,
+    "gap_min_to_published": 0.22833983445167538,
+    "seed_results": [
+      {
+        "seed": 42,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.43900996446609497
+      },
+      {
+        "seed": 43,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.44303251802921295
+      },
+      {
+        "seed": 44,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.3943942189216614
+      },
+      {
+        "seed": 45,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.3897521197795868
+      },
+      {
+        "seed": 46,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.4856601655483246
+      },
+      {
+        "seed": 47,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.46103715896606445
+      },
+      {
+        "seed": 48,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.4104665368795395
+      },
+      {
+        "seed": 49,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.42811059951782227
+      },
+      {
+        "seed": 50,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.4289359897375107
+      },
+      {
+        "seed": 51,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.39423900842666626
+      }
+    ]
+  },
+  "abortion": {
+    "topic": "abortion",
+    "sbert_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "n_seeds": 10,
+    "published": 0.626,
+    "ecs_mean": 0.6366933375597,
+    "ecs_std": 0.07245678685259166,
+    "ecs_min": 0.6054922044277191,
+    "ecs_max": 0.8423908352851868,
+    "gap_mean_to_published": 0.010693337559700034,
+    "gap_min_to_published": 0.003977967262268067,
+    "seed_results": [
+      {
+        "seed": 42,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6173914074897766
+      },
+      {
+        "seed": 43,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6150601506233215
+      },
+      {
+        "seed": 44,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6118375957012177
+      },
+      {
+        "seed": 45,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6196884512901306
+      },
+      {
+        "seed": 46,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6117249727249146
+      },
+      {
+        "seed": 47,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6140929758548737
+      },
+      {
+        "seed": 48,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6220220327377319
+      },
+      {
+        "seed": 49,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6054922044277191
+      },
+      {
+        "seed": 50,
+        "n_communities_non_singleton": 1,
+        "graph_ecs": 0.8423908352851868
+      },
+      {
+        "seed": 51,
+        "n_communities_non_singleton": 2,
+        "graph_ecs": 0.6072327494621277
+      }
+    ]
+  },
+  "super_bowl": {
+    "topic": "super_bowl",
+    "sbert_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "n_seeds": 10,
+    "published": 0.485,
+    "ecs_mean": 0.6004186245799065,
+    "ecs_std": 0.04104455121191038,
+    "ecs_min": 0.5384638905525208,
+    "ecs_max": 0.6641125828027725,
+    "gap_mean_to_published": 0.11541862457990648,
+    "gap_min_to_published": 0.053463890552520765,
+    "seed_results": [
+      {
+        "seed": 42,
+        "n_communities_non_singleton": 3,
+        "graph_ecs": 0.5384638905525208
+      },
+      {
+        "seed": 43,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.5720756888389588
+      },
+      {
+        "seed": 44,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6538694798946381
+      },
+      {
+        "seed": 45,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6641125828027725
+      },
+      {
+        "seed": 46,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.6025337696075439
+      },
+      {
+        "seed": 47,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6453172639012337
+      },
+      {
+        "seed": 48,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.5905396863818169
+      },
+      {
+        "seed": 49,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.5726192712783813
+      },
+      {
+        "seed": 50,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.5878463923931122
+      },
+      {
+        "seed": 51,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.5768082201480865
+      }
+    ]
+  },
+  "sxsw": {
+    "topic": "sxsw",
+    "sbert_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "n_seeds": 10,
+    "published": 0.465,
+    "ecs_mean": 0.6369879695773124,
+    "ecs_std": 0.021923417312423383,
+    "ecs_min": 0.5940311004718145,
+    "ecs_max": 0.6558292657136917,
+    "gap_mean_to_published": 0.17198796957731238,
+    "gap_min_to_published": 0.12903110047181449,
+    "seed_results": [
+      {
+        "seed": 42,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.6417136907577514
+      },
+      {
+        "seed": 43,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6215588450431824
+      },
+      {
+        "seed": 44,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6064460128545761
+      },
+      {
+        "seed": 45,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.6440826237201691
+      },
+      {
+        "seed": 46,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.6533582746982575
+      },
+      {
+        "seed": 47,
+        "n_communities_non_singleton": 6,
+        "graph_ecs": 0.655303418636322
+      },
+      {
+        "seed": 48,
+        "n_communities_non_singleton": 5,
+        "graph_ecs": 0.6492474317550659
+      },
+      {
+        "seed": 49,
+        "n_communities_non_singleton": 6,
+        "graph_ecs": 0.6483090321222941
+      },
+      {
+        "seed": 50,
+        "n_communities_non_singleton": 4,
+        "graph_ecs": 0.6558292657136917
+      },
+      {
+        "seed": 51,
+        "n_communities_non_singleton": 6,
+        "graph_ecs": 0.5940311004718145
+      }
+    ]
+  }
+}

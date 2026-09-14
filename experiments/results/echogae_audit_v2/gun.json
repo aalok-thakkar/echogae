@@ -1,0 +1,29 @@
+{
+  "topic": "gun",
+  "epochs": 300,
+  "n_nodes": 6614,
+  "n_edges": 14327,
+  "n_communities_non_singleton": 2,
+  "graph_level_ecs": 0.4691307544708252,
+  "per_community_ecs": {
+    "0": 0.46065783500671387,
+    "1": 0.4776036739349365
+  },
+  "graph_blind_r2_mean": 1.0,
+  "graph_blind_r2_std": 0.0,
+  "clus_before": 0.02243881046822038,
+  "clus_after": 0.00032654406086275777,
+  "triangles_before": 789,
+  "triangles_after": 18,
+  "graph_level_ecs_rewired": 0.49383966624736786,
+  "delta_ecs": 0.024708911776542664,
+  "connectivity": {
+    "n_components_before": 44,
+    "n_components_after": 48,
+    "largest_component_size_before": 6566,
+    "largest_component_size_after": 6558,
+    "labelled_in_lcc_before": 6566,
+    "labelled_in_lcc_after": 6558,
+    "labelled_total": 6566
+  }
+}

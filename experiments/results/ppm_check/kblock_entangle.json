@@ -1,0 +1,44 @@
+{
+  "m": 160,
+  "n": 640,
+  "n_samples": 60,
+  "params_1": {
+    "p_in": 0.18,
+    "p_sfd": 0.02,
+    "p_dfs": 0.05,
+    "p_dfd": 0.05
+  },
+  "params_2": {
+    "p_in": 0.02,
+    "p_sfd": 0.18,
+    "p_dfs": 0.05,
+    "p_dfd": 0.05
+  },
+  "analytic_1": {
+    "degree": 48.0,
+    "clustering": 0.10122985106382981
+  },
+  "analytic_2": {
+    "degree": 48.0,
+    "clustering": 0.05603206382978724
+  },
+  "empirical_1": {
+    "degree": 47.79375000000001,
+    "clustering": 0.10030346904070218,
+    "homophily": 0.6657770503530802,
+    "mean_same_feat_neigh": 31.819635416666664,
+    "mean_diff_feat_neigh": 15.974114583333334
+  },
+  "empirical_2": {
+    "degree": 48.00822916666667,
+    "clustering": 0.05498196863322078,
+    "homophily": 0.6665882977183865,
+    "mean_same_feat_neigh": 32.001875,
+    "mean_diff_feat_neigh": 16.006354166666668
+  },
+  "wl_tv": {
+    "depth_0": 0.0,
+    "depth_1": 0.08875,
+    "depth_2": 1.0
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "dataset": "P50",
+  "task": "Classification",
+  "epochs": 300,
+  "n_seeds_total": 10,
+  "n_seeds_success": 10,
+  "accuracy_mean": 0.9266599999999998,
+  "accuracy_std": 0.05631656949779522,
+  "accuracy_range": [
+    0.7733,
+    0.96
+  ],
+  "f1_mean": 0.92426,
+  "f1_std": 0.061383805319933975,
+  "per_seed": [
+    {
+      "seed": 42,
+      "accuracy": 0.96,
+      "f1_score": 0.9593
+    },
+    {
+      "seed": 43,
+      "accuracy": 0.96,
+      "f1_score": 0.96
+    },
+    {
+      "seed": 44,
+      "accuracy": 0.92,
+      "f1_score": 0.9193
+    },
+    {
+      "seed": 45,
+      "accuracy": 0.9467,
+      "f1_score": 0.945
+    },
+    {
+      "seed": 46,
+      "accuracy": 0.9333,
+      "f1_score": 0.9316
+    },
+    {
+      "seed": 47,
+      "accuracy": 0.7733,
+      "f1_score": 0.756
+    },
+    {
+      "seed": 48,
+      "accuracy": 0.96,
+      "f1_score": 0.9597
+    },
+    {
+      "seed": 49,
+      "accuracy": 0.9333,
+      "f1_score": 0.9331
+    },
+    {
+      "seed": 50,
+      "accuracy": 0.96,
+      "f1_score": 0.9593
+    },
+    {
+      "seed": 51,
+      "accuracy": 0.92,
+      "f1_score": 0.9193
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "gun": {
+    "topic": "gun",
+    "n_nodes": 6614,
+    "n_edges": 14327,
+    "n_edges_rw": 14327,
+    "depths": {
+      "1": {
+        "tv_constant": 0.0,
+        "tv_block": 0.0,
+        "n_colours_orig_const": 73,
+        "n_colours_rw_const": 73,
+        "n_colours_orig_block": 191,
+        "n_colours_rw_block": 191
+      },
+      "2": {
+        "tv_constant": 0.6400060477774417,
+        "tv_block": 0.6915633504687028,
+        "n_colours_orig_const": 3770,
+        "n_colours_rw_const": 3730,
+        "n_colours_orig_block": 4612,
+        "n_colours_rw_block": 4433
+      },
+      "3": {
+        "tv_constant": 0.9891140006047777,
+        "tv_block": 0.9898699727850016,
+        "n_colours_orig_const": 6012,
+        "n_colours_rw_const": 6230,
+        "n_colours_orig_block": 6024,
+        "n_colours_rw_block": 6253
+      }
+    }
+  },
+  "abortion": {
+    "topic": "abortion",
+    "n_nodes": 5088,
+    "n_edges": 10572,
+    "n_edges_rw": 10572,
+    "depths": {
+      "1": {
+        "tv_constant": 0.0,
+        "tv_block": 0.0,
+        "n_colours_orig_const": 65,
+        "n_colours_rw_const": 65,
+        "n_colours_orig_block": 157,
+        "n_colours_rw_block": 157
+      },
+      "2": {
+        "tv_constant": 0.6727594339622641,
+        "tv_block": 0.7299528301886793,
+        "n_colours_orig_const": 2838,
+        "n_colours_rw_const": 2769,
+        "n_colours_orig_block": 3413,
+        "n_colours_rw_block": 3244
+      },
+      "3": {
+        "tv_constant": 0.991941823899371,
+        "tv_block": 0.99312106918239,
+        "n_colours_orig_const": 4600,
+        "n_colours_rw_const": 4947,
+        "n_colours_orig_block": 4614,
+        "n_colours_rw_block": 4966
+      }
+    }
+  },
+  "super_bowl": {
+    "topic": "super_bowl",
+    "n_nodes": 5463,
+    "n_edges": 8734,
+    "n_edges_rw": 8734,
+    "depths": {
+      "1": {
+        "tv_constant": 0.0,
+        "tv_block": 0.0,
+        "n_colours_orig_const": 58,
+        "n_colours_rw_const": 58,
+        "n_colours_orig_block": 86,
+        "n_colours_rw_block": 86
+      },
+      "2": {
+        "tv_constant": 0.09738239062786015,
+        "tv_block": 0.0975654402343035,
+        "n_colours_orig_const": 2065,
+        "n_colours_rw_const": 2089,
+        "n_colours_orig_block": 2132,
+        "n_colours_rw_block": 2161
+      },
+      "3": {
+        "tv_constant": 0.5692842760388065,
+        "tv_block": 0.5692842760388065,
+        "n_colours_orig_const": 4253,
+        "n_colours_rw_const": 4364,
+        "n_colours_orig_block": 4262,
+        "n_colours_rw_block": 4374
+      }
+    }
+  },
+  "sxsw": {
+    "topic": "sxsw",
+    "n_nodes": 2436,
+    "n_edges": 5325,
+    "n_edges_rw": 5325,
+    "depths": {
+      "1": {
+        "tv_constant": 0.0,
+        "tv_block": 0.0,
+        "n_colours_orig_const": 51,
+        "n_colours_rw_const": 51,
+        "n_colours_orig_block": 132,
+        "n_colours_rw_block": 132
+      },
+      "2": {
+        "tv_constant": 0.7307060755336617,
+        "tv_block": 0.7865353037766831,
+        "n_colours_orig_const": 1341,
+        "n_colours_rw_const": 1530,
+        "n_colours_orig_block": 1513,
+        "n_colours_rw_block": 1730
+      },
+      "3": {
+        "tv_constant": 0.9917898193760263,
+        "tv_block": 0.9963054187192119,
+        "n_colours_orig_const": 1822,
+        "n_colours_rw_const": 2333,
+        "n_colours_orig_block": 1840,
+        "n_colours_rw_block": 2338
+      }
+    }
+  }
+}

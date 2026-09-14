@@ -1,0 +1,22 @@
+{
+  "topic": "sxsw",
+  "epochs": 500,
+  "n_nodes": 2438,
+  "n_edges": 5329,
+  "n_labeled": 200,
+  "community_score": 0.0,
+  "per_node_std": 0.0,
+  "community_score_rewired": 0.0,
+  "delta_score": 0.0,
+  "triangles_before": 997,
+  "triangles_after": 7,
+  "connectivity": {
+    "n_components_before": 1,
+    "n_components_after": 2,
+    "largest_component_size_before": 2438,
+    "largest_component_size_after": 2436,
+    "labelled_in_lcc_before": 200,
+    "labelled_in_lcc_after": 200,
+    "labelled_total": 200
+  }
+}

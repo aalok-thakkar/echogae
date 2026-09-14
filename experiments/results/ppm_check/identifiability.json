@@ -1,0 +1,80 @@
+{
+  "n": 1000,
+  "grid": 41,
+  "reports": [
+    {
+      "scenario": {
+        "d_target": 30.0,
+        "h_target": 0.6,
+        "tol_d": 1.5,
+        "tol_h": 0.02
+      },
+      "report": {
+        "count": 0,
+        "clustering_min": null,
+        "clustering_max": null,
+        "range": null
+      }
+    },
+    {
+      "scenario": {
+        "d_target": 60.0,
+        "h_target": 0.7,
+        "tol_d": 3.0,
+        "tol_h": 0.02
+      },
+      "report": {
+        "count": 26,
+        "clustering_min": 0.06213186321217722,
+        "clustering_max": 0.09616731020000338,
+        "range": 0.03403544698782616,
+        "example_min": {
+          "p": 0.08249999999999999,
+          "q": 0.03175,
+          "sigma": 0.0125,
+          "degree": 57.067874999999994,
+          "homophily": 0.7111344365426695,
+          "clustering": 0.06213186321217722
+        },
+        "example_max": {
+          "p": 0.11149999999999999,
+          "q": 0.01,
+          "sigma": 0.1375,
+          "degree": 60.689249999999994,
+          "homophily": 0.7195511831275722,
+          "clustering": 0.09616731020000338
+        }
+      }
+    },
+    {
+      "scenario": {
+        "d_target": 100.0,
+        "h_target": 0.55,
+        "tol_d": 3.0,
+        "tol_h": 0.02
+      },
+      "report": {
+        "count": 95,
+        "clustering_min": 0.10075202114115965,
+        "clustering_max": 0.17413260483777632,
+        "range": 0.07338058369661667,
+        "example_min": {
+          "p": 0.11149999999999999,
+          "q": 0.08974999999999998,
+          "sigma": 0.0,
+          "degree": 100.52437499999999,
+          "homophily": 0.5540372670807453,
+          "clustering": 0.10075202114115965
+        },
+        "example_max": {
+          "p": 0.19125,
+          "q": 0.01,
+          "sigma": 0.3125,
+          "degree": 100.524375,
+          "homophily": 0.5633249223602484,
+          "clustering": 0.17413260483777632
+        }
+      }
+    }
+  ]
+}

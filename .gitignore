@@ -1,0 +1,39 @@
+# LaTeX build
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+!paper/figures/*.pdf
+!paper/build/icwsm_rev.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+.ipynb_checkpoints/
+
+# Data (raw, large)
+data/*
+!data/README.md
+!data/.gitkeep
+
+# Vendored upstream releases (cloned by scripts/setup.sh, not committed)
+experiments/vendor/
+
+# Ephemeral experiment scaffolding
+experiments/build/venv*
+experiments/wandb/
+experiments/logs/
+
+# Private drafts
+tasks/author_contact_drafts.md
+
+# OS
+.DS_Store

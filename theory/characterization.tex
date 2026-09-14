@@ -1,0 +1,196 @@
+% Characterization chapter.
+
+\section{Factorisation through ego-net types}\label{sec:characterization}
+
+Theorem~\ref{thm:dichotomy} places every MPNN output in the class of continuous
+$1$-WL invariant functionals. This chapter gives an explicit form: the
+output of a depth-$T$ MPNN on a featured graph is a continuous function
+of the empirical distribution of the graph's rooted $T$-hop ego-net
+types. The factorisation gives an approximation procedure for any
+trained MPNN estimator that uses only local per-vertex statistics of
+the graph.
+
+\subsection{Rooted ego-nets}
+
+Let $(\gph, x)$ be a featured graph and let $v \in \vertices$. For an
+integer $T \ge 1$, define the \emph{$T$-hop ball around $v$} as the
+set $B_T(v) = \{u \in \vertices : d_\gph(u, v) \le T\}$, where
+$d_\gph$ denotes graph distance in $\gph$.
+
+\begin{definition}[Rooted ego-net]\label{def:egonet}
+The \emph{rooted $T$-hop ego-net at $v$}, written $\mathcal{E}_T(v)$,
+is the triple
+\[
+\mathcal{E}_T(v) = (\gph[B_T(v)],\ x|_{B_T(v)},\ v),
+\]
+where $\gph[B_T(v)]$ is the subgraph of $\gph$ induced on $B_T(v)$,
+$x|_{B_T(v)}$ is the restriction of the feature $x$ to $B_T(v)$, and
+the final component marks $v$ as the root.
+\end{definition}
+
+Two rooted ego-nets $(\gph_1, x_1, v_1)$ and $(\gph_2, x_2, v_2)$ are
+\emph{rooted-isomorphic} if there is an isomorphism of featured graphs
+$\pi : (\gph_1, x_1) \to (\gph_2, x_2)$ with $\pi(v_1) = v_2$: same
+edge structure, same features, root maps to root. Write $\mathcal{R}_T$
+for the set of rooted-isomorphism classes of possible $T$-hop
+ego-nets. Since the ego-net has at most $\sum_{k=0}^T d^k$ vertices in
+a graph of maximum degree $d$, $\mathcal{R}_T$ is finite for every
+fixed $T$ and $d$.
+
+\begin{definition}[Ego-net type distribution]\label{def:pi-t}
+Let $\pi_T(\gph, x) \in \Delta(\mathcal{R}_T)$ denote the empirical
+distribution of ego-net types across the vertices of $\gph$:
+\[
+\pi_T(\gph, x)(\rho) = \frac{|\{v \in \vertices : [\mathcal{E}_T(v)] =
+\rho\}|}{|\vertices|}
+\qquad \text{for } \rho \in \mathcal{R}_T,
+\]
+where $[\mathcal{E}_T(v)]$ denotes the rooted-isomorphism class of
+$\mathcal{E}_T(v)$.
+\end{definition}
+
+Rooted ego-nets and $1$-WL colour refinement are related: the
+depth-$T$ colour $c_v^{(T)}$ of $v$ under Definition~\ref{def:wl} is a canonical
+name for the rooted-isomorphism class of $\mathcal{E}_T(v)$. Colour
+refinement is precisely the standard algorithm for computing this
+canonical name.
+
+\begin{example}\label{ex:egonet-c6}
+Take the six-cycle $B = C_6$ with the alternating feature of
+Example~\ref{ex:wl-feat} (odd vertices $+1$, even vertices $-1$). Compute
+$\mathcal{E}_1(1)$: the $1$-hop ball is $B_1(1) = \{1, 2, 6\}$; the
+induced subgraph has two edges ($\{1, 2\}$ and $\{1, 6\}$); the
+features are $x(1) = +1$, $x(2) = -1$, $x(6) = -1$; the root is $1$.
+Every odd vertex of $B$ has an $\mathcal{E}_1$-type
+rooted-isomorphic to this one. Every even vertex has an
+$\mathcal{E}_1$-type with roles reversed. The distribution $\pi_1(B,
+x)$ places mass $1/2$ on each of these two types.
+\end{example}
+
+\subsection{Factorisation}
+
+\begin{proposition}\label{prop:egonet-factorisation}
+Let $M \in \mpnn$ be a message-passing GNN of depth $T$ with
+continuous update and readout. There exists a continuous function
+$F_M : \Delta(\mathcal{R}_T) \to \R$ such that
+\[
+M(\gph, x) = F_M\!\left(\pi_T(\gph, x)\right)
+\]
+for every featured graph $(\gph, x)$.
+\end{proposition}
+
+\begin{proof}
+Fix $M \in \mpnn$ of depth $T$. By the proof of Proposition~\ref{prop:upper},
+$M(\gph, x)$ is a permutation-invariant function of the multiset
+$\{\!\{h_v^{(T)} : v \in \vertices\}\!\}$. The representation
+$h_v^{(T)}$ is a function of the featured rooted $T$-hop ego-net
+$\mathcal{E}_T(v)$ alone (since a depth-$T$ MPNN aggregates information
+from the $T$-hop neighbourhood of each vertex). Two vertices with the
+same rooted-isomorphism class of $\mathcal{E}_T$ receive the same
+representation $h_v^{(T)}$.
+
+Consequently, $\{\!\{h_v^{(T)} : v \in \vertices\}\!\}$ is determined
+by the empirical distribution $\pi_T(\gph, x)$: for each type $\rho
+\in \mathcal{R}_T$ occurring at some vertex, one instance of the
+corresponding representation appears with multiplicity $|\vertices|
+\cdot \pi_T(\gph, x)(\rho)$.
+
+The readout, being permutation-invariant and continuous, defines a
+continuous $F_M$ on $\Delta(\mathcal{R}_T)$ with $M(\gph, x) =
+F_M(\pi_T(\gph, x))$.
+\end{proof}
+
+\subsection{Approximation from ego-net statistics}
+
+Proposition~\ref{prop:egonet-factorisation} lets us approximate any MPNN
+estimator's output by polynomial functions of the coordinates of
+$\pi_T$ on a compact featured-graph class.
+
+\begin{proposition}\label{prop:reproduce}
+Let $M \in \mpnn$ have depth $T$, continuous update, and continuous
+readout. Fix a compact featured-graph class $\mathcal{G}$ of graphs
+on at most $n$ vertices with maximum degree at most $d$. For every
+$\varepsilon > 0$ there exists a polynomial $P_\varepsilon$ in the
+coordinates of $\pi_T$ such that
+\[
+\sup_{(\gph, x) \in \mathcal{G}} \left|M(\gph, x) - P_\varepsilon(\pi_T(\gph, x))\right|
+\le \varepsilon.
+\]
+\end{proposition}
+
+\begin{proof}
+By Proposition~\ref{prop:egonet-factorisation}, $M(\gph, x) = F_M(\pi_T(\gph,
+x))$ for a continuous $F_M : \Delta(\mathcal{R}_T) \to \R$. The
+image of $\mathcal{G}$ under $\pi_T$ is a compact subset of
+$\Delta(\mathcal{R}_T)$, itself a compact subset of $\R^{|\mathcal{R}_T|}$;
+$\mathcal{R}_T$ is finite because a rooted $T$-hop ego-net has at
+most $\sum_{k=0}^T d^k$ vertices. By the Stone-Weierstrass theorem,
+continuous functions on this compact set are uniformly approximable
+by polynomials in the coordinates.
+\end{proof}
+
+\subsection{The graph-blind statistic}\label{sec:graph-blind}
+
+At $T = 1$ the ego-net type of $v$ is determined by $x_v$, $\deg(v)$,
+and the multiset $\{\!\{x_u : u \in \neigh{v}\}\!\}$. Any statistic
+that depends on the featured graph only through the empirical
+distribution of $T = 1$ ego-net types is what we call a
+\emph{graph-blind statistic}: it treats the graph as a bag of
+per-vertex tuples $(x_v, \deg(v), \{\!\{x_u : u \in \neigh{v}\}\!\})$
+and ignores everything else.
+
+\begin{definition}[Graph-blind statistic]\label{def:graph-blind}
+A functional $S : \mathcal{G} \to \R$ is \emph{graph-blind at depth
+$1$} if $S(\gph, x) = S(\gph', x')$ whenever $\pi_1(\gph, x) =
+\pi_1(\gph', x')$.
+\end{definition}
+
+Any graph-blind statistic is a function of the empirical distribution
+of first-order neighbourhood tuples. Standard examples include edge
+homophily and Newman attribute assortativity. Any ridge regression
+built from vertex features constructed as functions of $(x_v, \deg(v),
+\{\!\{x_u : u \in \neigh{v}\}\!\})$ is a graph-blind statistic.
+
+Proposition~\ref{prop:reproduce} guarantees that a polynomial in $\pi_T$
+approximates any continuous MPNN output to arbitrary precision. A
+polynomial in $\pi_1$ can only approximate an MPNN whose factorisation
+$F_M$ depends on $\pi_T$ only through its marginalisation to $\pi_1$;
+this is a stronger property, and not every MPNN satisfies it.
+
+The empirical audit of Section~\ref{sec:emp-reddit} tests this stronger
+property directly on EchoGAE: it fits a ridge regression on eight
+per-vertex features (all functions of the depth-$1$ ego-net type) to
+EchoGAE's per-node output and reports the cross-validated $R^2$. On
+the abortion dataset the $R^2$ is $0.60$; on the gun dataset the
+$R^2$ is $-0.01$. A high $R^2$ is evidence that EchoGAE's
+factorisation depends on $\pi_T$ only through its depth-$1$
+marginalisation. A low $R^2$ is not evidence to the contrary: it
+means only that the specific eight features chosen do not span the
+required subspace of $\pi_1$.
+
+\subsection{The audit procedure}
+
+The audit procedure derived from this chapter has three steps.
+
+\emph{Fit a graph-blind regression.} Choose a small vector of
+per-vertex features, all functions of $(x_v, \deg(v), \{\!\{x_u : u
+\in \neigh{v}\}\!\})$. Fit a ridge regression from these features to
+the estimator's per-node output on the training distribution in
+cross-validation. Report the cross-validated $R^2$.
+
+\emph{Apply a 1-WL preserving rewiring.} Apply a graph rewiring that
+preserves every $1$-WL colour class at every depth. The
+degree-and-block-preserving edge-swap procedure of
+Section~\ref{sec:emp-reddit} approximates this: it preserves the sign-block
+edge multiplicities exactly and preserves depth-$1$ WL colours
+approximately. Recompute the estimator's output on the rewired graph.
+
+\emph{Compare cross-topic scores.} Compare the estimator's numerical
+output on multiple datasets. If the estimator returns
+indistinguishable scores on datasets the authors label as polarised
+and non-polarised, the estimator is not discriminating between the
+two categories.
+
+Each check falls out of one of the results in this chapter or of
+Theorem~\ref{thm:dichotomy}. The audit in the next chapter runs all three
+on EchoGAE.

@@ -1,0 +1,22 @@
+{
+  "topic": "super_bowl",
+  "epochs": 500,
+  "n_nodes": 5473,
+  "n_edges": 8754,
+  "n_labeled": 195,
+  "community_score": 0.0,
+  "per_node_std": 0.0,
+  "community_score_rewired": 0.0,
+  "delta_score": 0.0,
+  "triangles_before": 281,
+  "triangles_after": 0,
+  "connectivity": {
+    "n_components_before": 1,
+    "n_components_after": 1,
+    "largest_component_size_before": 5473,
+    "largest_component_size_after": 5473,
+    "labelled_in_lcc_before": 195,
+    "labelled_in_lcc_after": 195,
+    "labelled_total": 195
+  }
+}

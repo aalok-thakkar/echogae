@@ -1,0 +1,159 @@
+% Dichotomy chapter.
+
+\section{The dichotomy}\label{sec:dichotomy}
+
+This chapter states and proves the paper's central theorem: the set of
+graph functionals that message-passing GNNs can approximate uniformly
+on a compact featured-graph class equals the set of continuous
+$1$-WL invariant functionals. Both directions are drawn from published
+theorems in the graph neural network expressiveness literature. The
+purpose of stating them together as a dichotomy is that, applied to
+polarisation measurement, the equality places every candidate measure
+into one of two disjoint classes: MPNN-computable, or provably not.
+
+\subsection{The theorem}
+
+\begin{theorem}\label{thm:dichotomy}
+Let $\mathcal{G}$ be a set of featured graphs on at most $n$
+vertices, with features in a compact set $\mathcal{X} \subset \R^d$.
+Equip $\mathcal{G}$ with the topology it inherits as a subset of the
+adjacency-plus-feature tensor space. Then
+\[
+\mathcal{F}_{\mpnn}(\mathcal{G}) \;=\; \mathcal{F}_{\wl}(\mathcal{G})
+\cap C(\mathcal{G}),
+\]
+where $C(\mathcal{G})$ is the set of continuous real-valued
+functionals on $\mathcal{G}$.
+\end{theorem}
+
+The two inclusions have different origins, so we address them
+separately.
+
+\subsection{Upper bound: every MPNN output is 1-WL invariant}
+
+\begin{proposition}\label{prop:upper}
+$\mathcal{F}_{\mpnn}(\mathcal{G}) \subseteq \mathcal{F}_{\wl}(\mathcal{G})$.
+\end{proposition}
+
+\begin{proof}
+Fix $M \in \mpnn$ of depth $T$ and two featured graphs $(\gph, x)
+\sim_{\wl} (\gph', x')$. We prove first a per-vertex claim: for
+every vertex $v \in \vertices$ there is a vertex $v' \in \vertices'$
+such that $h_v^{(t)} = h_{v'}^{(t)}$ for every $t \in \{0, 1,
+\dots, T\}$, where $h^{(t)}$ denotes the MPNN's layer-$t$
+representation.
+
+\emph{Base case} $t = 0$. $h_v^{(0)} = \iota(x_v)$. Pair $v$ with any
+$v' \in \vertices'$ having $c_{v'}^{(0)} = c_v^{(0)}$; such a $v'$
+exists because $\mathrm{hist}(\gph, x)$ contains $c_v^{(0)}$ with
+some multiplicity, and $(\gph, x) \sim_{\wl} (\gph', x')$ makes the
+histograms agree, so $c_v^{(0)}$ appears at some vertex of $\gph'$.
+Then $x_{v'} = x_v$ (since $\tau$ is injective, equal round-$0$
+colours imply equal features), so $h_v^{(0)} = h_{v'}^{(0)}$.
+
+\emph{Inductive step.} Assume the pairing exists at round $t-1$:
+for every $u \in \vertices$ there is $u' \in \vertices'$ with
+$h_u^{(t-1)} = h_{u'}^{(t-1)}$ and $c_u^{(t-1)} = c_{u'}^{(t-1)}$.
+Fix $v \in \vertices$ paired with $v' \in \vertices'$. The
+neighbour multisets satisfy
+\[
+\{\!\{c_u^{(t-1)} : u \in \neigh{v}\}\!\} = \{\!\{c_{u'}^{(t-1)} : u'
+\in \neigh{v'}\}\!\}
+\]
+since $c_v^{(t)} = c_{v'}^{(t)}$ and $\tau$ is injective. By the
+inductive hypothesis, applying the pairing to each neighbour of $v$
+gives a bijection between $\neigh{v}$ and $\neigh{v'}$ that
+preserves $h^{(t-1)}$. Consequently
+\[
+\{\!\{h_u^{(t-1)} : u \in \neigh{v}\}\!\} = \{\!\{h_{u'}^{(t-1)} :
+u' \in \neigh{v'}\}\!\}
+\]
+as multisets in $\R^{d_{t-1}}$. The aggregation $\agg^{(t)}$ is
+permutation-invariant, so it takes both multisets to the same value.
+The update $\upd^{(t)}$, being a function, gives $h_v^{(t)} =
+h_{v'}^{(t)}$.
+
+At round $T$, the pairing extends to a bijection between
+$\vertices$ and $\vertices'$ that preserves $h^{(T)}$. Applied to
+the round-$T$ multisets:
+\[
+\{\!\{h_v^{(T)} : v \in \vertices\}\!\} = \{\!\{h_{v'}^{(T)} : v'
+\in \vertices'\}\!\}.
+\]
+The readout $\readout$ is permutation-invariant on multisets, so
+$M(\gph, x) = M(\gph', x')$. This gives $M \in \mathcal{F}_{\wl}(\mathcal{G})$.
+
+For the closure statement: if $M_k \in \mpnn$ with $M_k \to \Pi$
+uniformly on $\mathcal{G}$, then for every pair $(\gph, x) \sim_{\wl}
+(\gph', x')$ we have $M_k(\gph, x) = M_k(\gph', x')$ for every $k$,
+hence $\Pi(\gph, x) = \Pi(\gph', x')$. This gives
+$\mathcal{F}_{\mpnn}(\mathcal{G}) \subseteq \mathcal{F}_{\wl}(\mathcal{G})$.
+\end{proof}
+
+\subsection{Matching inclusion: every continuous 1-WL invariant functional is MPNN-computable}
+
+\begin{proposition}\label{prop:lower}
+$\mathcal{F}_{\wl}(\mathcal{G}) \cap C(\mathcal{G}) \subseteq
+\mathcal{F}_{\mpnn}(\mathcal{G})$.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+The proof is the content of \citet[Theorem~4]{AzizianLelarge2021}
+combined with the construction of \citet[Theorem~3, Corollary~6]{XuGIN2019}.
+We sketch the argument.
+
+Consider a continuous $\Pi \in \mathcal{F}_{\wl}(\mathcal{G}) \cap
+C(\mathcal{G})$. The set $\mathcal{G}$ is a compact subset of a
+finite-dimensional space (the adjacency-plus-feature tensor space
+for graphs on at most $n$ vertices with features in $\mathcal{X}
+\subset \R^d$), and $1$-WL equivalence partitions $\mathcal{G}$ into
+closed subsets. $\Pi$ factors as $\Pi = \bar\Pi \circ q$, where $q :
+\mathcal{G} \to \mathcal{G}/{\sim_{\wl}}$ is the quotient map to the
+space of $1$-WL equivalence classes, and $\bar\Pi$ is continuous on
+the quotient. The quotient space is compact and metrisable, so
+$\bar\Pi$ can be approximated uniformly by polynomials in a basis of
+$1$-WL invariant scalars.
+
+The construction of \citet{XuGIN2019} shows that MPNNs with sum
+aggregation and multi-layer perceptron updates can implement every
+basis element in the quotient space, up to arbitrary approximation
+error. Applied here, this gives an MPNN $M \in \mpnn_{\mathrm{sum}}$
+uniformly approximating $\Pi$ on $\mathcal{G}$. The technical caveat
+is the extension from countable feature domains (\citet{XuGIN2019}) to
+compact continuous ones, which is \citet[Theorems~3,
+4]{ChenVillar2019}.
+
+\citet{AzizianLelarge2021} state the resulting equality directly, in
+their Theorem~4: the uniform closure of the invariant message-passing
+GNN class $\mathrm{MGNN}_I$ on a compact featured-graph domain equals
+the continuous $\rho(2\text{-WL}_I)$-invariant functions. Their $2$-WL$_I$
+convention is what we call node-level $1$-WL in Definition~\ref{def:wl};
+Proposition~3 in the same paper aligns the two conventions.
+\end{proof}
+
+Proposition~\ref{prop:upper} and Proposition~\ref{prop:lower} together give
+Theorem~\ref{thm:dichotomy}.
+
+\subsection{What the dichotomy says}
+
+The dichotomy identifies $\mathcal{F}_{\mpnn}(\mathcal{G})$ with a
+subset of the continuous functionals on $\mathcal{G}$: those that
+respect $1$-WL equivalence. A functional $\Pi$ is MPNN-computable to
+arbitrary precision on a compact featured-graph class if and only if
+it takes the same value on any two featured graphs $1$-WL cannot
+tell apart. If $(\gph, x) \sim_{\wl} (\gph', x')$ but $\Pi(\gph, x)
+\neq \Pi(\gph', x')$, then no message-passing GNN, at any depth,
+width, aggregation scheme, or training procedure, can approximate
+$\Pi$ on any class containing both $(\gph, x)$ and $(\gph', x')$.
+
+The impossibility does not depend on model parameters, on random
+initialisation, or on training data. A message-passing GNN's output
+on $(\gph, x)$ is a deterministic function of its weights and the
+featured graph; the dichotomy makes the function's dependence on the
+featured graph pass through the $1$-WL fingerprint.
+
+The chapter that follows applies the dichotomy to a class of
+functionals that matter for the paper's applied audience:
+polarisation measures published in the social-computing literature.
+Each measure gets sorted into the MPNN-computable class or its
+complement. The sort is complete for the measures we survey.

@@ -1,0 +1,123 @@
+% Appendix: entanglement proof details.
+
+\section{Entanglement proof details}\label{app:entangle-proof}
+
+This appendix records the technical details of the proof of
+Proposition~\ref{prop:entanglement} that were compressed in the main body, and
+notes the exact role of the continuity hypothesis on the MPNN's
+update and readout.
+
+\subsection{The colour trace on a monochromatic triangle}
+
+Consider a sample $(\gph_A, x_A) \in \mathrm{supp}(\mathcal{M}_n^A)$
+and a vertex $v$ in a $(+1)$-triangle $T = \{v, u_1, u_2\}$. The
+initial colour of $v$ is $c_v^{(0)} = \tau(+1)$; call this $\alpha_+$.
+By the definition of the ensemble, $x_{u_1} = x_{u_2} = +1$ as well,
+so $c_{u_1}^{(0)} = c_{u_2}^{(0)} = \alpha_+$.
+
+At round $1$,
+\[
+c_v^{(1)} = \tau\!\left(c_v^{(0)},\ \{\!\{c_{u_1}^{(0)}, c_{u_2}^{(0)}\}\!\}\right) = \tau(\alpha_+, \{\!\{\alpha_+, \alpha_+\}\!\}).
+\]
+Denote this colour $\beta_+$. By the same computation, $c_{u_1}^{(1)} =
+c_{u_2}^{(1)} = \beta_+$.
+
+At round $2$, every neighbour of $v$ has colour $\beta_+$, so
+\[
+c_v^{(2)} = \tau(\beta_+, \{\!\{\beta_+, \beta_+\}\!\}) = \gamma_+,
+\]
+and the same holds for $u_1$ and $u_2$. From round $2$ onward, every
+vertex of the triangle shares a common colour that evolves as
+$\gamma_+ \mapsto \tau(\gamma_+, \{\!\{\gamma_+, \gamma_+\}\!\})$; the
+evolution is one-to-one, so no two rounds produce the same colour on
+the triangle, but the partition of vertices induced by refinement is
+the same partition (the singleton class containing all three vertices
+of the triangle). Refinement has stabilised at round $1$ in the sense
+that the partition does not refine further.
+
+The same computation applies to every $(+1)$-triangle in the sample,
+so every vertex in every $(+1)$-triangle receives the same stable
+colour. Analogously, every vertex in every $(-1)$-triangle receives a
+common colour $\beta_-$. There are exactly $n/2$ vertices of each
+kind.
+
+\subsection{The colour trace on a monochromatic six-cycle}
+
+Consider a sample $(\gph_B, x_B) \in \mathrm{supp}(\mathcal{M}_n^B)$
+and a vertex $v$ in a $(+1)$-cycle $C = \{v_0, v_1, v_2, v_3, v_4,
+v_5\}$ with edges $\{v_i, v_{i+1 \bmod 6}\}$. Each $v_i$ has
+$x_{v_i} = +1$ and two neighbours $v_{i \pm 1 \bmod 6}$, both with
+feature $+1$.
+
+At round $1$, $c_{v_i}^{(1)} = \tau(\alpha_+, \{\!\{\alpha_+,
+\alpha_+\}\!\}) = \beta_+$: the same colour that a vertex of a
+$(+1)$-triangle receives at round $1$.
+
+At round $2$, every neighbour of $v_i$ has colour $\beta_+$, so
+$c_{v_i}^{(2)} = \tau(\beta_+, \{\!\{\beta_+, \beta_+\}\!\}) =
+\gamma_+$: the same colour that a vertex of a $(+1)$-triangle
+receives at round $2$.
+
+Higher rounds continue in the same one-to-one evolution: the partition
+does not refine further. The graph-level fingerprint agrees with the
+fingerprint on samples from $\mathcal{M}_n^A$:
+\[
+\mathrm{hist}(\gph_A, x_A) = \mathrm{hist}(\gph_B, x_B) = \{\!\{\gamma_+^{n/2},\ \gamma_-^{n/2}\}\!\}.
+\]
+
+\subsection{Continuity of the MPNN's factorisation}
+
+The proof of Proposition~\ref{prop:entanglement}(i) invokes Proposition~\ref{prop:upper} to
+pass from $\mathrm{hist}(\gph_A, x_A) = \mathrm{hist}(\gph_B, x_B)$
+to $M(\gph_A, x_A) = M(\gph_B, x_B)$ for every $M \in \mpnn$ with
+continuous update and readout.
+
+Proposition~\ref{prop:upper} in fact shows this stronger statement: $M(\gph_A,
+x_A)$ is a function of $\mathrm{hist}(\gph_A, x_A)$ alone.
+Continuity of the update and readout does not enter into whether
+this function is well-defined; it enters only when one considers
+uniform approximation, which the ensemble-level theorem does not
+require. On samples with matching fingerprint, the MPNN's output is
+pointwise equal regardless of continuity assumptions.
+
+\subsection{Extension to noisy features}
+
+The construction of Proposition~\ref{prop:entanglement} assigns features by
+component: every vertex in a $(+1)$-triangle receives $x_v = +1$.
+This is the exact-alignment case.
+
+If one applies a feature-flip perturbation with probability $\sigma$
+to each vertex independently, the two ensembles $\mathcal{M}_n^A(\sigma)$
+and $\mathcal{M}_n^B(\sigma)$ are no longer $1$-WL equivalent
+pointwise: a $(+1)$-triangle after perturbation may contain a vertex
+with $x_v = -1$, and the round-one $1$-WL colour of such a vertex
+depends on the number of $+1$ vs. $-1$ neighbours in the triangle,
+which differs from the corresponding count in a $6$-cycle whose
+vertices have been perturbed similarly.
+
+Numerical simulation of the two ensembles at $\sigma = 0.05$ and
+$n = 300$ gives a depth-$1$ $1$-WL total variation of approximately
+$0.14$ between the two ensembles. The impossibility as stated
+requires $\sigma = 0$.
+
+\subsection{Extension to weighted rewiring within components}
+
+The ensembles $\mathcal{M}_n^A$ and $\mathcal{M}_n^B$ use uniform
+random assignment of vertices to triangles or $6$-cycles. Any
+alternative assignment procedure (weighted random, deterministic,
+or dependent on an auxiliary feature) preserves the theorem, as
+long as the resulting graph decomposes into monochromatic triangles
+or monochromatic $6$-cycles: the proof depends only on the
+component structure of the featured graph.
+
+Extensions that connect the components (adding cross-component
+edges) break the theorem. If cross-triangle edges are added to
+samples from $\mathcal{M}_n^A$, the round-one $1$-WL colour of a
+vertex touched by a cross-triangle edge sees a neighbour outside
+its triangle. The neighbour's feature may or may not match the
+vertex's, but in either case the colour differs from a vertex in a
+purely monochromatic triangle. Cross-cycle edges added to samples
+from $\mathcal{M}_n^B$ have the same effect. Matching the two
+ensembles with cross-component edges requires the additional edges
+to have matched sign-block statistics, and this is the SBM
+extension analysed in Section~\ref{sec:obstacle}.

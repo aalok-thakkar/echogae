@@ -1,0 +1,439 @@
+% Consolidated appendix for the AAAI submission. Does not count toward
+% the 11-page limit. Self-contained: every internal cross-reference
+% resolves against a label present in this file or in main.tex.
+
+\section{Dichotomy: formal statement and proof}\label{app:dichotomy}
+
+For completeness, this appendix states the WL equivalence formally
+and gives a self-contained proof of the upper containment.
+
+\begin{theorem}[Dichotomy; \citealp{ChenVillar2019, AzizianLelarge2021}]\label{thm:dichotomy}
+Let $\mathcal{G}_{n,X}$ be the space of featured graphs on at most
+$n$ vertices with features in a compact $X \subset \R^d$, and
+$\overline{\mpnn}|_{\mathcal{G}_{n,X}}$ the uniform closure on
+$\mathcal{G}_{n,X}$ of the message-passing class with continuous
+update and readout. Then
+$\overline{\mpnn}|_{\mathcal{G}_{n,X}} =
+\mathcal{F}_{\wl}|_{\mathcal{G}_{n,X}}$.
+\end{theorem}
+
+We record the two containments separately; both are standard, and
+this theorem is a synthesis.
+
+\paragraph{Upper bound: $\overline{\mpnn} \subseteq \mathcal{F}_{\wl}$.}
+Fix an MPNN $M \in \mpnn$ of depth $T$ with continuous update $\upd$
+and readout $\readout$. Induction on $t$ shows that
+$h^{(t)}_v = h^{(t)}_{v'}$ whenever $c^{(t)}_v = c^{(t)}_{v'}$ in the
+$1$-WL colour refinement started from $\iota$. The base case is
+$c^{(0)}_v = c^{(0)}_{v'} \Rightarrow \iota(v) = \iota(v')
+\Rightarrow h^{(0)}_v = h^{(0)}_{v'}$. Inductively, if
+$c^{(t)}_v = c^{(t)}_{v'}$ then $c^{(t+1)}_v = c^{(t+1)}_{v'}$ by
+definition of colour refinement, so the induction hypothesis gives
+$h^{(t)}_v = h^{(t)}_{v'}$ and
+$\{\!\!\{h^{(t)}_u : u \in \neigh{v}\}\!\!\} =
+\{\!\!\{h^{(t)}_u : u \in \neigh{v'}\}\!\!\}$; the update rule then
+gives $h^{(t+1)}_v = h^{(t+1)}_{v'}$. The readout is a
+permutation-invariant continuous function of the multiset
+$\{\!\!\{h^{(T)}_v\}\!\!\}$, which by the inductive argument is
+determined by the stable colour histogram. Hence
+$M(\gph, x) \in \mathcal{F}_{\wl}$.
+
+\paragraph{Lower bound: $\mathcal{F}_{\wl} \subseteq \overline{\mpnn}$.}
+By \citet{ChenVillar2019}, the class of continuous permutation-invariant
+functions of the stable $1$-WL colour histogram equals the closure of
+message-passing GNNs with sufficiently expressive update and readout
+(such as GIN, whose sum aggregation plus MLP update distinguishes
+countable colour classes \citep{XuGIN2019}). On a compact bounded-size
+featured-graph space $\mathcal{G}_{n,X}$, the stable colour histogram
+takes values in a compact set, and continuous functions on that set
+are approximable uniformly by the MPNN class \citep{AzizianLelarge2021}.
+
+\paragraph{Consequences for polarisation measures.}
+
+\begin{proposition}\label{prop:computable}
+Edge homophily, attribute assortativity, and modularity of a
+fixed partition are elements of $\mathcal{F}_{\wl}$.
+\end{proposition}
+
+Each is a sum over edges of a function of the endpoints' colours;
+depth-$1$ colour refinement suffices.
+
+\begin{proposition}\label{prop:noncomputable}
+Average local clustering, triangle density, and the generalised
+Euclidean distance are not elements of $\mathcal{F}_{\wl}$.
+\end{proposition}
+
+The pair $(2K_3, C_6)$, standard in the GNN-expressiveness
+literature \citep{ChenVillar2019, XuGIN2019}, witnesses
+non-invariance for average local clustering (both graphs are
+$2$-regular and share a stable $1$-WL colour histogram under
+constant features; $\pol_{\clos}(2K_3) = 1$ vs. $\pol_{\clos}(C_6)
+= 0$). The GED witness on $(2K_3, C_6)$ under an appropriate
+opinion vector is in Appendix~\ref{app:ged}.
+
+\begin{proposition}[Rewire-delta bound]\label{prop:rewire-bound}
+Let $M$ be an MPNN of depth $T$ with continuous update and
+readout, and output range $[a, b]$. Let $\gph, \gph'$ be two
+graphs on the same vertex set with the same feature tensor $x$,
+and let $h_T(\gph, x)$ be the stable depth-$T$ $1$-WL colour
+histogram. Then
+\begin{align*}
+\bigl|M(\gph, x) - M(\gph', x)\bigr|
+\;&\le\; (b - a) \\
+&\quad\cdot d_{TV}\bigl(h_T(\gph, x),\, h_T(\gph', x)\bigr),
+\end{align*}
+where $d_{TV}$ is total variation on the shared canonical
+colour space of the disjoint union of the two graphs (obtained
+by running $T$ rounds of joint WL refinement on the union).
+\end{proposition}
+
+The bound follows from Proposition~\ref{prop:egonet} with a
+$0$-$1$ metric on the WL type space. Two immediate consequences.
+First, if $d_{TV}(h_T(\gph), h_T(\gph')) = 0$, then $M$ is
+invariant: any two graphs with identical stable depth-$T$
+colour histograms give identical MPNN output for every $T$-layer
+$M$. This is the reason our rewiring, which by construction
+satisfies $d_{TV}(h_1) = 0$, leaves any depth-$1$ MPNN estimator
+exactly invariant. Second, the ratio $|\Delta M| / d_{TV}(h_T)$
+is a measurable compression factor for a specific $M$ and a
+specific rewiring; the smaller it is, the more the estimator's
+readout compresses depth-$T$ WL structure into its output.
+Section~\ref{sec:exp-rewire} reports this ratio on EchoGAE:
+values between $0.03$ and $0.07$ against the depth-$2$ TV,
+against a range-bound value of $1$.
+
+\begin{proposition}[Ego-net factorisation, quantitative]\label{prop:egonet}
+Fix a compact featured-graph space $\mathcal{G}_{n,X}$ and an
+MPNN $M$ of depth $T$ with continuous update $\upd_t$ and readout
+$\readout$ that are $L_M$-Lipschitz in each argument. Let
+$\mu_T(\gph, x)$ be the empirical distribution of depth-$T$
+rooted ego-net types of $(\gph, x)$, viewed as an element of the
+Wasserstein-$1$ space over the compact type space
+$\mathcal{T}_T$. Then there is a continuous $F_M$ such that
+$M(\gph, x) = F_M(\mu_T(\gph, x))$ and
+\begin{align*}
+\bigl| M(\gph_1, x_1) - M(\gph_2, x_2) \bigr|
+\;&\le\; L_M^T \cdot W_1\bigl(\mu_T(\gph_1, x_1), \\
+&\qquad\qquad\quad\mu_T(\gph_2, x_2)\bigr),
+\end{align*}
+where $W_1$ is the Wasserstein-$1$ distance on
+$\mathcal{P}(\mathcal{T}_T)$. In particular, at $T = 1$, $M$ is
+approximable in sup norm by a polynomial in per-vertex features
+and one-hop neighbourhood aggregates, and the approximation
+error is controlled by $L_M \cdot W_1(\mu_1(\gph_1, x_1),
+\mu_1(\gph_2, x_2))$.
+\end{proposition}
+
+The Lipschitz claim is direct: by the upper containment,
+$M(\gph, x)$ depends on the input only through $\mu_T$; the
+$T$-fold composition of the $L_M$-Lipschitz update rounds and
+the readout gives the $L_M^T$ constant on the readout side, and
+$W_1$ is the natural transport metric on the ego-net type
+distribution. For $L_M \le 1$ (any bounded MPNN with normalised
+weights), the bound is $W_1(\mu_T(\gph_1), \mu_T(\gph_2))$
+directly. The polynomial approximation at $T = 1$ follows from
+Stone-Weierstrass on the compact type space.
+
+\begin{proposition}[RWC not $1$-WL invariant]\label{rem:rwc}
+The random walk controversy score \citep{Garimella18} is not an
+element of $\mathcal{F}_{\wl}$. A witness on the Shrikhande vs.
+$4{\times}4$ rook pair is constructed in
+Appendix~\ref{app:rwc}: under the column-based bipartition
+$L = \{(i, 0), (i, 1) : i = 0, 1, 2, 3\}$ and its complement,
+with degree-plus-lexicographic authority selection ($k = 2$),
+$\mathrm{RWC}(\text{Shrikhande}) = 0.111$ and
+$\mathrm{RWC}(\text{rook}) = 0.200$, while the two featured
+graphs have identical stable $1$-WL colour histograms. An
+exhaustive sweep over the $6435$ balanced bipartitions finds
+$46$ valid witnesses (RWC differs and the featured $1$-WL
+histograms coincide), with maximum $|\Delta\mathrm{RWC}| = 0.089$.
+\end{proposition}
+
+\section{Base witness: $2K_3$ vs $C_6$}\label{app:warmup}
+
+The two graphs $2K_3$ (two disjoint triangles) and $C_6$ (a single
+six-cycle) with constant features $x \equiv 1$ are $1$-WL equivalent:
+every vertex has degree $2$ and every neighbour has degree $2$, so
+$1$-WL colour refinement stabilises after one round with the same
+colour on every vertex of both graphs. Yet
+$\pol_{\clos}(2K_3) = 1$ (every vertex has both neighbours mutually
+adjacent) and $\pol_{\clos}(C_6) = 0$ (no two neighbours are
+adjacent). Hence $\pol_{\clos}$ is not $1$-WL invariant, and by
+Theorem~\ref{thm:dichotomy} no MPNN with continuous update and
+readout can distinguish $2K_3$ from $C_6$.
+
+\section{GED witness}\label{app:ged}
+
+The same pair $(2K_3, C_6)$ under an opinion vector aligned with
+component structure separates GED. Set $x_v = +1$ on one triangle
+of $2K_3$ and $x_v = -1$ on the other; on $C_6$, set $x_v = +1$ on
+three consecutive vertices and $x_v = -1$ on the other three. Both
+featured graphs have the same $1$-WL colour histogram (every vertex
+is degree-$2$ with a matching one-hop feature signature). But the
+Laplacian pseudoinverse spectra differ: on $2K_3$, each triangle
+component has $L^\dagger$ concentrated within the component, giving
+$\ged = \tfrac{2}{3}$ under the specified opinion; on $C_6$, the
+single-component Laplacian pseudoinverse spreads mass around the
+cycle, giving $\ged = 1$. The two values differ by a constant, so
+$\ged \notin \mathcal{F}_{\wl}$.
+
+\section{RWC witness on Shrikhande vs.~rook}\label{app:rwc}
+
+We construct a witness pair for
+$\mathrm{RWC} \notin \mathcal{F}_{\wl}$ on the Shrikhande and
+$4{\times}4$ rook graphs. Both are SRG$(16, 6, 2, 2)$:
+$16$ vertices, $6$-regular, every adjacent pair shares $2$
+neighbours, every non-adjacent pair shares $2$ neighbours. Under
+constant features, their stable $1$-WL colour histograms coincide
+at every depth (a single colour class after one round).
+
+Index both graphs on $\{0, \ldots, 15\}$ by the natural
+$4{\times}4$ grid ($v = 4i + j$). Fix the column-based
+bipartition
+$L = \{4i + j : j \in \{0, 1\}\}$,
+$R = \{4i + j : j \in \{2, 3\}\}$
+on both graphs and select authorities as the two
+highest-degree vertices per side (tie-broken lexicographically).
+The exact absorbing-Markov-chain computation gives
+$\mathrm{RWC}(\text{Shrikhande}) = 0.111$ and
+$\mathrm{RWC}(\text{rook}) = 0.200$, a difference of $0.089$
+against a $[-1, 1]$ range. On the featured graphs
+$(\text{Shrikhande}, \mathbb{1}_L)$ and
+$(\text{rook}, \mathbb{1}_L)$ (bipartition as vertex feature),
+the stable $1$-WL colour histograms are both
+$\{\!\!\{ c_1 : 8,\ c_2 : 8 \}\!\!\}$ (two colour classes with
+matching counts on both graphs), so the pair is $1$-WL
+equivalent as featured graphs. RWC distinguishes them, so
+$\mathrm{RWC} \notin \mathcal{F}_{\wl}$.
+
+The witness is not isolated. Sweeping the exhaustive $6435$
+balanced $(8, 8)$ bipartitions of $\{0, \ldots, 15\}$ under the
+identity index correspondence, $5592$ give
+$|\Delta \mathrm{RWC}| > 10^{-4}$; of those, $46$ retain
+matched stable $1$-WL histograms and are therefore valid
+witnesses. Maximum observed $|\Delta \mathrm{RWC}|$ across the
+valid set is $0.089$.
+
+The earlier attempt on this pair, using the row-based bipartition
+$L = \{4i + j : i \in \{0, 1\}\}$ with authorities at $(0, 0)$
+and $(2, 2)$, gave $\mathrm{RWC} = 1/21$ on both graphs and did
+not distinguish. That specific bipartition happens to be
+fixed by a common automorphism of both graphs (both preserve the
+$4{\times}4$ toroidal row structure), so vertex-transitivity
+pins RWC on it. Most bipartitions do not have this common
+symmetry, and among those the RWC values disagree.
+
+\section{PPM moment calculations}\label{app:ppm}
+
+The planted partition model $\ppm(n, K, p, q)$ generates a graph on
+$n$ vertices partitioned into $K$ equal blocks, with within-block
+edge probability $p$ and cross-block edge probability $q$. The
+depth-$1$ $1$-WL colour of a vertex $v$ is a function of $v$'s
+degree and the multiset of neighbour block memberships.
+
+The first two moments of the local clustering coefficient
+$c_v = \binom{d_v}{2}^{-1} T_v$, with $T_v$ the number of triangles
+containing $v$, are computable in closed form for the two-block
+symmetric PPM. Setting $p, q$ so that the mean degree matches a
+target $\bar d$ and the mean clustering matches a target $\bar c$
+gives two equations in two unknowns; the depth-$1$ $1$-WL total
+variation between two such PPMs with matched $(\bar d, \bar c)$ is
+$\approx 0.28$ at $\bar c$-gap $0.07$ (numerical simulation, $n =
+1000$, $K = 2$, averaged over $200$ samples).
+
+For a $K$-block symmetric PPM with $K \ge 4$ blocks, matching the
+first two moments of the degree distribution and the mean
+clustering reduces the depth-$1$ $1$-WL total variation between two
+matched-moment PPMs to $\approx 0.06$ at $\bar c$-gap $\approx
+0.015$. The impossibility of Theorem~\ref{thm:main} does not
+extend to matched-moment PPM pairs at realistic $K$; a stronger
+ensemble-level impossibility would need either $K \to \infty$
+asymptotics or new graph-limit machinery interpolating between
+Benjamini-Schramm and graphon convergence.
+
+\section{Ensemble MSE lower bound: statement and proof}\label{app:entangle}
+
+\begin{theorem}[General two-ensemble MSE lower bound]\label{thm:main-general}
+Let $E_1, E_2$ be two distributions over featured graphs on the
+same $n$-vertex space, and $\mathcal{D} = \tfrac{1}{2} E_1 +
+\tfrac{1}{2} E_2$ their uniform mixture. Let $\pol_{\clos}$
+denote the average local clustering with mean $c_i =
+\mathbb{E}_{E_i}[\pol_{\clos}]$ under $E_i$, and let
+$\mathrm{TV}_T = d_{TV}\bigl(P_{E_1}(h_T),\, P_{E_2}(h_T)\bigr)$
+be the total variation between the marginal distributions of
+the stable depth-$T$ $1$-WL colour histogram under the two
+ensembles. Then for every $T$-layer MPNN $M$ with continuous
+update and readout and output range $[a, b]$,
+\begin{align*}
+\mathbb{E}_{(\gph, x) \sim \mathcal{D}}&\bigl[(M(\gph, x) - \pol_{\clos}(\gph))^2\bigr] \\
+&\ge \tfrac{1}{4}\bigl(\max\{0,\, |c_1 - c_2| - (b - a) \cdot \mathrm{TV}_T\}\bigr)^2.
+\end{align*}
+\end{theorem}
+
+The bound follows from Proposition~\ref{prop:rewire-bound}
+applied at the ensemble level. Let $\mu_i = \mathbb{E}_{E_i}[M]$.
+Since $M$ depends on its input only through the depth-$T$
+stable $1$-WL colour histogram, $|\mu_1 - \mu_2| \le (b - a)
+\cdot \mathrm{TV}_T$. Bias-variance decomposition gives
+$\mathrm{MSE} \ge \tfrac{1}{2}[(\mu_1 - c_1)^2 + (\mu_2 -
+c_2)^2] \ge \tfrac{1}{4}((\mu_1 - c_1) - (\mu_2 - c_2))^2$.
+Setting $\delta = \mu_1 - \mu_2$ and $\Delta = c_1 - c_2$ and
+minimising over $|\delta| \le (b - a) \mathrm{TV}_T$ gives the
+stated bound.
+
+\begin{corollary}[Structurally uniform ensembles]\label{thm:main}
+For each $n \in 12\N$, let $\mathcal{A}_n$ be the family of
+featured graphs on $n$ vertices that decompose into $n/6$
+monochromatic $(+1)$-triangles and $n/6$ monochromatic
+$(-1)$-triangles, and $\mathcal{B}_n$ the family that decomposes
+into monochromatic $6$-cycles with matched sign counts. Let
+$\mathcal{D}_n$ assign mass $1/2$ to each side. Then for every
+$M \in \mpnn$ with continuous update and readout and output
+range $[0, 1]$,
+$\mathbb{E}_{\mathcal{D}_n}[(M - \pol_{\clos})^2] \ge 1/4$,
+attained by $M \equiv 1/2$. The non-MPNN estimator
+$\hat{\pol} = \pol_{\clos}$ achieves MSE zero.
+\end{corollary}
+
+Direct from Theorem~\ref{thm:main-general}: $c_1 = 1$, $c_2 = 0$,
+$\mathrm{TV}_T = 0$ at every $T$ (both families have the same
+stable $1$-WL histogram under matched sign counts), $b - a = 1$,
+so the bound is $\tfrac{1}{4}$. The corollary keeps the label
+\texttt{thm:main} for continuity with the main-body reference.
+
+\paragraph{Regime of applicability.} The bound is non-trivial
+iff $|c_1 - c_2| > (b - a) \cdot \mathrm{TV}_T$. To measure
+where this holds on realistic ensembles, we sweep symmetric
+$K$-block PPMs on $n = 400$ vertices with mean degree pinned to
+$\mu = 15$ (so within-block $p$ and cross-block $q$ satisfy
+$(n/K - 1) p + ((K-1)n/K) q = \mu$), for $K \in \{2, 4, 8\}$
+and $8$ values of $p$ per $K$. For each parameter pair
+$(\theta_1, \theta_2)$ we compute the empirical clustering gap
+$|\Delta c|$ (averaged over $12$ samples per ensemble) and the
+empirical depth-$1$ TV between the two ensembles' colour
+distributions on a shared canonical colour space
+(joint WL on the disjoint union of all samples).
+
+At $K = 4$, the bound bites on $9$ of $15$ parameter pairs
+($60\%$): matching only the mean degree still lets $|\Delta c|$
+grow beyond $\mathrm{TV}_1$ for most parameter distances. Pairs
+with clustering gap $|\Delta c| \ge 0.05$ all bite; pairs with
+$|\Delta c| < 0.03$ never do. At $K = 8$, no pair bites in this
+sweep: the clustering coefficient concentrates in a narrow band
+($0.038$ to $0.057$ across our grid), so $|\Delta c|$ stays
+below $\mathrm{TV}_1$ everywhere. The bound bites when the
+ensemble family is either structurally symmetric (as in
+Corollary~\ref{thm:main}) or PPM-like with few blocks; it
+vacates when the ensemble concentrates clustering tightly, as
+$K$-block PPMs do at large $K$.
+
+The sweep matches only the mean degree, not the mean clustering.
+The stronger constraint is matched $(\bar d, \bar c)$: fix both moments and ask whether any
+$1$-WL-invariant distinction remains. Under that stronger
+matching $|\Delta c| = 0$ by construction, so the bound in
+Theorem~\ref{thm:main-general} is trivially $0$; a separate
+argument would be needed to bound MSE against a higher-order
+target. We do not attempt one here.
+
+What follows records the ensemble construction, the
+fingerprint-matching argument that gives $\mathrm{TV}_T = 0$ on
+Corollary~\ref{thm:main}'s ensembles, the direct MSE calculation,
+and the robustness corollary.
+
+\paragraph{The ensembles.} Fix $n \in 12\N$. A sample from
+$\mathcal{A}_n$ is a featured graph $(\gph_A, x_A)$ constructed by
+partitioning $\{1, \ldots, n\}$ into $n/3$ blocks of three
+vertices, assigning each block a sign in $\{-1, +1\}$ with $n/6$
+blocks of each sign, placing a triangle on each block, and setting
+$x_v$ to the block sign. A sample from $\mathcal{B}_n$ partitions
+into $n/6$ blocks of six vertices, $n/12$ blocks of each sign,
+places a $6$-cycle on each block, and sets $x_v$ to the block sign.
+
+\paragraph{Fingerprint match.} On a sample from $\mathcal{A}_n$,
+every vertex of a $(+1)$-triangle has feature $+1$ and two
+neighbours with feature $+1$. On a sample from $\mathcal{B}_n$,
+every vertex of a $(+1)$-cycle has feature $+1$ and two neighbours
+with feature $+1$. At round $1$ of colour refinement, both receive
+the same colour $\beta_+$; symmetrically, every vertex in a
+$(-1)$-component receives $\beta_-$. At round $2$, every vertex of
+either family has $2$ neighbours of colour $\beta_\pm$, so the
+partition does not refine further. The stable colour histogram is
+$\{\!\!\{\gamma_+^{n/2}, \gamma_-^{n/2}\}\!\!\}$ on every element
+of $\mathcal{A}_n \cup \mathcal{B}_n$. By
+Theorem~\ref{thm:dichotomy}, every MPNN $M$ with continuous update
+and readout returns a common value $c \in \R$ on all of
+$\mathcal{A}_n \cup \mathcal{B}_n$.
+
+\paragraph{Clustering gap.} A vertex in a triangle has both
+neighbours mutually adjacent, so $c_v = 1$; a vertex in a $6$-cycle
+has no two neighbours adjacent, so $c_v = 0$. Averaging:
+$\pol_{\clos}(\gph_A) = 1$ for every $\gph_A \in \mathcal{A}_n$ and
+$\pol_{\clos}(\gph_B) = 0$ for every $\gph_B \in \mathcal{B}_n$.
+
+\paragraph{MSE.} Under $\mathcal{D}_n$,
+\[
+\mathbb{E}_{\mathcal{D}_n}[(M - \pol_{\clos})^2] =
+\tfrac{1}{2}(c - 1)^2 + \tfrac{1}{2}c^2 = (c - \tfrac{1}{2})^2 + \tfrac{1}{4}.
+\]
+The right side is minimised at $c = 1/2$, giving MSE $= 1/4$. The
+constant MPNN $M \equiv 1/2$ (obtainable with zero-weight
+aggregation and constant readout) attains the bound.
+
+\paragraph{Robustness.} For $\varepsilon \in [0, 1)$ and any
+distribution $\nu$ over featured graphs on $n$ vertices, define
+$\tilde{\mathcal{D}}_n^\varepsilon = (1 - \varepsilon) \mathcal{D}_n
++ \varepsilon \nu$. Writing $e = M - \pol_{\clos}$,
+\begin{align*}
+\mathbb{E}_{\tilde{\mathcal{D}}_n^\varepsilon}[e^2]
+&= (1 - \varepsilon) \mathbb{E}_{\mathcal{D}_n}[e^2]
+ + \varepsilon \mathbb{E}_\nu[e^2] \\
+&\ge (1 - \varepsilon)/4,
+\end{align*}
+since the second term is non-negative. The impossibility is
+preserved under any polynomial adversary that adds an
+$\varepsilon$-fraction of arbitrary featured graphs, as long as
+$\varepsilon < 1$.
+
+\section{InfoVGAE adapted to EchoGAE's user-user graphs}\label{app:infovgae-adapt}
+
+The main text runs InfoVGAE in the authors' own bipartite
+user-claim setting on Election, Eurovision, and their
+TIMME-derived dataset. As a secondary check we adapt the
+released implementation to EchoGAE's four user-user Twitter
+graphs, keeping the encoder, decoder, base loss, discriminator,
+TC penalty, and PID controller. Two-column feature matrix
+(AllSides score, labelled indicator); $2$-dimensional latent;
+per-node score $z_v[0] - z_v[1]$; $300$ epochs; $3$ seeds per
+graph. Gun ($n = 7905$) is deferred: its dense $n \times n$
+adjacency is too costly to train at multiple seeds inside the
+audit budget.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Topic & Orig.\ (mean $\pm$ std) & Rewired (mean $\pm$ std) & $\Delta/\sigma$ \\
+\midrule
+SXSW        & $+0.00 \pm 0.00$    & $+0.00 \pm 0.00$    & --- \\
+Super Bowl  & $-0.01 \pm 1.21$    & $-0.19 \pm 1.05$    & $0.15$ \\
+Abortion    & $-0.03 \pm 0.39$    & $+0.09 \pm 0.84$    & $0.15$ \\
+\bottomrule
+\end{tabular}
+\caption{InfoVGAE adaptation across $10$ seeds ($42$--$51$).
+$\Delta/\sigma$ is
+$|\text{mean}_{\text{rw}} - \text{mean}_{\text{orig}}| /
+\max(\sigma_{\text{orig}}, \sigma_{\text{rw}})$. SXSW:
+posterior collapse on all $20$ runs. Super Bowl and Abortion:
+across-seed std comparable to the mean; rewire delta at
+$0.15\sigma$ of noise on both. Gun ($n = 7905$) is deferred
+under the same dense-adjacency memory budget.}
+\end{table}
+
+The adaptation reproduces the training-run instability we
+report in the authors' own setting: on the two topics with
+non-zero variance, the rewire delta sits at $0.15\sigma$ of
+across-seed noise, and per-seed scores disagree in sign on
+both. The bound in Section~\ref{sec:framework}
+does not imply this failure mode; the pathology is variational
+(posterior collapse, PID-controlled KL) rather than 1-WL.

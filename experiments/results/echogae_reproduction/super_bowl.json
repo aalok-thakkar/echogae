@@ -1,0 +1,17 @@
+{
+  "topic": "super_bowl",
+  "epochs": 300,
+  "seed": 42,
+  "resolution": 0.05,
+  "n_nodes": 5463,
+  "n_edges": 8734,
+  "n_communities_louvain": 6,
+  "n_communities_non_singleton": 3,
+  "graph_level_ecs": 0.5678900480270386,
+  "per_community_ecs": {
+    "0": 0.5031866431236267,
+    "1": 0.6604869365692139,
+    "2": 0.5399965643882751
+  },
+  "features": "Sentence-BERT"
+}

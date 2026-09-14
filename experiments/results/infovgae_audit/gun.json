@@ -1,0 +1,17 @@
+{
+  "topic": "gun",
+  "epochs": 200,
+  "n_nodes": 7905,
+  "n_edges": 18882,
+  "n_labeled": 1027,
+  "community_score": 0.0015995813300833106,
+  "per_node_std": 0.1902712732553482,
+  "graph_blind_r2_mean": -0.02003859588071517,
+  "graph_blind_r2_std": 0.013927392867406435,
+  "community_score_rewired": 0.0,
+  "delta_score": -0.0015995813300833106,
+  "triangles_before": 1061,
+  "triangles_after": 59,
+  "clus_before": 0.023688245512360723,
+  "clus_after": 0.0014518890431811835
+}

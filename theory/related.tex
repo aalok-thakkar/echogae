@@ -1,0 +1,158 @@
+% Related work.
+
+\section{Related work}\label{sec:related}
+
+The paper draws on four strands of prior work: the expressiveness
+theory of graph neural networks, the polarisation measurement
+literature in network science and computational social science, the
+line of graph neural network estimators applied to polarisation and
+ideology on social platforms, and the null-model rewiring literature
+in network science. This chapter surveys each strand and locates the
+paper's contribution.
+
+\subsection{Graph neural network expressiveness}
+
+Message-passing graph neural networks were introduced in a general
+form by \citet{GilmerNeuralMessagePassing2017}, unifying earlier
+architectures for molecular property prediction. Their expressiveness
+was placed against the Weisfeiler-Leman graph isomorphism test by
+\citet{MorrisWL2019}: any GNN that follows the message-passing schema
+of Definition~\ref{def:mpnn} distinguishes graphs no better than $1$-WL colour
+refinement. \citet{XuGIN2019} gave the matching lower bound with the
+graph isomorphism network, which uses sum aggregation and multi-layer
+perceptron updates to attain $1$-WL expressiveness on countable
+feature domains.
+
+The passage to continuous feature domains and to universal
+approximation on featured graphs was made by \citet{ChenVillar2019},
+who established a two-way equivalence between graph-isomorphism
+discrimination and universal approximation of permutation-invariant
+continuous functionals on compact featured-graph classes. Their
+result is per-graph-size, matching the format of Theorem~\ref{thm:dichotomy}
+in this paper. \citet{AzizianLelarge2021} tightened the equivalence
+to the form we use: on a compact bounded-size featured-graph space,
+the uniform closure of the message-passing GNN class equals exactly
+the continuous $1$-WL invariant functionals. Higher-order variants
+(hierarchical Weisfeiler-Leman refinements and $k$-GNNs) escape the
+$1$-WL bound and gain expressiveness at the cost of computational
+scaling with $k$ \citep{MorrisWL2019}.
+
+Architectures that inject subgraph counts as vertex features
+\citep{Bouritsas2022} also escape the $1$-WL bound. Subgraph counts
+include triangles, so these architectures can compute closure
+directly; the impossibility in this paper does not apply to them.
+Graph transformers with positional encodings based on the Laplacian
+spectrum sit outside the message-passing schema of Definition~\ref{def:mpnn}
+entirely.
+
+The graphon-limit theory of GNN expressiveness \citep{KerivenPeyre2020,
+RuizChamonRibeiro2021} studies convergence of GNN outputs on
+random-graph samples of a graphon and shows universal approximation
+of continuous cut-metric functionals in the graphon limit. The
+implication for the impossibility of this paper is discussed in
+Section~\ref{sec:obstacle}: the ensemble-level entanglement does not
+extend to the dense graphon regime, only to the sparse and
+structured regimes real interaction graphs inhabit.
+
+\subsection{Polarisation measurement}
+
+The measurement of political polarisation on social platforms is a
+mature field. Homophily indices and modularity have long been used to
+assess whether interaction graphs align with partisan labels
+\citep{Newman2003, Newman2004}. \citet{AdamicGlance2005} applied assortativity-based analyses to
+early blog data. \citet{ConoverPolBlogs2011} extended homophily-based
+scoring to Twitter interaction graphs.
+
+More structural measures followed. \citet{Garimella18} introduced the
+random walk controversy score (Definition~\ref{def:rwc}), which measures the
+propensity of random walks starting on one side of a bipartition to
+terminate on the same side. \citet{Hohmann2016} and later
+\citet{HohmannGED2023} introduced spectral measures culminating in
+the generalised Euclidean distance (Definition~\ref{def:ged}), which measures
+opinion separation via the Laplacian pseudoinverse and admits a
+partition-free formulation.
+
+At the community level, \citet{WallerAnderson2021} released
+$150$-dimensional embeddings for ten thousand subreddits, along with
+one-dimensional partisan-axis scores per subreddit. Their embedding
+procedure is a skip-gram model on user co-comment counts, not a
+graph neural network. \citet{Barbera2015} developed a Bayesian
+ideal-point model on Twitter follower networks; ideal-point models
+lie outside the message-passing class and are unaffected by the
+dichotomy of Theorem~\ref{thm:dichotomy}.
+
+None of the polarisation measurement literature before this paper
+has, to our knowledge, connected the choice of measure to the
+expressiveness class of the estimator applied to it. The taxonomy
+of Section~\ref{sec:measures} is the paper's contribution in this
+direction.
+
+\subsection{GNN-based polarisation estimation}
+
+A recent line of work applies graph neural networks directly to
+polarisation and ideology detection on interaction graphs.
+
+EchoGAE \citep{Alatawi23EchoGAE} is a two-layer graph auto-encoder
+whose Echo Chamber Score is a cohesion-versus-separation metric in
+the vertex embedding space. The score is unsupervised: it does not
+see partisan labels at training. Its authors report positive results
+on four Twitter datasets.
+
+InfoVGAE \citep{Li22InfoVGAE} is a variational graph auto-encoder
+with disentangled latent axes intended to capture belief dimensions.
+The variational objective adds a total-correlation regulariser to
+the reconstruction loss; the resulting per-vertex embeddings are
+used to score users on inferred belief axes.
+
+TIMME \citep{XiaoTIMME2020} is a relational graph convolutional
+network for Twitter ideology detection. It runs over the
+heterogeneous graph formed by follow, retweet, mention, reply, and
+like edges and outputs a supervised ideology label for each user.
+
+Each of these three estimators is a message-passing graph neural
+network in the sense of Definition~\ref{def:mpnn}. All three fall within the
+scope of Theorem~\ref{thm:dichotomy}. The empirical audit of
+Section~\ref{sec:emp-reddit} instantiates the procedure derived from
+Proposition~\ref{prop:reproduce} on EchoGAE; the same procedure applies to
+InfoVGAE and TIMME with no change beyond the choice of
+per-vertex features.
+
+Beyond these three, several other message-passing approaches to
+polarisation and stance detection have been proposed in the recent
+literature, with heterogeneous input types and multimodal features.
+All fall within the message-passing class as defined here and are
+therefore subject to Theorem~\ref{thm:dichotomy}.
+
+\subsection{Null-model rewiring in network science}
+
+Degree-preserving rewiring, sometimes called the configuration model
+or the null-model construction, dates to work by \citet{MolloyReed1995}
+and \citet{Newman2001} in the study of random graphs with prescribed
+degree sequence. The construction has since been used extensively as
+a null model for tests of higher-order structure: given a graph
+$\gph$, one compares the observed value of a structural quantity
+(such as clustering or modularity) against the distribution of the
+quantity under uniform rewiring conditional on the degree sequence.
+\citet{Karrer2011StochasticBlock} developed the degree-corrected
+stochastic block model, extending the null-model framework to
+include community structure.
+
+\citet{Karrer2011StochasticBlock} developed the degree-corrected
+stochastic block model, which combines degree correction with a
+block structure and is standard in null-model tests of community
+detection. Block-preserving rewiring is standard in this line;
+targeted triangle-destroying rewiring is less common. To our
+knowledge, no prior work uses joint degree- and block-preserving
+rewiring as an identifiability test for GNN-based estimators. The
+rewiring procedure of Section~\ref{sec:emp-reddit} is adapted to that
+purpose: it holds the depth-$1$ $1$-WL colour distribution of the
+labelled edges exact by construction, and drops higher-order
+structure by targeted swaps.
+
+Adversarial perturbations of graph structure for GNN robustness
+\citep{Jin2020, Zugner2018} share the technical mechanism (edge
+addition, deletion, or swap) with this paper's rewiring but use it
+under a different objective: adversarial robustness studies MPNN
+sensitivity to worst-case edge perturbations that maximise output
+change, whereas the rewiring here is constrained to preserve
+$1$-WL statistics that any MPNN can compute at depth $1$.

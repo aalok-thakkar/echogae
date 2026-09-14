@@ -1,0 +1,19 @@
+{
+  "topic": "sxsw",
+  "epochs": 300,
+  "seed": 42,
+  "resolution": 0.05,
+  "n_nodes": 2436,
+  "n_edges": 5325,
+  "n_communities_louvain": 5,
+  "n_communities_non_singleton": 5,
+  "graph_level_ecs": 0.6530591726303101,
+  "per_community_ecs": {
+    "0": 0.4808506369590759,
+    "1": 0.4352087378501892,
+    "2": 0.7894835472106934,
+    "3": 0.7992019653320312,
+    "4": 0.7605509757995605
+  },
+  "features": "Sentence-BERT"
+}
