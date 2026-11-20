@@ -25,7 +25,7 @@ affiliations:
 keywords: reproducibility, graph neural networks, echo chamber score, measurement validity, python
 
 code:
-  - url: https://github.com/aalok-thakkar/rescience-echogae
+  - url: https://github.com/aalok-thakkar/echogae
   - doi:
   - swh:
 

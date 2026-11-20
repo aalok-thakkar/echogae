@@ -1,4 +1,4 @@
-# rescience-echogae
+# echogae
 
 Reproduction of Alatawi, Sheth, and Liu (2023), [*Quantifying the Echo Chamber Effect: An Embedding Distance-based Approach*](https://arxiv.org/abs/2307.04668), submitted to [ReScience C](https://rescience.github.io/).
 
@@ -24,8 +24,8 @@ The reproduction runs end to end on a single machine with Python 3.13, `make`, `
 
 1. **Clone this repository and the pinned EchoGAE release.**
    ```bash
-   git clone https://github.com/aalok-thakkar/rescience-echogae
-   cd rescience-echogae
+   git clone https://github.com/aalok-thakkar/echogae
+   cd echogae
    bash scripts/setup.sh
    ```
    The setup script clones [`faalatawi/echo-chamber-score`](https://github.com/faalatawi/echo-chamber-score) into `experiments/vendor/echo-chamber-score` and checks it out at commit `0626330`. All twelve raw graph, tweet, and label files are verified against the release's Git blob hashes.
