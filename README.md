@@ -10,9 +10,8 @@ The paper draft is at [paper/rescience/article.pdf](paper/rescience/article.pdf)
 
 ```
 paper/rescience/            ReScience C manuscript (LaTeX + metadata)
-experiments/validation/     reproduction protocol and results
-experiments/src/            Python scripts used by the validation
-scripts/                    setup, run, and summarisation helpers
+experiments/validation/     reproduction protocol, pinned source, lock, and results
+scripts/                    setup, run, verification, and figure scripts
 ```
 
 Two directories are gitignored and populated on first run:
