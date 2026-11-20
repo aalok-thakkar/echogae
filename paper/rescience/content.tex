@@ -89,7 +89,14 @@ SXSW        & $0.465$ & $0.465$ & $0.467\pm 0.007$ & $0.655\pm 0.006$ & $+0.187$
 \label{tab:repro}
 \end{table}
 
-Under $S_{\mathrm{user}}$, SXSW is the one topic where our mean reproduces the paper's value to within one standard deviation ($0.467$ vs $0.465$). On the other three topics the user-average means are within $0.07$ of both the paper and the notebook. Under $S_{\mathrm{community}}$, three of the four topics agree with the user-average to within $0.03$; SXSW alone diverges by $+0.187$.
+Under $S_{\mathrm{user}}$, SXSW is the one topic where our mean reproduces the paper's value to within one standard deviation ($0.467$ vs $0.465$). On the other three topics the user-average means are within $0.07$ of both the paper and the notebook. Under $S_{\mathrm{community}}$, three of the four topics agree with the user-average to within $0.03$; SXSW alone diverges by $+0.187$. Figure~\ref{fig:averaging} places the two averages, the ten per-fit values behind them, and the two reference records on the same axis.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{figure_averaging.pdf}
+\caption{Paired reproduction at Louvain seed $42$. For each topic, the ten per-fit $S_{\mathrm{user}}$ values (filled circles) and $S_{\mathrm{community}}$ values (open squares) share the same ten fitted representations; their means are shown with standard-deviation bars. The paper's Table~II value ($\times$) and the notebook's stored value ($+$) are drawn above and below each row for comparison. SXSW is the one row whose user-average mean overlaps the paper's value; its community-average mean sits $0.19$ away.}
+\label{fig:averaging}
+\end{figure}
 
 The SXSW partition at Louvain seed $42$ contains five non-singleton communities of sizes $1{,}568$, $712$, $85$, $54$, and $17$. Under $S_{\mathrm{user}}$ the largest contributes $64.4\%$ of the weight and the three smallest together contribute less than $7\%$. Under $S_{\mathrm{community}}$ each contributes $20\%$. The three smallest communities have the highest per-community mean scores across the ten fits (around $0.80$--$0.86$), while the largest two have means around $0.40$--$0.48$. The identity $S_{\mathrm{community}}-S_{\mathrm{user}}=\sum_k(1/K-n_k/n)\bar s_k$ in Section~\ref{sec:score} then gives $+0.19$. The three other topics have either two Louvain communities of roughly comparable size (gun control, abortion) or a single dominant community plus small residues with low scores (Super Bowl), so their size-weighted and equal-weighted means stay close.
 
