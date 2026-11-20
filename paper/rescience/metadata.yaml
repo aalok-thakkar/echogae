@@ -1,0 +1,80 @@
+# ReScience C submission metadata
+
+title: "[Rp] Reproducing EchoGAE's Echo Chamber Score: an averaging ambiguity between paper and code"
+
+authors:
+  - name: Vedant Gautam
+    orcid: ""
+    email: ""
+    affiliations: 1
+
+  - name: Aalok Thakkar
+    orcid: ""
+    email: thakkarsciencestrategy@gmail.com
+    affiliations: 1,2,*
+
+affiliations:
+  - code:    1
+    name:    Ashoka University
+    address: ""
+
+  - code:    2
+    name:    Alt Carbon
+    address: ""
+
+keywords: reproducibility, graph neural networks, echo chamber score, measurement validity, python
+
+code:
+  - url: https://github.com/aalok-thakkar/rescience-echogae
+  - doi:
+  - swh:
+
+data:
+  - url: https://github.com/echo-chamber-score/echo-chamber-score
+  - doi:
+
+replication:
+  - cite: "Alatawi, F., Sheth, P., & Liu, H. (2023). Quantifying the Echo Chamber Effect: An Embedding Distance-based Approach. In International Conference on Advances in Social Networks Analysis and Mining."
+  - bib: Alatawi2023EchoGAE
+  - url: https://arxiv.org/abs/2307.04668
+  - doi: 10.1109/ASONAM60784.2023.10388478
+
+abstract: "EchoGAE (Alatawi, Sheth and Liu, 2023) trains a graph autoencoder on a Twitter retweet graph and reports an Echo Chamber Score (ECS) per topic. The paper's Equation 4 averages community scores; the released notebook averages user scores. On graphs with unequal community sizes these are different numbers, and both circulate as the ECS. We pin the release to commit 0626330, regenerate text features with Sentence-BERT revision 1110a243, cross ten Louvain seeds with ten model-fitting seeds, and compute both averages on the same fitted representations. On SXSW ten fits give a user-average score of 0.467 (within one seed standard deviation of the published 0.465) and a community-average score of 0.655. Across the four topics the polarising-minus-non-polarising contrast is +0.131 under the code's rule and +0.036 under the paper's, reversing in 22 of 90 defined seed configurations under the second. The reproduction succeeds under the released code's rule, documents a definitional ambiguity between the published equation and the released implementation, and recommends reporting the averaging unit alongside any cross-topic ECS value."
+
+bibliography: bibliography.bib
+
+type: Replication
+
+domain: Computational Social Science
+
+language: Python
+
+review:
+  - url:
+
+contributors:
+  - name:
+    orcid:
+    role: editor
+  - name:
+    orcid:
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+dates:
+  - received:
+  - accepted:
+  - published:
+
+article:
+  - number:
+  - doi:
+  - url:
+
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume:
+  - issue:

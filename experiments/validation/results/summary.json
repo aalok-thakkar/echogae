@@ -1,0 +1,2005 @@
+{
+  "topics": {
+    "gun": {
+      "inputs": {
+        "raw_graph_sha256": "3dad44ccaaca44237cc3791b3ed02ed0aa49c14f84fa67d735ae25692ed9998e",
+        "feature_sha256": "a3ffc3b8312ccf581d2c4eeabf93b1760e139f603485942f38826aa7e1ac132f",
+        "ordered_user_hash": "34d090b2d846319ae85ee6583bad515fac76d443e89a11163efa2e32ec9ccf90",
+        "n": 6566,
+        "m": 14322,
+        "self_loops": 72,
+        "domain": "largest_component"
+      },
+      "completed_factorial_cells": 100,
+      "reference_partition": {
+        "counts": [
+          3985,
+          2581
+        ],
+        "sha256": "a594341bf5b1a2636935bc2bd2d522055ed84493ae18a534ec245771c85be673"
+      },
+      "source_sha256": "efac2471e4f6657c9d82223ea0a129549df509b747812ff3b0c52c731525df77",
+      "fixed_partition": {
+        "user": {
+          "n": 10,
+          "mean": 0.6569593667984008,
+          "sd": 0.028358950857939418,
+          "min": 0.6242645382881165,
+          "max": 0.7145067453384399
+        },
+        "community": {
+          "n": 10,
+          "mean": 0.6561223715543747,
+          "sd": 0.026528114931599626,
+          "min": 0.6263459622859955,
+          "max": 0.707823634147644
+        }
+      },
+      "averaging_difference": {
+        "n": 10,
+        "mean": -0.0008369952440261841,
+        "sd": 0.002280410617972612,
+        "min": -0.0066831111907958984,
+        "max": 0.0020814239978790283
+      },
+      "undefined_cells": 0,
+      "finite_design_variation": {
+        "user": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.6570796436071396,
+          "total_mean_square": 0.0007264019937507906,
+          "fractions": {
+            "fitting": 0.9999846660471561,
+            "partition": 9.586862957136257e-06,
+            "interaction": 5.747089886147006e-06
+          }
+        },
+        "community": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.6562595224380493,
+          "total_mean_square": 0.0006357554656759753,
+          "fractions": {
+            "fitting": 0.9999893627418838,
+            "partition": 4.708310310624985e-06,
+            "interaction": 5.928947805474919e-06
+          }
+        }
+      },
+      "architecture": {
+        "user": {
+          "n": 5,
+          "mean": -0.03591927289962769,
+          "sd": 0.03327421628893121,
+          "min": -0.09198892116546631,
+          "max": -0.006265103816986084
+        },
+        "community": {
+          "n": 5,
+          "mean": -0.03312510848045349,
+          "sd": 0.03031319731825046,
+          "min": -0.08420911431312561,
+          "max": -0.006306558847427368
+        }
+      },
+      "structural": {
+        "closure": {
+          "graphs": 5,
+          "original": {
+            "triangles": 789,
+            "clustering": 0.022602846853001766,
+            "cross_community_fraction": 0.011017543859649122,
+            "components": 1,
+            "largest_component": 6566
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 468,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.011017543859649122,
+                "components": 1,
+                "largest_component": 6566
+              },
+              "mean_delta_user": -0.003635366757710775,
+              "mean_delta_community": -0.0035306215286254883
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 485,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.011017543859649122,
+                "components": 1,
+                "largest_component": 6566
+              },
+              "mean_delta_user": 0.02163974444071452,
+              "mean_delta_community": 0.02101670702298482
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 452,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.011017543859649122,
+                "components": 1,
+                "largest_component": 6566
+              },
+              "mean_delta_user": -0.008873581886291504,
+              "mean_delta_community": -0.0073071519533793134
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 483,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.011017543859649122,
+                "components": 1,
+                "largest_component": 6566
+              },
+              "mean_delta_user": 0.0016596118609110515,
+              "mean_delta_community": 0.0025398731231689453
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 487,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.011017543859649122,
+                "components": 1,
+                "largest_component": 6566
+              },
+              "mean_delta_user": 0.0235248605410258,
+              "mean_delta_community": 0.022439817587534588
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": 0.006863053639729818,
+            "sd": 0.014839985976322299,
+            "min": -0.008873581886291504,
+            "max": 0.0235248605410258
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": 0.00703172485033671,
+            "sd": 0.013877430680132731,
+            "min": -0.0073071519533793134,
+            "max": 0.022439817587534588
+          }
+        },
+        "mixing": {
+          "graphs": 5,
+          "original": {
+            "triangles": 789,
+            "clustering": 0.022602846853001766,
+            "cross_community_fraction": 0.011017543859649122,
+            "components": 1,
+            "largest_component": 6566
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "mixing",
+                "proposals": 145896,
+                "accepted": 142500,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 772,
+                "clustering": 0.010686743706377176,
+                "cross_community_fraction": 0.47010526315789475,
+                "components": 14,
+                "largest_component": 6537
+              },
+              "mean_delta_user": -0.15510056416193643,
+              "mean_delta_community": -0.15374137461185455
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "mixing",
+                "proposals": 146064,
+                "accepted": 142500,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 875,
+                "clustering": 0.011457552306904269,
+                "cross_community_fraction": 0.4713684210526316,
+                "components": 7,
+                "largest_component": 6551
+              },
+              "mean_delta_user": -0.1547490954399109,
+              "mean_delta_community": -0.15371384720007578
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "mixing",
+                "proposals": 145964,
+                "accepted": 142500,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 838,
+                "clustering": 0.009344312728268174,
+                "cross_community_fraction": 0.4672982456140351,
+                "components": 16,
+                "largest_component": 6527
+              },
+              "mean_delta_user": -0.15573970476786295,
+              "mean_delta_community": -0.15379301210244498
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "mixing",
+                "proposals": 145995,
+                "accepted": 142500,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 853,
+                "clustering": 0.010758615680356735,
+                "cross_community_fraction": 0.4689824561403509,
+                "components": 8,
+                "largest_component": 6550
+              },
+              "mean_delta_user": -0.1559458076953888,
+              "mean_delta_community": -0.1540479063987732
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "mixing",
+                "proposals": 145976,
+                "accepted": 142500,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 831,
+                "clustering": 0.010585462297943155,
+                "cross_community_fraction": 0.4696842105263158,
+                "components": 11,
+                "largest_component": 6544
+              },
+              "mean_delta_user": -0.1557383139928182,
+              "mean_delta_community": -0.15438534816106161
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": -0.15545469721158345,
+            "sd": 0.0005064931811183757,
+            "min": -0.1559458076953888,
+            "max": -0.1547490954399109
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.15393629769484202,
+            "sd": 0.0002837749178032162,
+            "min": -0.15438534816106161,
+            "max": -0.15371384720007578
+          }
+        }
+      }
+    },
+    "abortion": {
+      "inputs": {
+        "raw_graph_sha256": "c52604d16ddb7abd51b7789e3e6f093d93522c68b49a8a55c0252ed1eada33e3",
+        "feature_sha256": "26ceb25e563cf0257c57ba93e9be22d82da4855fc11c5b90a1e3a7a908f7ca3b",
+        "ordered_user_hash": "2868c9c69a819045245c5e1ba3ad790ee7ac08477ec3bc4e5554d64592445d26",
+        "n": 5087,
+        "m": 10572,
+        "self_loops": 56,
+        "domain": "largest_component"
+      },
+      "completed_factorial_cells": 100,
+      "reference_partition": {
+        "counts": [
+          3933,
+          1154
+        ],
+        "sha256": "080bd5f86e275d847fee8285b095e777eec4aa0d349cb429f86f7a65c18cb3ce"
+      },
+      "source_sha256": "266bdf3b3f4eecb204852fd4c9955db9ff29c1161448ba6d7b2693e90e6896b4",
+      "fixed_partition": {
+        "user": {
+          "n": 10,
+          "mean": 0.6187175154685974,
+          "sd": 0.016652702775383103,
+          "min": 0.5898050665855408,
+          "max": 0.6437252163887024
+        },
+        "community": {
+          "n": 10,
+          "mean": 0.6442761033773422,
+          "sd": 0.017051254098594995,
+          "min": 0.6168633103370667,
+          "max": 0.670024037361145
+        }
+      },
+      "averaging_difference": {
+        "n": 10,
+        "mean": 0.025558587908744813,
+        "sd": 0.001374224574867472,
+        "min": 0.023476362228393555,
+        "max": 0.02759811282157898
+      },
+      "undefined_cells": 10,
+      "finite_design_variation": {
+        "user": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            51
+          ],
+          "mean": 0.6189182274871402,
+          "total_mean_square": 0.00024915126140747604,
+          "fractions": {
+            "fitting": 0.9998051085500944,
+            "partition": 0.0001586358450639755,
+            "interaction": 3.6255604842259446e-05
+          }
+        },
+        "community": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            51
+          ],
+          "mean": 0.6446609146065182,
+          "total_mean_square": 0.0002618157942998457,
+          "fractions": {
+            "fitting": 0.9995902537644831,
+            "partition": 0.000376923207553065,
+            "interaction": 3.282302796558725e-05
+          }
+        }
+      },
+      "architecture": {
+        "user": {
+          "n": 5,
+          "mean": -0.02803328037261963,
+          "sd": 0.014459015473763503,
+          "min": -0.04869091510772705,
+          "max": -0.012718796730041504
+        },
+        "community": {
+          "n": 5,
+          "mean": -0.035288506746292116,
+          "sd": 0.014892948605479916,
+          "min": -0.053968608379364014,
+          "max": -0.02026844024658203
+        }
+      },
+      "structural": {
+        "closure": {
+          "graphs": 5,
+          "original": {
+            "triangles": 149,
+            "clustering": 0.016695835712135853,
+            "cross_community_fraction": 0.015785469760365156,
+            "components": 1,
+            "largest_component": 5087
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 118,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.015785469760365156,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.00034248828887939453,
+              "mean_delta_community": -0.0024801393349965415
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 125,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.015785469760365156,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.002495884895324707,
+              "mean_delta_community": -0.005768726269404094
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 106,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.015785469760365156,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.005124449729919434,
+              "mean_delta_community": -0.008836050828297934
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 114,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.015785469760365156,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.003769218921661377,
+              "mean_delta_community": -0.006877998510996501
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 123,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 0,
+                "clustering": 0.0,
+                "cross_community_fraction": 0.015785469760365156,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.004746496677398682,
+              "mean_delta_community": -0.010326176881790161
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": -0.003295707702636719,
+            "sd": 0.0019387186718985816,
+            "min": -0.005124449729919434,
+            "max": -0.00034248828887939453
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.006857818365097046,
+            "sd": 0.00301220504782421,
+            "min": -0.010326176881790161,
+            "max": -0.0024801393349965415
+          }
+        },
+        "mixing": {
+          "graphs": 5,
+          "original": {
+            "triangles": 149,
+            "clustering": 0.016695835712135853,
+            "cross_community_fraction": 0.015785469760365156,
+            "components": 1,
+            "largest_component": 5087
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "mixing",
+                "proposals": 107458,
+                "accepted": 105160,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 431,
+                "clustering": 0.00819101298896048,
+                "cross_community_fraction": 0.34252567516165844,
+                "components": 2,
+                "largest_component": 5085
+              },
+              "mean_delta_user": -0.12375271320343018,
+              "mean_delta_community": -0.1462947279214859
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "mixing",
+                "proposals": 107420,
+                "accepted": 105160,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 424,
+                "clustering": 0.010300704210526727,
+                "cross_community_fraction": 0.3375808292126284,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.12237314383188884,
+              "mean_delta_community": -0.146294504404068
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "mixing",
+                "proposals": 107420,
+                "accepted": 105160,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 483,
+                "clustering": 0.010674018315316168,
+                "cross_community_fraction": 0.34347660707493344,
+                "components": 2,
+                "largest_component": 5085
+              },
+              "mean_delta_user": -0.11782672007878621,
+              "mean_delta_community": -0.14614492654800415
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "mixing",
+                "proposals": 107433,
+                "accepted": 105160,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 473,
+                "clustering": 0.009098903849918434,
+                "cross_community_fraction": 0.3392925066565234,
+                "components": 3,
+                "largest_component": 5083
+              },
+              "mean_delta_user": -0.11689567565917969,
+              "mean_delta_community": -0.1466659059127172
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "mixing",
+                "proposals": 107377,
+                "accepted": 105160,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 444,
+                "clustering": 0.008852158328216973,
+                "cross_community_fraction": 0.3373906428299734,
+                "components": 1,
+                "largest_component": 5087
+              },
+              "mean_delta_user": -0.11859263976414998,
+              "mean_delta_community": -0.1451842337846756
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": -0.11988817850748698,
+            "sd": 0.00299969939600222,
+            "min": -0.12375271320343018,
+            "max": -0.11689567565917969
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.14611685971419017,
+            "sd": 0.0005557034583949925,
+            "min": -0.1466659059127172,
+            "max": -0.1451842337846756
+          }
+        }
+      }
+    },
+    "super_bowl": {
+      "inputs": {
+        "raw_graph_sha256": "ac81c13ace38a3218ad343bc972497591ac1f1d5d5999162901a6cc67f859df5",
+        "feature_sha256": "0228d17d558ef4df0bdfee00221a56031e7c846ab2e5db4c73ac2562e3a58454",
+        "ordered_user_hash": "b9e6e0a43bd5fa2e42d0eb8a187e026d633257db1e065dcb9f4ef02c5daf6ecf",
+        "n": 5460,
+        "m": 8732,
+        "self_loops": 0,
+        "domain": "largest_component"
+      },
+      "completed_factorial_cells": 100,
+      "reference_partition": {
+        "counts": [
+          5346,
+          23,
+          91
+        ],
+        "sha256": "a556db9c3b5bd8a9908ee3bfd4d9816f1d01b2b97cba2ca6fb8d52b20c4bb5d0"
+      },
+      "source_sha256": "58cf2aaf1ec5e3848d98c2c129bdedc0f1dea48cfdb0f35b71028123b7a3a94a",
+      "fixed_partition": {
+        "user": {
+          "n": 10,
+          "mean": 0.5453150868415833,
+          "sd": 0.010630837298173646,
+          "min": 0.5322470664978027,
+          "max": 0.5630002021789551
+        },
+        "community": {
+          "n": 10,
+          "mean": 0.5740079164505005,
+          "sd": 0.02397128108344007,
+          "min": 0.545151929060618,
+          "max": 0.6257226665814718
+        }
+      },
+      "averaging_difference": {
+        "n": 10,
+        "mean": 0.028692829608917225,
+        "sd": 0.030638697075708366,
+        "min": -0.017848273118337032,
+        "max": 0.09347560008366906
+      },
+      "undefined_cells": 0,
+      "finite_design_variation": {
+        "user": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.47271886467933655,
+          "total_mean_square": 0.0006956414026309687,
+          "fractions": {
+            "fitting": 0.0716416963740106,
+            "partition": 0.8897464895831425,
+            "interaction": 0.03861181404284721
+          }
+        },
+        "community": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.6232935353368521,
+          "total_mean_square": 0.0012747089879782186,
+          "fractions": {
+            "fitting": 0.22290418593195044,
+            "partition": 0.7545450158563421,
+            "interaction": 0.022550798211706552
+          }
+        }
+      },
+      "architecture": {
+        "user": {
+          "n": 5,
+          "mean": -0.00860767364501953,
+          "sd": 0.014381155245507505,
+          "min": -0.02923792600631714,
+          "max": 0.003530740737915039
+        },
+        "community": {
+          "n": 5,
+          "mean": 0.003019305070241329,
+          "sd": 0.021434305859647108,
+          "min": -0.019119570652643803,
+          "max": 0.0374985933303833
+        }
+      },
+      "structural": {
+        "closure": {
+          "graphs": 5,
+          "original": {
+            "triangles": 278,
+            "clustering": 0.04542989394838202,
+            "cross_community_fraction": 0.001717819514429684,
+            "components": 1,
+            "largest_component": 5460
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 228,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 1,
+                "clustering": 0.00010378510378510379,
+                "cross_community_fraction": 0.001717819514429684,
+                "components": 1,
+                "largest_component": 5460
+              },
+              "mean_delta_user": 0.01884591579437256,
+              "mean_delta_community": -0.002008633481131635
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 228,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 2,
+                "clustering": 0.00023809523809523807,
+                "cross_community_fraction": 0.001717819514429684,
+                "components": 1,
+                "largest_component": 5460
+              },
+              "mean_delta_user": 0.015222251415252686,
+              "mean_delta_community": -0.007565283113055747
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 227,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 1,
+                "clustering": 0.00010378510378510379,
+                "cross_community_fraction": 0.001717819514429684,
+                "components": 1,
+                "largest_component": 5460
+              },
+              "mean_delta_user": 0.013614952564239502,
+              "mean_delta_community": -0.0044801798131730575
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 234,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 2,
+                "clustering": 0.00023809523809523807,
+                "cross_community_fraction": 0.001717819514429684,
+                "components": 1,
+                "largest_component": 5460
+              },
+              "mean_delta_user": 0.014698962370554606,
+              "mean_delta_community": -0.0043772293461693534
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 231,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 2,
+                "clustering": 0.00023809523809523807,
+                "cross_community_fraction": 0.001717819514429684,
+                "components": 1,
+                "largest_component": 5460
+              },
+              "mean_delta_user": 0.005070805549621582,
+              "mean_delta_community": -0.0004883607228596635
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": 0.013490577538808187,
+            "sd": 0.0051001609201158735,
+            "min": 0.005070805549621582,
+            "max": 0.01884591579437256
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.0037839372952778914,
+            "sd": 0.0026994376206997354,
+            "min": -0.007565283113055747,
+            "max": -0.0004883607228596635
+          }
+        },
+        "mixing": {
+          "graphs": 5,
+          "original": {
+            "triangles": 278,
+            "clustering": 0.04542989394838202,
+            "cross_community_fraction": 0.001717819514429684,
+            "components": 1,
+            "largest_component": 5460
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "mixing",
+                "proposals": 89931,
+                "accepted": 87320,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 394,
+                "clustering": 0.012521647291929767,
+                "cross_community_fraction": 0.03973889143380669,
+                "components": 37,
+                "largest_component": 5378
+              },
+              "mean_delta_user": -0.09540996948877971,
+              "mean_delta_community": -0.0694339076677958
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "mixing",
+                "proposals": 89896,
+                "accepted": 87320,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 431,
+                "clustering": 0.013023530698987424,
+                "cross_community_fraction": 0.038822721026110854,
+                "components": 40,
+                "largest_component": 5366
+              },
+              "mean_delta_user": -0.06908752520879109,
+              "mean_delta_community": -0.07056626346376203
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "mixing",
+                "proposals": 89932,
+                "accepted": 87320,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 363,
+                "clustering": 0.011781304003503105,
+                "cross_community_fraction": 0.03893724232707284,
+                "components": 34,
+                "largest_component": 5380
+              },
+              "mean_delta_user": -0.06864147384961446,
+              "mean_delta_community": -0.06913342740800643
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "mixing",
+                "proposals": 89943,
+                "accepted": 87320,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 437,
+                "clustering": 0.012334755463494843,
+                "cross_community_fraction": 0.039624370132844706,
+                "components": 44,
+                "largest_component": 5359
+              },
+              "mean_delta_user": -0.08048100272814433,
+              "mean_delta_community": -0.0697900421089596
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "mixing",
+                "proposals": 89975,
+                "accepted": 87320,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 339,
+                "clustering": 0.010039879079823174,
+                "cross_community_fraction": 0.039280806229958776,
+                "components": 33,
+                "largest_component": 5379
+              },
+              "mean_delta_user": -0.07912589112917583,
+              "mean_delta_community": -0.07010097636116874
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": -0.07854917248090108,
+            "sd": 0.010909128167669334,
+            "min": -0.09540996948877971,
+            "max": -0.06864147384961446
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.06980492340193852,
+            "sd": 0.000560371984072954,
+            "min": -0.07056626346376203,
+            "max": -0.06913342740800643
+          }
+        }
+      }
+    },
+    "sxsw": {
+      "inputs": {
+        "raw_graph_sha256": "133b871e7647c1bedaba126626321cdd01083c51e77c0e0f635f94a9c8607884",
+        "feature_sha256": "e5a34b71a6eb9f811e2cd51f925546a44a4a88ed0ad21b2e3909b67b24de1b0e",
+        "ordered_user_hash": "a8719295a6326c4adde3c56b0068b7009558f6e580aba17d1dacf4079c630ca2",
+        "n": 2436,
+        "m": 5325,
+        "self_loops": 38,
+        "domain": "largest_component"
+      },
+      "completed_factorial_cells": 100,
+      "reference_partition": {
+        "counts": [
+          1568,
+          712,
+          85,
+          54,
+          17
+        ],
+        "sha256": "d17b6e16ba1daf14651a268c61a1c70004c53fee92216216c88318d4aee86a4c"
+      },
+      "source_sha256": "73646655e604a2aa70122e832bd84bd9d2fbb205692f5eaa5ebaccc2459a3854",
+      "fixed_partition": {
+        "user": {
+          "n": 10,
+          "mean": 0.46746085584163666,
+          "sd": 0.0073540412287597945,
+          "min": 0.4547286927700043,
+          "max": 0.4757809638977051
+        },
+        "community": {
+          "n": 10,
+          "mean": 0.6545315676927567,
+          "sd": 0.006287582310254124,
+          "min": 0.6427887320518494,
+          "max": 0.6618339776992798
+        }
+      },
+      "averaging_difference": {
+        "n": 10,
+        "mean": 0.18707071185111998,
+        "sd": 0.009050062995722927,
+        "min": 0.17049252390861513,
+        "max": 0.1970421612262726
+      },
+      "undefined_cells": 0,
+      "finite_design_variation": {
+        "user": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.47555953681468965,
+          "total_mean_square": 0.0008517556784871697,
+          "fractions": {
+            "fitting": 0.040201799785779806,
+            "partition": 0.9176944823803524,
+            "interaction": 0.04210371783386869
+          }
+        },
+        "community": {
+          "valid_partition_seeds": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "mean": 0.6393285948485136,
+          "total_mean_square": 0.00047891651745162584,
+          "fractions": {
+            "fitting": 0.11343179582675991,
+            "partition": 0.8410111946261979,
+            "interaction": 0.04555700954704089
+          }
+        }
+      },
+      "architecture": {
+        "user": {
+          "n": 5,
+          "mean": 0.01239696741104126,
+          "sd": 0.0071546594113321435,
+          "min": 0.006643801927566528,
+          "max": 0.023433774709701538
+        },
+        "community": {
+          "n": 5,
+          "mean": -6.452322006222921e-05,
+          "sd": 0.005159334008883535,
+          "min": -0.005771690607070945,
+          "max": 0.006307804584503196
+        }
+      },
+      "structural": {
+        "closure": {
+          "graphs": 5,
+          "original": {
+            "triangles": 997,
+            "clustering": 0.17769501470921462,
+            "cross_community_fraction": 0.008700586343862303,
+            "components": 1,
+            "largest_component": 2436
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 573,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 47,
+                "clustering": 0.007281523767894445,
+                "cross_community_fraction": 0.008700586343862303,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": 0.06125394503275553,
+              "mean_delta_community": 0.019226690133412678
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 570,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 60,
+                "clustering": 0.014701636925649299,
+                "cross_community_fraction": 0.008700586343862303,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": 0.039021323124567665,
+              "mean_delta_community": 0.008448243141174316
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 593,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 50,
+                "clustering": 0.012456617628154799,
+                "cross_community_fraction": 0.008700586343862303,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": 0.052592446406682335,
+              "mean_delta_community": 0.014050173759460457
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 597,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 36,
+                "clustering": 0.007280550145687126,
+                "cross_community_fraction": 0.008700586343862303,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": 0.061115920543670654,
+              "mean_delta_community": 0.01964335838953657
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "closure",
+                "proposals": 100000,
+                "accepted": 573,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": true,
+                "triangles": 49,
+                "clustering": 0.009893829007777672,
+                "cross_community_fraction": 0.008700586343862303,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": 0.051603853702545166,
+              "mean_delta_community": 0.020787163575490337
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": 0.05311749776204427,
+            "sd": 0.009102822060459708,
+            "min": 0.039021323124567665,
+            "max": 0.06125394503275553
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": 0.016431125799814872,
+            "sd": 0.005160039520608294,
+            "min": 0.008448243141174316,
+            "max": 0.020787163575490337
+          }
+        },
+        "mixing": {
+          "graphs": 5,
+          "original": {
+            "triangles": 997,
+            "clustering": 0.17769501470921462,
+            "cross_community_fraction": 0.008700586343862303,
+            "components": 1,
+            "largest_component": 2436
+          },
+          "graph_records": [
+            {
+              "seed": 100,
+              "structure": {
+                "seed": 100,
+                "mode": "mixing",
+                "proposals": 55903,
+                "accepted": 52870,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 511,
+                "clustering": 0.024761599866505876,
+                "cross_community_fraction": 0.4711556648382826,
+                "components": 2,
+                "largest_component": 2434
+              },
+              "mean_delta_user": -0.032191952069600425,
+              "mean_delta_community": -0.16068334182103475
+            },
+            {
+              "seed": 101,
+              "structure": {
+                "seed": 101,
+                "mode": "mixing",
+                "proposals": 55779,
+                "accepted": 52870,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 574,
+                "clustering": 0.028978990681083443,
+                "cross_community_fraction": 0.4806128239076981,
+                "components": 2,
+                "largest_component": 2433
+              },
+              "mean_delta_user": -0.047499885161717735,
+              "mean_delta_community": -0.16812662879625956
+            },
+            {
+              "seed": 102,
+              "structure": {
+                "seed": 102,
+                "mode": "mixing",
+                "proposals": 55878,
+                "accepted": 52870,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 478,
+                "clustering": 0.031247838054144626,
+                "cross_community_fraction": 0.48477397389824095,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": -0.038609216610590615,
+              "mean_delta_community": -0.17343744635581967
+            },
+            {
+              "seed": 103,
+              "structure": {
+                "seed": 103,
+                "mode": "mixing",
+                "proposals": 55799,
+                "accepted": 52870,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 559,
+                "clustering": 0.024137357445067953,
+                "cross_community_fraction": 0.47777567618687344,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": -0.02846843997637431,
+              "mean_delta_community": -0.1625230570634206
+            },
+            {
+              "seed": 104,
+              "structure": {
+                "seed": 104,
+                "mode": "mixing",
+                "proposals": 55799,
+                "accepted": 52870,
+                "per_vertex_degree_preserved": true,
+                "per_vertex_community_degree_preserved": false,
+                "triangles": 486,
+                "clustering": 0.02437036364468929,
+                "cross_community_fraction": 0.4730470966521657,
+                "components": 1,
+                "largest_component": 2436
+              },
+              "mean_delta_user": -0.03967010974884033,
+              "mean_delta_community": -0.16895991563796994
+            }
+          ],
+          "delta_user": {
+            "n": 5,
+            "mean": -0.03728792071342468,
+            "sd": 0.007339226836519735,
+            "min": -0.047499885161717735,
+            "max": -0.02846843997637431
+          },
+          "delta_community": {
+            "n": 5,
+            "mean": -0.1667460779349009,
+            "sd": 0.005151991941670043,
+            "min": -0.17343744635581967,
+            "max": -0.16068334182103475
+          }
+        }
+      }
+    }
+  },
+  "group_contrasts": {
+    "published": 0.19499999999999992,
+    "notebook_stored": 0.11164649999999995,
+    "user": 0.13145046979188924,
+    "community": 0.035929495394229904
+  },
+  "contrast_grid": {
+    "cells": [
+      {
+        "fit_seed": 42,
+        "partition_seed": 42,
+        "user": 0.15015383064746857,
+        "community": 0.06234366993109386
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 43,
+        "user": 0.19190776348114014,
+        "community": 0.06108651906251905
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 44,
+        "user": 0.1770351529121399,
+        "community": 0.04055759683251381
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 45,
+        "user": 0.21035952866077423,
+        "community": 0.024731583893299103
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 46,
+        "user": 0.20607474446296692,
+        "community": 0.0462498664855957
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 47,
+        "user": 0.21527165174484253,
+        "community": 0.017291370779275894
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 48,
+        "user": 0.1883460283279419,
+        "community": 0.038942357152700446
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 49,
+        "user": 0.21299977600574493,
+        "community": 0.057648389041423775
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 42,
+        "partition_seed": 51,
+        "user": 0.22427132725715637,
+        "community": 0.07377664099136988
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 42,
+        "user": 0.11684684455394745,
+        "community": 0.025342736641566
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 43,
+        "user": 0.15270107984542847,
+        "community": 0.024225909262895584
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 44,
+        "user": 0.13140717148780823,
+        "community": 0.013834908604621887
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 45,
+        "user": 0.1597493290901184,
+        "community": -0.0050641916692256705
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 46,
+        "user": 0.16179321706295013,
+        "community": 0.01085859239101411
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 47,
+        "user": 0.1674662083387375,
+        "community": -0.013154923915863037
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 48,
+        "user": 0.15611466765403748,
+        "community": 0.0015519268810749165
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 49,
+        "user": 0.1669348180294037,
+        "community": 0.022175451119740786
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 43,
+        "partition_seed": 51,
+        "user": 0.18002325296401978,
+        "community": 0.03499955187241238
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 42,
+        "user": 0.1279633343219757,
+        "community": 0.03681564033031465
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 43,
+        "user": 0.16138729453086853,
+        "community": 0.030220518261194207
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 44,
+        "user": 0.14261995255947113,
+        "community": 0.007913514971733093
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 45,
+        "user": 0.1611623913049698,
+        "community": -0.01312952712178228
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 46,
+        "user": 0.16617058217525482,
+        "community": 0.015227437019348145
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 47,
+        "user": 0.17476452887058258,
+        "community": -0.021967614690462767
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 48,
+        "user": 0.1603674292564392,
+        "community": 0.012309522181749355
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 49,
+        "user": 0.17138990759849548,
+        "community": 0.02116803924242655
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 44,
+        "partition_seed": 51,
+        "user": 0.17825058102607727,
+        "community": 0.042278032501538554
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 42,
+        "user": 0.13713477551937103,
+        "community": 0.048692906896273314
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 43,
+        "user": 0.15730278193950653,
+        "community": 0.047133775800466515
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 44,
+        "user": 0.13460327684879303,
+        "community": 0.023762866854667664
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 45,
+        "user": 0.1525476723909378,
+        "community": -0.0006760418415069358
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 46,
+        "user": 0.16796350479125977,
+        "community": 0.03349750041961669
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 47,
+        "user": 0.18096953630447388,
+        "community": 0.002226114273071289
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 48,
+        "user": 0.1650320291519165,
+        "community": 0.022570112347602866
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 49,
+        "user": 0.18081656098365784,
+        "community": 0.04240567088127134
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 45,
+        "partition_seed": 51,
+        "user": 0.1756986677646637,
+        "community": 0.05561359574397401
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 42,
+        "user": 0.1246577799320221,
+        "community": 0.039112467567126
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 43,
+        "user": 0.16257178783416748,
+        "community": 0.03018040060997007
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 44,
+        "user": 0.1381257027387619,
+        "community": 0.0028240829706192017
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 45,
+        "user": 0.1592833250761032,
+        "community": -0.019492273032665264
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 46,
+        "user": 0.16846558451652527,
+        "community": 0.01863063573837276
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 47,
+        "user": 0.1769264191389084,
+        "community": -0.022963054478168488
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 48,
+        "user": 0.16024893522262573,
+        "community": 0.014522330462932609
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 49,
+        "user": 0.17485496401786804,
+        "community": 0.022597986956437388
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 46,
+        "partition_seed": 51,
+        "user": 0.17996817827224731,
+        "community": 0.04140921284755067
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 42,
+        "user": 0.13982631266117096,
+        "community": 0.04223185082276659
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 43,
+        "user": 0.17243719100952148,
+        "community": 0.03586769849061966
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 44,
+        "user": 0.14669154584407806,
+        "community": 0.01313241571187973
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 45,
+        "user": 0.1720740795135498,
+        "community": -0.009485163539648067
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 46,
+        "user": 0.18022026121616364,
+        "community": 0.021811860799789418
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 47,
+        "user": 0.1904478520154953,
+        "community": -0.011325483520825685
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 48,
+        "user": 0.16832976043224335,
+        "community": 0.01332498565316198
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 49,
+        "user": 0.18888475000858307,
+        "community": 0.03139027953147888
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 47,
+        "partition_seed": 51,
+        "user": 0.1951053887605667,
+        "community": 0.04923086365063983
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 42,
+        "user": 0.11896979808807373,
+        "community": 0.0420387218395869
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 43,
+        "user": 0.1560690701007843,
+        "community": 0.04048538580536842
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 44,
+        "user": 0.13778138160705566,
+        "community": 0.01784907653927803
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 45,
+        "user": 0.15633276104927063,
+        "community": -0.00785096511244776
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 46,
+        "user": 0.16476009786128998,
+        "community": 0.02533651888370514
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 47,
+        "user": 0.1746188998222351,
+        "community": -0.011593670894702257
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 48,
+        "user": 0.15876130759716034,
+        "community": 0.015955861657857895
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 49,
+        "user": 0.1730189025402069,
+        "community": 0.03187125672896701
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 48,
+        "partition_seed": 51,
+        "user": 0.1750735640525818,
+        "community": 0.051643210152785
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 42,
+        "user": 0.12295004725456238,
+        "community": 0.012317409118016542
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 43,
+        "user": 0.14940384030342102,
+        "community": 0.015139684826135646
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 44,
+        "user": 0.1313941478729248,
+        "community": -0.002926841378211975
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 45,
+        "user": 0.14965426921844482,
+        "community": -0.027370911836624157
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 46,
+        "user": 0.15507663786411285,
+        "community": 0.0013605326414108387
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 47,
+        "user": 0.16902302205562592,
+        "community": -0.02976046750942868
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 48,
+        "user": 0.14984247088432312,
+        "community": -0.011063777655363094
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 49,
+        "user": 0.16742756962776184,
+        "community": 0.005123887956142437
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 49,
+        "partition_seed": 51,
+        "user": 0.1681225299835205,
+        "community": 0.026675859590371442
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 42,
+        "user": 0.1515742391347885,
+        "community": 0.05166702369848891
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 43,
+        "user": 0.18567140400409698,
+        "community": 0.05578223466873167
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 44,
+        "user": 0.16834840178489685,
+        "community": 0.03345475345849991
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 45,
+        "user": 0.18894900381565094,
+        "community": 0.015506538003683068
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 46,
+        "user": 0.19162657856941223,
+        "community": 0.040863770246505726
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 47,
+        "user": 0.20274026691913605,
+        "community": 0.00576656311750412
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 48,
+        "user": 0.18195988237857819,
+        "community": 0.02653251588344574
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 49,
+        "user": 0.20116528868675232,
+        "community": 0.046990393102169015
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 50,
+        "partition_seed": 51,
+        "user": 0.20423826575279236,
+        "community": 0.069332421819369
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 42,
+        "user": 0.12442773580551147,
+        "community": -0.001267472902933775
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 43,
+        "user": 0.16342957317829132,
+        "community": 0.005421454459428765
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 44,
+        "user": 0.1455485224723816,
+        "community": -0.009415976703166962
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 45,
+        "user": 0.1703857183456421,
+        "community": -0.021431439369916927
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 46,
+        "user": 0.16662612557411194,
+        "community": -0.012747576832771335
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 47,
+        "user": 0.16878312826156616,
+        "community": -0.03684577594200772
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 48,
+        "user": 0.1460217982530594,
+        "community": -0.023944804817438103
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 49,
+        "user": 0.169143944978714,
+        "community": -0.005862759053707145
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 50,
+        "user": null,
+        "community": null
+      },
+      {
+        "fit_seed": 51,
+        "partition_seed": 51,
+        "user": 0.18444064259529114,
+        "community": 0.02076007525126139
+      }
+    ],
+    "undefined": 10,
+    "opposite_signs": 22,
+    "user": {
+      "all_defined": {
+        "n": 90,
+        "mean": 0.1662009095152219,
+        "sd": 0.022482757469637186,
+        "min": 0.11684684455394745,
+        "max": 0.22427132725715637
+      },
+      "negative_cells": 0,
+      "fixed_partition": {
+        "n": 10,
+        "mean": 0.13145046979188918,
+        "sd": 0.012499589490048915,
+        "min": 0.11684684455394745,
+        "max": 0.1515742391347885
+      }
+    },
+    "community": {
+      "all_defined": {
+        "n": 90,
+        "mean": 0.01902504251235061,
+        "sd": 0.02497562960944104,
+        "min": -0.03684577594200772,
+        "max": 0.07377664099136988
+      },
+      "negative_cells": 22,
+      "fixed_partition": {
+        "n": 10,
+        "mean": 0.0359294953942299,
+        "sd": 0.019001364023768407,
+        "min": -0.001267472902933775,
+        "max": 0.06234366993109386
+      }
+    }
+  },
+  "complete": true
+}

@@ -1,0 +1,2547 @@
+{
+  "topic": "abortion",
+  "inputs": {
+    "raw_graph_sha256": "c52604d16ddb7abd51b7789e3e6f093d93522c68b49a8a55c0252ed1eada33e3",
+    "feature_sha256": "26ceb25e563cf0257c57ba93e9be22d82da4855fc11c5b90a1e3a7a908f7ca3b",
+    "ordered_user_hash": "2868c9c69a819045245c5e1ba3ad790ee7ac08477ec3bc4e5554d64592445d26",
+    "n": 5087,
+    "m": 10572,
+    "self_loops": 56,
+    "domain": "largest_component"
+  },
+  "config": {
+    "epochs": 300,
+    "lr": 0.01,
+    "hidden": 20,
+    "output": 10,
+    "partition_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "fit_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "fully_seeded": true
+  },
+  "partitions": {
+    "42": {
+      "counts": [
+        3933,
+        1154
+      ],
+      "sha256": "080bd5f86e275d847fee8285b095e777eec4aa0d349cb429f86f7a65c18cb3ce"
+    },
+    "43": {
+      "counts": [
+        1152,
+        3935
+      ],
+      "sha256": "f6b5d21e7270cc24a813556ae7963d87516e868ac2d22352a6dd8c59daf7f946"
+    },
+    "44": {
+      "counts": [
+        3938,
+        1149
+      ],
+      "sha256": "06713b6d7bcb6ab6b58c2b54bcfbb192f9796162c5f6dae29aac158f8a795638"
+    },
+    "45": {
+      "counts": [
+        3936,
+        1151
+      ],
+      "sha256": "feda1ca078813e8495f75947af67a9106d2f80ce0335270e784d7819157bcdc9"
+    },
+    "46": {
+      "counts": [
+        3935,
+        1152
+      ],
+      "sha256": "286d00e2052a755946c6e48d1eaf2704f589acfa0a6c0b59cce5fe120d75041d"
+    },
+    "47": {
+      "counts": [
+        1153,
+        3934
+      ],
+      "sha256": "89f64fc5ee1a8cfa2ca84c9c382bb7883a23ef51ecd3ded01be76d31b578585e"
+    },
+    "48": {
+      "counts": [
+        3936,
+        1151
+      ],
+      "sha256": "6a317fc263a2cc90e0a388804f5b3604920428a295b0e00bd289ce4d622a9c3d"
+    },
+    "49": {
+      "counts": [
+        1151,
+        3936
+      ],
+      "sha256": "7af70a07b13a8ba9b62b6d191bc2ff71d58fe0fa094a7d9b24d870bfb4403d10"
+    },
+    "50": {
+      "counts": [
+        5087
+      ],
+      "sha256": "19e9e9637bfa4d4f661a5ce5057d9739bdeddcd995009726229197f9299e9b29"
+    },
+    "51": {
+      "counts": [
+        3936,
+        1151
+      ],
+      "sha256": "889845d81bcac6bdb680f0b6612b41e416f531312949967cec29ff4caccf68a7"
+    }
+  },
+  "factorial": [
+    {
+      "fit_seed": 42,
+      "partition_seed": 42,
+      "user": 0.6193335652351379,
+      "community": 0.6429801881313324,
+      "non_singleton": 0.6429801881313324,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5996947288513184,
+        0.6862656474113464
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 43,
+      "user": 0.6195429563522339,
+      "community": 0.6434290707111359,
+      "non_singleton": 0.6434290707111359,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6870900392532349,
+        0.5997681021690369
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 44,
+      "user": 0.6199506521224976,
+      "community": 0.643875926733017,
+      "non_singleton": 0.643875926733017,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.6002373695373535,
+        0.6875144839286804
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 45,
+      "user": 0.6192561388015747,
+      "community": 0.6429595649242401,
+      "non_singleton": 0.6429595649242401,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5996636152267456,
+        0.6862555146217346
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 46,
+      "user": 0.6198384165763855,
+      "community": 0.6438510715961456,
+      "non_singleton": 0.6438510715961456,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5999587774276733,
+        0.6877433657646179
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 47,
+      "user": 0.6193462014198303,
+      "community": 0.6430723965167999,
+      "non_singleton": 0.6430723965167999,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6864724159240723,
+        0.5996723771095276
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 48,
+      "user": 0.6194892525672913,
+      "community": 0.6433748006820679,
+      "non_singleton": 0.6433748006820679,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5997462272644043,
+        0.6870033740997314
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 49,
+      "user": 0.6192110180854797,
+      "community": 0.6429232060909271,
+      "non_singleton": 0.6429232060909271,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6862351894378662,
+        0.599611222743988
+      ]
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 42,
+      "partition_seed": 51,
+      "user": 0.6194276213645935,
+      "community": 0.6431586444377899,
+      "non_singleton": 0.6431586444377899,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5998122096061707,
+        0.6865050792694092
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 42,
+      "user": 0.6093963980674744,
+      "community": 0.6350890398025513,
+      "non_singleton": 0.6350890398025513,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5880582332611084,
+        0.6821198463439941
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 43,
+      "user": 0.6095871925354004,
+      "community": 0.6354939341545105,
+      "non_singleton": 0.6354939341545105,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6828484535217285,
+        0.5881394147872925
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 44,
+      "user": 0.6099379062652588,
+      "community": 0.6360138654708862,
+      "non_singleton": 0.6360138654708862,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5884526968002319,
+        0.6835750341415405
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 45,
+      "user": 0.6095283031463623,
+      "community": 0.6352791786193848,
+      "non_singleton": 0.6352791786193848,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.588243305683136,
+        0.6823150515556335
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 46,
+      "user": 0.6098127961158752,
+      "community": 0.635795384645462,
+      "non_singleton": 0.635795384645462,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5883021950721741,
+        0.68328857421875
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 47,
+      "user": 0.6095436215400696,
+      "community": 0.6352849900722504,
+      "non_singleton": 0.6352849900722504,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6823709011077881,
+        0.5881990790367126
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 48,
+      "user": 0.6095607280731201,
+      "community": 0.6354037821292877,
+      "non_singleton": 0.6354037821292877,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5881994962692261,
+        0.6826080679893494
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 49,
+      "user": 0.6095079183578491,
+      "community": 0.6352804005146027,
+      "non_singleton": 0.6352804005146027,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6823556423187256,
+        0.5882051587104797
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 43,
+      "partition_seed": 51,
+      "user": 0.6095464825630188,
+      "community": 0.6353164613246918,
+      "non_singleton": 0.6353164613246918,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.588245689868927,
+        0.6823872327804565
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 42,
+      "user": 0.6437252163887024,
+      "community": 0.670024037361145,
+      "non_singleton": 0.670024037361145,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.6218836903572083,
+        0.7181643843650818
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 43,
+      "user": 0.64407879114151,
+      "community": 0.6705470085144043,
+      "non_singleton": 0.6705470085144043,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.7189279198646545,
+        0.622166097164154
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 44,
+      "user": 0.644058346748352,
+      "community": 0.6709220111370087,
+      "non_singleton": 0.6709220111370087,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.621924102306366,
+        0.7199199199676514
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 45,
+      "user": 0.6441342234611511,
+      "community": 0.6705632209777832,
+      "non_singleton": 0.6705632209777832,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6222887635231018,
+        0.7188376784324646
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 46,
+      "user": 0.6443911790847778,
+      "community": 0.6709825992584229,
+      "non_singleton": 0.6709825992584229,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.6223766803741455,
+        0.7195885181427002
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 47,
+      "user": 0.6439759731292725,
+      "community": 0.6703609228134155,
+      "non_singleton": 0.6703609228134155,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.7186242341995239,
+        0.6220976114273071
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 48,
+      "user": 0.644025981426239,
+      "community": 0.6705298721790314,
+      "non_singleton": 0.6705298721790314,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6221187114715576,
+        0.7189410328865051
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 49,
+      "user": 0.6438500881195068,
+      "community": 0.6702300608158112,
+      "non_singleton": 0.6702300608158112,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.7184150218963623,
+        0.62204509973526
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 44,
+      "partition_seed": 51,
+      "user": 0.6440421342849731,
+      "community": 0.6705064475536346,
+      "non_singleton": 0.6705064475536346,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6221674680709839,
+        0.7188454270362854
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 42,
+      "user": 0.6339590549468994,
+      "community": 0.6615571677684784,
+      "non_singleton": 0.6615571677684784,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.6110385060310364,
+        0.7120758295059204
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 43,
+      "user": 0.6341214179992676,
+      "community": 0.6619528532028198,
+      "non_singleton": 0.6619528532028198,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.712825357913971,
+        0.6110803484916687
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 44,
+      "user": 0.6348302960395813,
+      "community": 0.662855327129364,
+      "non_singleton": 0.662855327129364,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.6117391586303711,
+        0.7139714956283569
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 45,
+      "user": 0.6340670585632324,
+      "community": 0.6617709398269653,
+      "non_singleton": 0.6617709398269653,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.611167848110199,
+        0.7123740315437317
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 46,
+      "user": 0.6344929337501526,
+      "community": 0.6625238060951233,
+      "non_singleton": 0.6625238060951233,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.6112865805625916,
+        0.713761031627655
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 47,
+      "user": 0.6341577172279358,
+      "community": 0.6618691980838776,
+      "non_singleton": 0.6618691980838776,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.7125589847564697,
+        0.6111794114112854
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 48,
+      "user": 0.6341521739959717,
+      "community": 0.6620156466960907,
+      "non_singleton": 0.6620156466960907,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6111210584640503,
+        0.7129102349281311
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 49,
+      "user": 0.6340084075927734,
+      "community": 0.6617585718631744,
+      "non_singleton": 0.6617585718631744,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.7124463319778442,
+        0.6110708117485046
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 45,
+      "partition_seed": 51,
+      "user": 0.6340765953063965,
+      "community": 0.6618429720401764,
+      "non_singleton": 0.6618429720401764,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6111257076263428,
+        0.71256023645401
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 42,
+      "user": 0.6145294308662415,
+      "community": 0.6396054923534393,
+      "non_singleton": 0.6396054923534393,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5937033295631409,
+        0.6855076551437378
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 43,
+      "user": 0.6147329211235046,
+      "community": 0.6399584710597992,
+      "non_singleton": 0.6399584710597992,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6860678195953369,
+        0.5938491225242615
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 44,
+      "user": 0.6150292754173279,
+      "community": 0.6404916644096375,
+      "non_singleton": 0.6404916644096375,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5940495133399963,
+        0.6869338154792786
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 45,
+      "user": 0.6145716905593872,
+      "community": 0.639689564704895,
+      "non_singleton": 0.639689564704895,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5938099026679993,
+        0.6855692267417908
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 46,
+      "user": 0.6150396466255188,
+      "community": 0.6403548121452332,
+      "non_singleton": 0.6403548121452332,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5940815210342407,
+        0.6866281032562256
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 47,
+      "user": 0.6146547198295593,
+      "community": 0.6397673487663269,
+      "non_singleton": 0.6397673487663269,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6857032775878906,
+        0.5938314199447632
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 48,
+      "user": 0.6147993803024292,
+      "community": 0.6400502324104309,
+      "non_singleton": 0.6400502324104309,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5939276218414307,
+        0.6861728429794312
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 49,
+      "user": 0.6145609617233276,
+      "community": 0.6396740972995758,
+      "non_singleton": 0.6396740972995758,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6855450868606567,
+        0.5938031077384949
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 46,
+      "partition_seed": 51,
+      "user": 0.614628255367279,
+      "community": 0.6397793889045715,
+      "non_singleton": 0.6397793889045715,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5938390493392944,
+        0.6857197284698486
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 42,
+      "user": 0.5898050665855408,
+      "community": 0.6168633103370667,
+      "non_singleton": 0.6168633103370667,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5673328042030334,
+        0.6663938164710999
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 43,
+      "user": 0.5902636051177979,
+      "community": 0.6175839304924011,
+      "non_singleton": 0.6175839304924011,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6675223708152771,
+        0.5676454901695251
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 44,
+      "user": 0.5905376672744751,
+      "community": 0.6179573237895966,
+      "non_singleton": 0.6179573237895966,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5679452419281006,
+        0.6679694056510925
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 45,
+      "user": 0.5902266502380371,
+      "community": 0.6174635589122772,
+      "non_singleton": 0.6174635589122772,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5677134394645691,
+        0.6672136783599854
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 46,
+      "user": 0.5904284119606018,
+      "community": 0.6178074479103088,
+      "non_singleton": 0.6178074479103088,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5677617788314819,
+        0.6678531169891357
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 47,
+      "user": 0.5899642109870911,
+      "community": 0.6172291040420532,
+      "non_singleton": 0.6172291040420532,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6671020984649658,
+        0.5673561096191406
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 48,
+      "user": 0.5900999307632446,
+      "community": 0.6173662543296814,
+      "non_singleton": 0.6173662543296814,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5675623416900635,
+        0.6671701669692993
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 49,
+      "user": 0.589969277381897,
+      "community": 0.6172385811805725,
+      "non_singleton": 0.6172385811805725,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6670480370521545,
+        0.5674291253089905
+      ]
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 47,
+      "partition_seed": 51,
+      "user": 0.5900410413742065,
+      "community": 0.6172434091567993,
+      "non_singleton": 0.6172434091567993,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5675564408302307,
+        0.6669303774833679
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 42,
+      "user": 0.612170934677124,
+      "community": 0.6371125876903534,
+      "non_singleton": 0.6371125876903534,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5914565920829773,
+        0.6827685832977295
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 43,
+      "user": 0.6123130321502686,
+      "community": 0.6375178396701813,
+      "non_singleton": 0.6375178396701813,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6835892796516418,
+        0.5914463996887207
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 44,
+      "user": 0.6125764846801758,
+      "community": 0.6379533112049103,
+      "non_singleton": 0.6379533112049103,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5916672348976135,
+        0.684239387512207
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 45,
+      "user": 0.6120118498802185,
+      "community": 0.6371460855007172,
+      "non_singleton": 0.6371460855007172,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5912366509437561,
+        0.6830555200576782
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 46,
+      "user": 0.6125968098640442,
+      "community": 0.6378724575042725,
+      "non_singleton": 0.6378724575042725,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5916715264320374,
+        0.6840733885765076
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 47,
+      "user": 0.6121640801429749,
+      "community": 0.6372917592525482,
+      "non_singleton": 0.6372917592525482,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6832551956176758,
+        0.5913283228874207
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 48,
+      "user": 0.6122205853462219,
+      "community": 0.6374845802783966,
+      "non_singleton": 0.6374845802783966,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5913381576538086,
+        0.6836310029029846
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 49,
+      "user": 0.6120582222938538,
+      "community": 0.6372079253196716,
+      "non_singleton": 0.6372079253196716,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6831457018852234,
+        0.5912701487541199
+      ]
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 48,
+      "partition_seed": 51,
+      "user": 0.6120875477790833,
+      "community": 0.6372582912445068,
+      "non_singleton": 0.6372582912445068,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5912821292877197,
+        0.683234453201294
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 42,
+      "user": 0.6127294898033142,
+      "community": 0.6362058520317078,
+      "non_singleton": 0.6362058520317078,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5932320356369019,
+        0.6791796684265137
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 43,
+      "user": 0.6128184199333191,
+      "community": 0.6364872753620148,
+      "non_singleton": 0.6364872753620148,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6797511577606201,
+        0.5932233929634094
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 44,
+      "user": 0.6134353876113892,
+      "community": 0.6372664570808411,
+      "non_singleton": 0.6372664570808411,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5937997102737427,
+        0.6807332038879395
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 45,
+      "user": 0.6128376722335815,
+      "community": 0.6363373696804047,
+      "non_singleton": 0.6363373696804047,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5934135913848877,
+        0.6792611479759216
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 46,
+      "user": 0.6130887269973755,
+      "community": 0.6368380188941956,
+      "non_singleton": 0.6368380188941956,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5934270024299622,
+        0.680249035358429
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 47,
+      "user": 0.6129113435745239,
+      "community": 0.636449009180069,
+      "non_singleton": 0.636449009180069,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6795039772987366,
+        0.5933940410614014
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 48,
+      "user": 0.6128917932510376,
+      "community": 0.6365146338939667,
+      "non_singleton": 0.6365146338939667,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5933658480644226,
+        0.6796634197235107
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 49,
+      "user": 0.6128091216087341,
+      "community": 0.6363799571990967,
+      "non_singleton": 0.6363799571990967,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.6794338226318359,
+        0.5933260917663574
+      ]
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 49,
+      "partition_seed": 51,
+      "user": 0.6129302978515625,
+      "community": 0.6365271508693695,
+      "non_singleton": 0.6365271508693695,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5934259295463562,
+        0.6796283721923828
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 42,
+      "user": 0.6418781876564026,
+      "community": 0.6685468852519989,
+      "non_singleton": 0.6685468852519989,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.6197294592857361,
+        0.7173643112182617
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 43,
+      "user": 0.6419187784194946,
+      "community": 0.6688835024833679,
+      "non_singleton": 0.6688835024833679,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.7181719541549683,
+        0.6195950508117676
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 44,
+      "user": 0.6427714228630066,
+      "community": 0.6699183881282806,
+      "non_singleton": 0.6699183881282806,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.6204037070274353,
+        0.719433069229126
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 45,
+      "user": 0.6417112350463867,
+      "community": 0.6685604453086853,
+      "non_singleton": 0.6685604453086853,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6195184588432312,
+        0.7176024317741394
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 46,
+      "user": 0.6422715187072754,
+      "community": 0.6693457663059235,
+      "non_singleton": 0.6693457663059235,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.6198573112487793,
+        0.7188342213630676
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 47,
+      "user": 0.6418663263320923,
+      "community": 0.6686795651912689,
+      "non_singleton": 0.6686795651912689,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.7177262902259827,
+        0.6196328401565552
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 48,
+      "user": 0.6417860388755798,
+      "community": 0.6688092350959778,
+      "non_singleton": 0.6688092350959778,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.6194494366645813,
+        0.7181690335273743
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 49,
+      "user": 0.6416472792625427,
+      "community": 0.6685197949409485,
+      "non_singleton": 0.6685197949409485,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.7176042199134827,
+        0.6194353699684143
+      ]
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 50,
+      "partition_seed": 51,
+      "user": 0.6418570280075073,
+      "community": 0.6687069833278656,
+      "non_singleton": 0.6687069833278656,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.619663655757904,
+        0.7177503108978271
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 42,
+      "user": 0.609647810459137,
+      "community": 0.6347764730453491,
+      "non_singleton": 0.6347764730453491,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5887781381607056,
+        0.6807748079299927
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 43,
+      "user": 0.6097535490989685,
+      "community": 0.635097861289978,
+      "non_singleton": 0.635097861289978,
+      "communities": 2,
+      "sizes": [
+        1152,
+        3935
+      ],
+      "community_scores": [
+        0.6814243793487549,
+        0.5887713432312012
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 44,
+      "user": 0.6102644801139832,
+      "community": 0.6358306407928467,
+      "non_singleton": 0.6358306407928467,
+      "communities": 2,
+      "sizes": [
+        3938,
+        1149
+      ],
+      "community_scores": [
+        0.5891991257667542,
+        0.6824621558189392
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 45,
+      "user": 0.6097574234008789,
+      "community": 0.6349432170391083,
+      "non_singleton": 0.6349432170391083,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5889395475387573,
+        0.6809468865394592
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 46,
+      "user": 0.6099897027015686,
+      "community": 0.6354687809944153,
+      "non_singleton": 0.6354687809944153,
+      "communities": 2,
+      "sizes": [
+        3935,
+        1152
+      ],
+      "community_scores": [
+        0.5888959169387817,
+        0.6820416450500488
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 47,
+      "user": 0.6097975373268127,
+      "community": 0.6349968314170837,
+      "non_singleton": 0.6349968314170837,
+      "communities": 2,
+      "sizes": [
+        1153,
+        3934
+      ],
+      "community_scores": [
+        0.6810912489891052,
+        0.5889024138450623
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 48,
+      "user": 0.6098140478134155,
+      "community": 0.6351154446601868,
+      "non_singleton": 0.6351154446601868,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5889005661010742,
+        0.6813303232192993
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 49,
+      "user": 0.609664261341095,
+      "community": 0.6348763704299927,
+      "non_singleton": 0.6348763704299927,
+      "communities": 2,
+      "sizes": [
+        1151,
+        3936
+      ],
+      "community_scores": [
+        0.680928111076355,
+        0.5888246297836304
+      ]
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 50,
+      "user": null,
+      "community": null,
+      "non_singleton": null,
+      "communities": 1,
+      "sizes": [
+        5087
+      ],
+      "reason": "one_community_no_between_distance"
+    },
+    {
+      "fit_seed": 51,
+      "partition_seed": 51,
+      "user": 0.6097451448440552,
+      "community": 0.6350370049476624,
+      "non_singleton": 0.6350370049476624,
+      "communities": 2,
+      "sizes": [
+        3936,
+        1151
+      ],
+      "community_scores": [
+        0.5888397693634033,
+        0.6812342405319214
+      ]
+    }
+  ],
+  "native_score_check": {
+    "native": 0.6193335652351379,
+    "efficient": 0.6193335652351379,
+    "absolute_difference": 0.0
+  },
+  "architecture": [
+    {
+      "fit_seed": 42,
+      "user": 0.5896360278129578,
+      "community": 0.6094912588596344,
+      "non_singleton": 0.6094912588596344,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5731459259986877,
+        0.645836591720581
+      ]
+    },
+    {
+      "fit_seed": 43,
+      "user": 0.5966776013374329,
+      "community": 0.6148205995559692,
+      "non_singleton": 0.6148205995559692,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5816094875335693,
+        0.6480317115783691
+      ]
+    },
+    {
+      "fit_seed": 44,
+      "user": 0.5950343012809753,
+      "community": 0.616055428981781,
+      "non_singleton": 0.616055428981781,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5775758624076843,
+        0.6545349955558777
+      ]
+    },
+    {
+      "fit_seed": 45,
+      "user": 0.6008370518684387,
+      "community": 0.6147956252098083,
+      "non_singleton": 0.6147956252098083,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5892442464828491,
+        0.6403470039367676
+      ]
+    },
+    {
+      "fit_seed": 46,
+      "user": 0.5985922813415527,
+      "community": 0.6176504790782928,
+      "non_singleton": 0.6176504790782928,
+      "communities": 2,
+      "sizes": [
+        3933,
+        1154
+      ],
+      "community_scores": [
+        0.5827641487121582,
+        0.6525368094444275
+      ]
+    }
+  ],
+  "domain_controls": [
+    {
+      "hidden": 20,
+      "inputs": {
+        "raw_graph_sha256": "c52604d16ddb7abd51b7789e3e6f093d93522c68b49a8a55c0252ed1eada33e3",
+        "feature_sha256": "26ceb25e563cf0257c57ba93e9be22d82da4855fc11c5b90a1e3a7a908f7ca3b",
+        "ordered_user_hash": "99bf0121a52f8b340f523b219b3dd7b878f35cf8422edb3c92075a27497dac9d",
+        "n": 5088,
+        "m": 10572,
+        "self_loops": 56,
+        "domain": "full_feature_covered"
+      },
+      "user": 0.6164435744285583,
+      "community": 0.7573843002319336,
+      "non_singleton": 0.6360764503479004,
+      "communities": 3,
+      "sizes": [
+        3933,
+        1154,
+        1
+      ],
+      "community_scores": [
+        0.6000002026557922,
+        0.6721526980400085,
+        1.0
+      ]
+    },
+    {
+      "hidden": 100,
+      "inputs": {
+        "raw_graph_sha256": "c52604d16ddb7abd51b7789e3e6f093d93522c68b49a8a55c0252ed1eada33e3",
+        "feature_sha256": "26ceb25e563cf0257c57ba93e9be22d82da4855fc11c5b90a1e3a7a908f7ca3b",
+        "ordered_user_hash": "99bf0121a52f8b340f523b219b3dd7b878f35cf8422edb3c92075a27497dac9d",
+        "n": 5088,
+        "m": 10572,
+        "self_loops": 56,
+        "domain": "full_feature_covered"
+      },
+      "user": 0.5833776593208313,
+      "community": 0.7376155654589335,
+      "non_singleton": 0.6064233481884003,
+      "communities": 3,
+      "sizes": [
+        3933,
+        1154,
+        1
+      ],
+      "community_scores": [
+        0.5640879273414612,
+        0.6487587690353394,
+        1.0
+      ]
+    }
+  ],
+  "structural": {
+    "original_structure": {
+      "triangles": 149,
+      "clustering": 0.016695835712135853,
+      "cross_community_fraction": 0.015785469760365156,
+      "components": 1,
+      "largest_component": 5087
+    },
+    "baseline": {
+      "42": {
+        "user": 0.6193335652351379,
+        "community": 0.6429801881313324,
+        "non_singleton": 0.6429801881313324,
+        "communities": 2,
+        "sizes": [
+          3933,
+          1154
+        ],
+        "community_scores": [
+          0.5996947288513184,
+          0.6862656474113464
+        ]
+      },
+      "43": {
+        "user": 0.6093963980674744,
+        "community": 0.6350890398025513,
+        "non_singleton": 0.6350890398025513,
+        "communities": 2,
+        "sizes": [
+          3933,
+          1154
+        ],
+        "community_scores": [
+          0.5880582332611084,
+          0.6821198463439941
+        ]
+      },
+      "44": {
+        "user": 0.6437252163887024,
+        "community": 0.670024037361145,
+        "non_singleton": 0.670024037361145,
+        "communities": 2,
+        "sizes": [
+          3933,
+          1154
+        ],
+        "community_scores": [
+          0.6218836903572083,
+          0.7181643843650818
+        ]
+      }
+    },
+    "runs": [
+      {
+        "structure": {
+          "seed": 100,
+          "mode": "closure",
+          "proposals": 100000,
+          "accepted": 118,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": true,
+          "triangles": 0,
+          "clustering": 0.0,
+          "cross_community_fraction": 0.015785469760365156,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.6262887120246887,
+            "community": 0.6493120789527893,
+            "non_singleton": 0.6493120789527893,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6071674227714539,
+              0.6914567351341248
+            ],
+            "delta_user": 0.006955146789550781,
+            "delta_community": 0.006331890821456909
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.6120386123657227,
+            "community": 0.6356435120105743,
+            "non_singleton": 0.6356435120105743,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5924345254898071,
+              0.6788524985313416
+            ],
+            "delta_user": 0.002642214298248291,
+            "delta_community": 0.0005544722080230713
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.6331003904342651,
+            "community": 0.6556972563266754,
+            "non_singleton": 0.6556972563266754,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6143332719802856,
+              0.6970612406730652
+            ],
+            "delta_user": -0.010624825954437256,
+            "delta_community": -0.014326781034469604
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 101,
+          "mode": "closure",
+          "proposals": 100000,
+          "accepted": 125,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": true,
+          "triangles": 0,
+          "clustering": 0.0,
+          "cross_community_fraction": 0.015785469760365156,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.62852942943573,
+            "community": 0.6494392454624176,
+            "non_singleton": 0.6494392454624176,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6111634969711304,
+              0.6877149939537048
+            ],
+            "delta_user": 0.009195864200592041,
+            "delta_community": 0.006459057331085205
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.605601966381073,
+            "community": 0.6271722614765167,
+            "non_singleton": 0.6271722614765167,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5876874923706055,
+              0.666657030582428
+            ],
+            "delta_user": -0.003794431686401367,
+            "delta_community": -0.007916778326034546
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.6308361291885376,
+            "community": 0.6541755795478821,
+            "non_singleton": 0.6541755795478821,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6114524602890015,
+              0.6968986988067627
+            ],
+            "delta_user": -0.012889087200164795,
+            "delta_community": -0.01584845781326294
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 102,
+          "mode": "closure",
+          "proposals": 100000,
+          "accepted": 106,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": true,
+          "triangles": 0,
+          "clustering": 0.0,
+          "cross_community_fraction": 0.015785469760365156,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.6232455968856812,
+            "community": 0.6422674357891083,
+            "non_singleton": 0.6422674357891083,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6074478030204773,
+              0.6770870685577393
+            ],
+            "delta_user": 0.003912031650543213,
+            "delta_community": -0.0007127523422241211
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.616178572177887,
+            "community": 0.6367793381214142,
+            "non_singleton": 0.6367793381214142,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5990692973136902,
+              0.6744893789291382
+            ],
+            "delta_user": 0.006782174110412598,
+            "delta_community": 0.001690298318862915
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.6176576614379883,
+            "community": 0.6425383388996124,
+            "non_singleton": 0.6425383388996124,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5969938039779663,
+              0.6880828738212585
+            ],
+            "delta_user": -0.02606755495071411,
+            "delta_community": -0.027485698461532593
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 103,
+          "mode": "closure",
+          "proposals": 100000,
+          "accepted": 114,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": true,
+          "triangles": 0,
+          "clustering": 0.0,
+          "cross_community_fraction": 0.015785469760365156,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.6296533346176147,
+            "community": 0.6510810852050781,
+            "non_singleton": 0.6510810852050781,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6118571162223816,
+              0.6903050541877747
+            ],
+            "delta_user": 0.010319769382476807,
+            "delta_community": 0.008100897073745728
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.6126251816749573,
+            "community": 0.6360323429107666,
+            "non_singleton": 0.6360323429107666,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5931851267814636,
+              0.6788795590400696
+            ],
+            "delta_user": 0.00322878360748291,
+            "delta_community": 0.000943303108215332
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.6188690066337585,
+            "community": 0.6403458416461945,
+            "non_singleton": 0.6403458416461945,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6010321974754333,
+              0.6796594858169556
+            ],
+            "delta_user": -0.024856209754943848,
+            "delta_community": -0.02967819571495056
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 104,
+          "mode": "closure",
+          "proposals": 100000,
+          "accepted": 123,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": true,
+          "triangles": 0,
+          "clustering": 0.0,
+          "cross_community_fraction": 0.015785469760365156,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.6214580535888672,
+            "community": 0.6397946774959564,
+            "non_singleton": 0.6397946774959564,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6062292456626892,
+              0.6733601093292236
+            ],
+            "delta_user": 0.002124488353729248,
+            "delta_community": -0.0031855106353759766
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.597269594669342,
+            "community": 0.6189849376678467,
+            "non_singleton": 0.6189849376678467,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5792346000671387,
+              0.6587352752685547
+            ],
+            "delta_user": -0.012126803398132324,
+            "delta_community": -0.01610410213470459
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.6394880414009094,
+            "community": 0.6583351194858551,
+            "non_singleton": 0.6583351194858551,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.6238352060317993,
+              0.6928350329399109
+            ],
+            "delta_user": -0.004237174987792969,
+            "delta_community": -0.011688917875289917
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 100,
+          "mode": "mixing",
+          "proposals": 107458,
+          "accepted": 105160,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": false,
+          "triangles": 431,
+          "clustering": 0.00819101298896048,
+          "cross_community_fraction": 0.34252567516165844,
+          "components": 2,
+          "largest_component": 5085
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.5027007460594177,
+            "community": 0.5024898052215576,
+            "non_singleton": 0.5024898052215576,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5028759837150574,
+              0.5021036267280579
+            ],
+            "delta_user": -0.11663281917572021,
+            "delta_community": -0.14049038290977478
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.49803948402404785,
+            "community": 0.5032280385494232,
+            "non_singleton": 0.5032280385494232,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.4937303066253662,
+              0.5127257704734802
+            ],
+            "delta_user": -0.11135691404342651,
+            "delta_community": -0.13186100125312805
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.5004568099975586,
+            "community": 0.5034912377595901,
+            "non_singleton": 0.5034912377595901,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.4979366362094879,
+              0.5090458393096924
+            ],
+            "delta_user": -0.1432684063911438,
+            "delta_community": -0.16653279960155487
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 101,
+          "mode": "mixing",
+          "proposals": 107420,
+          "accepted": 105160,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": false,
+          "triangles": 424,
+          "clustering": 0.010300704210526727,
+          "cross_community_fraction": 0.3375808292126284,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.5027869343757629,
+            "community": 0.5029958784580231,
+            "non_singleton": 0.5029958784580231,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5026134848594666,
+              0.5033782720565796
+            ],
+            "delta_user": -0.116546630859375,
+            "delta_community": -0.13998430967330933
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.5004112720489502,
+            "community": 0.5032936036586761,
+            "non_singleton": 0.5032936036586761,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.4980176091194153,
+              0.508569598197937
+            ],
+            "delta_user": -0.10898512601852417,
+            "delta_community": -0.13179543614387512
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.5021375417709351,
+            "community": 0.5029202699661255,
+            "non_singleton": 0.5029202699661255,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5014875531196594,
+              0.5043529868125916
+            ],
+            "delta_user": -0.14158767461776733,
+            "delta_community": -0.16710376739501953
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 102,
+          "mode": "mixing",
+          "proposals": 107420,
+          "accepted": 105160,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": false,
+          "triangles": 483,
+          "clustering": 0.010674018315316168,
+          "cross_community_fraction": 0.34347660707493344,
+          "components": 2,
+          "largest_component": 5085
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.5086750984191895,
+            "community": 0.5032113343477249,
+            "non_singleton": 0.5032113343477249,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5132128596305847,
+              0.4932098090648651
+            ],
+            "delta_user": -0.11065846681594849,
+            "delta_community": -0.13976885378360748
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.5054026246070862,
+            "community": 0.5026815980672836,
+            "non_singleton": 0.5026815980672836,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5076625347137451,
+              0.49770066142082214
+            ],
+            "delta_user": -0.10399377346038818,
+            "delta_community": -0.13240744173526764
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.5048972964286804,
+            "community": 0.5037655532360077,
+            "non_singleton": 0.5037655532360077,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5058372020721436,
+              0.5016939043998718
+            ],
+            "delta_user": -0.13882791996002197,
+            "delta_community": -0.16625848412513733
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 103,
+          "mode": "mixing",
+          "proposals": 107433,
+          "accepted": 105160,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": false,
+          "triangles": 473,
+          "clustering": 0.009098903849918434,
+          "cross_community_fraction": 0.3392925066565234,
+          "components": 3,
+          "largest_component": 5083
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.5109022259712219,
+            "community": 0.503330647945404,
+            "non_singleton": 0.503330647945404,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5171904563903809,
+              0.48947083950042725
+            ],
+            "delta_user": -0.10843133926391602,
+            "delta_community": -0.13964954018592834
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.5047032237052917,
+            "community": 0.502490684390068,
+            "non_singleton": 0.502490684390068,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5065407752990723,
+              0.49844059348106384
+            ],
+            "delta_user": -0.10469317436218262,
+            "delta_community": -0.13259835541248322
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.506162703037262,
+            "community": 0.502274215221405,
+            "non_singleton": 0.502274215221405,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5093921422958374,
+              0.49515628814697266
+            ],
+            "delta_user": -0.13756251335144043,
+            "delta_community": -0.16774982213974
+          }
+        ]
+      },
+      {
+        "structure": {
+          "seed": 104,
+          "mode": "mixing",
+          "proposals": 107377,
+          "accepted": 105160,
+          "per_vertex_degree_preserved": true,
+          "per_vertex_community_degree_preserved": false,
+          "triangles": 444,
+          "clustering": 0.008852158328216973,
+          "cross_community_fraction": 0.3373906428299734,
+          "components": 1,
+          "largest_component": 5087
+        },
+        "fits": [
+          {
+            "fit_seed": 42,
+            "user": 0.5068557262420654,
+            "community": 0.5044261068105698,
+            "non_singleton": 0.5044261068105698,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.508873462677002,
+              0.4999787509441376
+            ],
+            "delta_user": -0.11247783899307251,
+            "delta_community": -0.13855408132076263
+          },
+          {
+            "fit_seed": 43,
+            "user": 0.5029815435409546,
+            "community": 0.5028438568115234,
+            "non_singleton": 0.5028438568115234,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.503095805644989,
+              0.5025919079780579
+            ],
+            "delta_user": -0.10641485452651978,
+            "delta_community": -0.13224518299102783
+          },
+          {
+            "fit_seed": 44,
+            "user": 0.5068399906158447,
+            "community": 0.5052706003189087,
+            "non_singleton": 0.5052706003189087,
+            "communities": 2,
+            "sizes": [
+              3933,
+              1154
+            ],
+            "community_scores": [
+              0.5081433653831482,
+              0.5023978352546692
+            ],
+            "delta_user": -0.13688522577285767,
+            "delta_community": -0.16475343704223633
+          }
+        ]
+      }
+    ]
+  }
+}

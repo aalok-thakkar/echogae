@@ -1,0 +1,36 @@
+{
+  "isolated_environment": "experiments/build/venv_clean",
+  "python": "3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "max_embedding_difference_from_primary": 0.0,
+  "max_embedding_difference_from_unmodified_upstream": 0.0,
+  "scores": {
+    "user": 0.47229620814323425,
+    "community": 0.6427887320518494,
+    "non_singleton": 0.6427887320518494,
+    "communities": 5,
+    "sizes": [
+      1568,
+      712,
+      85,
+      54,
+      17
+    ],
+    "community_scores": [
+      0.4682352542877197,
+      0.4116666913032532,
+      0.7819483876228333,
+      0.8206168413162231,
+      0.7314764857292175
+    ]
+  },
+  "inputs": {
+    "raw_graph_sha256": "133b871e7647c1bedaba126626321cdd01083c51e77c0e0f635f94a9c8607884",
+    "feature_sha256": "e5a34b71a6eb9f811e2cd51f925546a44a4a88ed0ad21b2e3909b67b24de1b0e",
+    "ordered_user_hash": "a8719295a6326c4adde3c56b0068b7009558f6e580aba17d1dacf4079c630ca2",
+    "n": 2436,
+    "m": 5325,
+    "self_loops": 38,
+    "domain": "largest_component"
+  },
+  "scope": "Seed42 SXSW 300-epoch reference case, not a rerun of every experimental cell."
+}

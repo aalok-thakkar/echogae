@@ -1,0 +1,35 @@
+--- upstream/src/EchoGAE.py
++++ controlled/src/EchoGAE.py
+@@ -24,7 +24,9 @@
+     epochs=300,
+     hidden_channels=100,
+     out_channels=50,
++    seed=42,
+ ) -> np.ndarray:
++    torch.manual_seed(seed)
+     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+ 
+     # Create node features
+@@ -52,6 +54,7 @@
+         epochs=epochs,
+         hidden_channels=hidden_channels,
+         out_channels=out_channels,
++        seed=seed,
+     )
+ 
+     # Embedding
+--- upstream/src/GAE.py
++++ controlled/src/GAE.py
+@@ -43,9 +43,10 @@
+     return model.test(z, pos_edge_index, neg_edge_index)
+ 
+ 
+-def run(data, hidden_channels, out_channels=10, epochs=300, show_progress=True):
++def run(data, hidden_channels, out_channels=10, epochs=300, show_progress=True,
++        seed=42):
+     # set the seed
+-    torch.manual_seed(42)
++    torch.manual_seed(seed)
+ 
+     num_features = data.num_features
+ 

@@ -1,0 +1,32 @@
+{
+  "topics": {
+    "gun": {
+      "result_sha256": "efac2471e4f6657c9d82223ea0a129549df509b747812ff3b0c52c731525df77",
+      "primary_score_max_abs_error": 0,
+      "input_verified": true
+    },
+    "abortion": {
+      "result_sha256": "266bdf3b3f4eecb204852fd4c9955db9ff29c1161448ba6d7b2693e90e6896b4",
+      "primary_score_max_abs_error": 0,
+      "input_verified": true
+    },
+    "super_bowl": {
+      "result_sha256": "58cf2aaf1ec5e3848d98c2c129bdedc0f1dea48cfdb0f35b71028123b7a3a94a",
+      "primary_score_max_abs_error": 0,
+      "input_verified": true
+    },
+    "sxsw": {
+      "result_sha256": "73646655e604a2aa70122e832bd84bd9d2fbb205692f5eaa5ebaccc2459a3854",
+      "primary_score_max_abs_error": 0,
+      "input_verified": true
+    }
+  },
+  "graph_checks": 40,
+  "fit_arrays": 188,
+  "primary_score_cells": 400,
+  "controlled_model_sha256": {
+    "EchoGAE.py": "8c41f7551a9038cdea87abc4c75a326e8e68d736eff5618fc3fe772f928b88a0",
+    "GAE.py": "88ac3896153e1af9acaa6d7e3f99a26219ca2e7cfc99df38785f504f1570cc83"
+  },
+  "pinned_source_files_checked": 9
+}

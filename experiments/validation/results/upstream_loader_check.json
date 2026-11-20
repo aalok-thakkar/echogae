@@ -1,0 +1,50 @@
+{
+  "sxsw": {
+    "nodes": 2436,
+    "edges": 5325,
+    "graph_matches": true,
+    "features_match_exactly": true,
+    "partition_matches": true,
+    "sizes": [
+      1568,
+      712,
+      85,
+      54,
+      17
+    ]
+  },
+  "super_bowl": {
+    "nodes": 5460,
+    "edges": 8732,
+    "graph_matches": true,
+    "features_match_exactly": true,
+    "partition_matches": true,
+    "sizes": [
+      5346,
+      23,
+      91
+    ]
+  },
+  "abortion": {
+    "nodes": 5087,
+    "edges": 10572,
+    "graph_matches": true,
+    "features_match_exactly": true,
+    "partition_matches": true,
+    "sizes": [
+      3933,
+      1154
+    ]
+  },
+  "gun": {
+    "nodes": 6566,
+    "edges": 14322,
+    "graph_matches": true,
+    "features_match_exactly": true,
+    "partition_matches": true,
+    "sizes": [
+      3985,
+      2581
+    ]
+  }
+}

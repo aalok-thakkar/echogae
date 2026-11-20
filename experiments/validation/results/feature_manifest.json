@@ -1,0 +1,72 @@
+{
+  "device": "mps",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "model_files": {
+    "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "README.md": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+    "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+  },
+  "topics": {
+    "sxsw": {
+      "users": 2464,
+      "cached_users": 2464,
+      "same_user_set": true,
+      "max_abs_difference": 0.006303447298705578,
+      "median_max_abs_difference": 2.60770320892334e-08,
+      "minimum_cosine_similarity": 0.9984867572784424,
+      "seconds": 219.25864911079407,
+      "feature_sha256": "e5a34b71a6eb9f811e2cd51f925546a44a4a88ed0ad21b2e3909b67b24de1b0e",
+      "encoded_tweets": 417093,
+      "raw_tweets_sha256": "292046983378db9f1cfd113203f6abca08a364cd32bac64c8a9ff5523c76e6ee"
+    },
+    "super_bowl": {
+      "users": 5463,
+      "cached_users": 5463,
+      "same_user_set": true,
+      "max_abs_difference": 0.01206142082810402,
+      "median_max_abs_difference": 2.60770320892334e-08,
+      "minimum_cosine_similarity": 0.9965861439704895,
+      "seconds": 18605.593316078186,
+      "feature_sha256": "0228d17d558ef4df0bdfee00221a56031e7c846ab2e5db4c73ac2562e3a58454",
+      "encoded_tweets": 480445,
+      "raw_tweets_sha256": "ec1e8c59dc6381f7ac95fc7ee7debe8ec8e62b8d573056697f04af69e11f0479"
+    },
+    "abortion": {
+      "users": 5088,
+      "cached_users": 5088,
+      "same_user_set": true,
+      "max_abs_difference": 0.0004413016140460968,
+      "median_max_abs_difference": 2.2351741790771484e-08,
+      "minimum_cosine_similarity": 0.999984622001648,
+      "seconds": 528.8117921352386,
+      "feature_sha256": "26ceb25e563cf0257c57ba93e9be22d82da4855fc11c5b90a1e3a7a908f7ca3b",
+      "encoded_tweets": 1003083,
+      "raw_tweets_sha256": "8d908ca05088853d20e0e12094e981d70319016f80e1a5b2b07e31d8f797958b"
+    },
+    "gun": {
+      "users": 6913,
+      "cached_users": 6913,
+      "same_user_set": true,
+      "max_abs_difference": 0.00044288113713264465,
+      "median_max_abs_difference": 2.514570951461792e-08,
+      "minimum_cosine_similarity": 0.9999909996986389,
+      "seconds": 508.236878156662,
+      "feature_sha256": "a3ffc3b8312ccf581d2c4eeabf93b1760e139f603485942f38826aa7e1ac132f",
+      "encoded_tweets": 1085126,
+      "raw_tweets_sha256": "c4bfb4a1a6a5169cb9a5c26f8dca3d6582e6f4d9ecd71979fa2347831af2fbc3"
+    }
+  },
+  "batch_size": 128,
+  "users_per_encoding_block": 100,
+  "torch_threads": 2,
+  "preprocessing_sha256": "996b4a362209a232dc5bde1105e30440c44c7e2ff88bdbf204c49a5b1f2156f5",
+  "manifest_note": "Encoding counts and input hashes completed from the saved run log and checked raw files after extraction."
+}

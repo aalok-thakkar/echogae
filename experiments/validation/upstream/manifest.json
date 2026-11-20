@@ -1,0 +1,109 @@
+{
+  "repository": "https://github.com/faalatawi/echo-chamber-score",
+  "commit": "062633017c9ea886b15d099f8370bbef447ecb5c",
+  "files": {
+    "src/EchoGAE.py": {
+      "sha256": "e1913a4df4e85611f55006aa7036cf754c8e4f2478fe17487233623c7229f320",
+      "matches_local": false
+    },
+    "src/GAE.py": {
+      "sha256": "a92bd27ec5be32b3e9bd948c5af13af3a6d80a3248f795e987d5543fffc3805c",
+      "matches_local": false
+    },
+    "src/load_data.py": {
+      "sha256": "a2edf8a0aee36131adca1a7b43e4a8d34aa1111aeae51f4945ba335b3a86ca84",
+      "matches_local": true
+    },
+    "src/echo_chamber_measure.py": {
+      "sha256": "012e2d5b65ba4954f4a0eb0e6f1f055587e1ab5b4be30492ef7727b4a8a276e6",
+      "matches_local": true
+    },
+    "src/tweet_preprocessing.py": {
+      "sha256": "996b4a362209a232dc5bde1105e30440c44c7e2ff88bdbf204c49a5b1f2156f5",
+      "matches_local": true
+    },
+    "expt_1_echo_chamber_score.ipynb": {
+      "sha256": "0a03620af01b694735224350699dfb69440ab03862dc5a634942e5c42ac19d3f",
+      "matches_local": true
+    },
+    "environment.yml": {
+      "sha256": "2451518537805ffe422c97351d16494981ca54ed369a6dd8804032923fc525a1",
+      "matches_local": true
+    },
+    "LICENSE": {
+      "sha256": "40a32d987fd86356c89a71678b40a092f6b317969044644729e965d06cb35931",
+      "matches_local": true
+    },
+    "README.md": {
+      "sha256": "f8fef8ee451fe0bbe984e5d890c7252f61749cbe154ce78c180d877c8877df78",
+      "matches_local": true
+    }
+  },
+  "data_git_blob_matches": {
+    "data/abortion/allsides.feather": {
+      "git_blob": "2ac3708d78c94dbb37d981c49f89d020573c352d",
+      "matches_local": true,
+      "sha256": "154ab7963659d0f975a0e3bb423054c878787916de6c2949e398e619b91fdbb6"
+    },
+    "data/abortion/graph.gml": {
+      "git_blob": "156847c7d591c095f38906f9a8b9bdfe9675ac47",
+      "matches_local": true,
+      "sha256": "c52604d16ddb7abd51b7789e3e6f093d93522c68b49a8a55c0252ed1eada33e3"
+    },
+    "data/abortion/tweets.feather": {
+      "git_blob": "f617b9194724b9792df45e1c0f4f7c8a98f99610",
+      "matches_local": true,
+      "sha256": "8d908ca05088853d20e0e12094e981d70319016f80e1a5b2b07e31d8f797958b"
+    },
+    "data/gun/allsides.feather": {
+      "git_blob": "6dc5f6f89f153c31d978361d8de3d08de7f5c686",
+      "matches_local": true,
+      "sha256": "56bd5fb2579a6f3d5ed840aca49698eb5568d98e18772017792e0da6c2056bb3"
+    },
+    "data/gun/graph.gml": {
+      "git_blob": "873c0b6780a1948cde98edf4597d02c31581ac1e",
+      "matches_local": true,
+      "sha256": "3dad44ccaaca44237cc3791b3ed02ed0aa49c14f84fa67d735ae25692ed9998e"
+    },
+    "data/gun/tweets.feather": {
+      "git_blob": "be61dc7eb1b136de2ea1e3f480ba3c0b681bd6cf",
+      "matches_local": true,
+      "sha256": "c4bfb4a1a6a5169cb9a5c26f8dca3d6582e6f4d9ecd71979fa2347831af2fbc3"
+    },
+    "data/readme.md": {
+      "git_blob": "0d9b8fa537e7114939978610c6d4ffccc7939953",
+      "matches_local": true,
+      "sha256": "e9b6f88fd0835e0da6e37be2ce5588e963210bc4e4a22a54cc934c6f39f7d536"
+    },
+    "data/super_bowl/allsides.feather": {
+      "git_blob": "08b6a9b777e56c5be04686dcfc2ac569daa3fd25",
+      "matches_local": true,
+      "sha256": "49f4eebbb7912cc8232edb6fc3d47ff306457e42c05518527cf39e4693ea38c0"
+    },
+    "data/super_bowl/graph.gml": {
+      "git_blob": "c7ba75ea684767d6af81df48aa5727de1c1a6a86",
+      "matches_local": true,
+      "sha256": "ac81c13ace38a3218ad343bc972497591ac1f1d5d5999162901a6cc67f859df5"
+    },
+    "data/super_bowl/tweets.feather": {
+      "git_blob": "15332526a412bd9bcbbbbf2dfa7d96ef00aba602",
+      "matches_local": true,
+      "sha256": "ec1e8c59dc6381f7ac95fc7ee7debe8ec8e62b8d573056697f04af69e11f0479"
+    },
+    "data/sxsw/allsides.feather": {
+      "git_blob": "a88133c8586ea273610f4af04161f57c4d81c3af",
+      "matches_local": true,
+      "sha256": "533736505a916f8f42f900a2c7876284c56cfc530257d8c8ce6fe0602de1a60c"
+    },
+    "data/sxsw/graph.gml": {
+      "git_blob": "f4a981bea196b00beef8ce1c6fd694c03bfe98aa",
+      "matches_local": true,
+      "sha256": "133b871e7647c1bedaba126626321cdd01083c51e77c0e0f635f94a9c8607884"
+    },
+    "data/sxsw/tweets.feather": {
+      "git_blob": "f7839f5c18670caf50cd0beab45290574a6640a8",
+      "matches_local": true,
+      "sha256": "292046983378db9f1cfd113203f6abca08a364cd32bac64c8a9ff5523c76e6ee"
+    }
+  }
+}

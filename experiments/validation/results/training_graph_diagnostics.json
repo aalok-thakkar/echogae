@@ -1,0 +1,1418 @@
+{
+  "sxsw": {
+    "original": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "419a5c1e97d71e8c015afd4690dfad37e6cddfd1c712cb62a44a8ffa0db2f02b",
+        "triangles": 616,
+        "clustering": 0.12203497209632673,
+        "cross_community_fraction": 0.009343715239154617,
+        "components": 68,
+        "largest_component": 2311
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "e3d1ba7b6a6a681eca1fd50776ff02d9787e94879fc1e3d6a215011d5d428198",
+        "triangles": 570,
+        "clustering": 0.1197064679679731,
+        "cross_community_fraction": 0.008453837597330366,
+        "components": 65,
+        "largest_component": 2331
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "39510b21e4d1f207d82ca580749dab28cee9ebded0324a49ffde91e9b77234c1",
+        "triangles": 616,
+        "clustering": 0.12003292068195232,
+        "cross_community_fraction": 0.008676307007786429,
+        "components": 65,
+        "largest_component": 2333
+      }
+    ],
+    "closure100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "776c7eb02c0f7d651b2a7808e5d4874b8dba545541dafecb49044b8ae04f5d20",
+        "triangles": 26,
+        "clustering": 0.005769951200337511,
+        "cross_community_fraction": 0.008453837597330366,
+        "components": 58,
+        "largest_component": 2370
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "9ba92c97433f93cd78f5e6d3bb60adaee0ef25c33686cfc647a9f1dfe04aa998",
+        "triangles": 33,
+        "clustering": 0.005123088491753562,
+        "cross_community_fraction": 0.009343715239154617,
+        "components": 55,
+        "largest_component": 2370
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "0313ef86d60eeb39947c60ddb36946f9ace28f2306f4c448d388b2a5cb766b3f",
+        "triangles": 32,
+        "clustering": 0.005545711851169527,
+        "cross_community_fraction": 0.009121245828698554,
+        "components": 61,
+        "largest_component": 2272
+      }
+    ],
+    "closure101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "44c18342c3a2c0a74114c6e273b455879be9670e9326bc4ee10e459768598cd3",
+        "triangles": 48,
+        "clustering": 0.012440536228926753,
+        "cross_community_fraction": 0.008453837597330366,
+        "components": 67,
+        "largest_component": 2351
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "cc93c9deb0d316d48752b42e919eeadd7c7640f0a3cf204aa7dec54e2caf7b40",
+        "triangles": 44,
+        "clustering": 0.01187988846148199,
+        "cross_community_fraction": 0.00778642936596218,
+        "components": 63,
+        "largest_component": 2357
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "ec26fb93b118b89e55b3639177659ba370aa6afc53518b089ae6ef013c7d60af",
+        "triangles": 50,
+        "clustering": 0.013520206153920257,
+        "cross_community_fraction": 0.008898776418242492,
+        "components": 63,
+        "largest_component": 2363
+      }
+    ],
+    "closure102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "aafff6877caed852677b4bc566882fff8c6bbe48fb03c845c41bf294d365c210",
+        "triangles": 30,
+        "clustering": 0.008335373649775272,
+        "cross_community_fraction": 0.008898776418242492,
+        "components": 54,
+        "largest_component": 2361
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "8a41dd577f98ca6c0950be1513535bca101f4f14190b4cbfedc35e6cb1f3cb55",
+        "triangles": 19,
+        "clustering": 0.004239619780881658,
+        "cross_community_fraction": 0.008898776418242492,
+        "components": 46,
+        "largest_component": 2378
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "bcb62c65549e13630ca1efc43951c84163e44dad3c242cf80fef43a93d1d498f",
+        "triangles": 32,
+        "clustering": 0.007862957295961719,
+        "cross_community_fraction": 0.009566184649610678,
+        "components": 57,
+        "largest_component": 2369
+      }
+    ],
+    "closure103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "83d803ba1c2fc56b6949519404a52b94725f7ab0697732f2c6ef51c7f9aeca90",
+        "triangles": 16,
+        "clustering": 0.0035347081691390735,
+        "cross_community_fraction": 0.008231368186874305,
+        "components": 61,
+        "largest_component": 2274
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "9dd01299f8c45f57242ee614bacd2eea94e00b76a36af50636ab1457181ff253",
+        "triangles": 25,
+        "clustering": 0.005051227619454784,
+        "cross_community_fraction": 0.008231368186874305,
+        "components": 56,
+        "largest_component": 2362
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "50f293681440616396d28a54aaf0ef720b9692a2327c4f7a91111371dd060113",
+        "triangles": 30,
+        "clustering": 0.007125112637534998,
+        "cross_community_fraction": 0.008008898776418243,
+        "components": 58,
+        "largest_component": 2365
+      }
+    ],
+    "closure104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "8478e0c6056b7c4100ba5e173293a747efdc412ebff92ae958754625efd10dd2",
+        "triangles": 33,
+        "clustering": 0.007662906402497519,
+        "cross_community_fraction": 0.008898776418242492,
+        "components": 65,
+        "largest_component": 2355
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "49ea399f2844a0a833bc33996e3c5651e07ec9acfb2dcf8c3ca6085926ba97e5",
+        "triangles": 39,
+        "clustering": 0.009094790399694392,
+        "cross_community_fraction": 0.008453837597330366,
+        "components": 57,
+        "largest_component": 2273
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "bbbbd759e86f6d2602661a97d135cc56f4532d8d3c2da7c6eca1aba7ff903d5e",
+        "triangles": 41,
+        "clustering": 0.009176312513789064,
+        "cross_community_fraction": 0.008676307007786429,
+        "components": 53,
+        "largest_component": 2375
+      }
+    ],
+    "mixing100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "389693b3923b5ee25f033a20eaeb13c5aaac1624560318893f8d56d3cd878c23",
+        "triangles": 304,
+        "clustering": 0.017075705740909292,
+        "cross_community_fraction": 0.467853170189099,
+        "components": 65,
+        "largest_component": 2362
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "a09c15d10bc90dd1a657c2db9102861c3233d671cda317e0f391924523253d8c",
+        "triangles": 308,
+        "clustering": 0.01830314669196188,
+        "cross_community_fraction": 0.47408231368186876,
+        "components": 70,
+        "largest_component": 2346
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "0fc4d2f4ddb058536f2eb1d2c4fa15feb2e3a0bd0f6a13cde311397cc92548f2",
+        "triangles": 343,
+        "clustering": 0.017205920593886984,
+        "cross_community_fraction": 0.47586206896551725,
+        "components": 72,
+        "largest_component": 2348
+      }
+    ],
+    "mixing101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "a62967ada390be4f36d61d2776fc24e4a8f2aabfee5f826c090a43b151200ace",
+        "triangles": 328,
+        "clustering": 0.019761378957152628,
+        "cross_community_fraction": 0.4832035595105673,
+        "components": 64,
+        "largest_component": 2355
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "9ad6e0a341da99d14a14aeae99d3391be08748e522b136e84c5dc4ad6d8e931b",
+        "triangles": 357,
+        "clustering": 0.02222335900624054,
+        "cross_community_fraction": 0.4845383759733037,
+        "components": 64,
+        "largest_component": 2361
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "8f378130af6124678b60d8b53c205800128922fe1995d810da84b9312bb389ef",
+        "triangles": 359,
+        "clustering": 0.02113503361291738,
+        "cross_community_fraction": 0.48164627363737483,
+        "components": 56,
+        "largest_component": 2360
+      }
+    ],
+    "mixing102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "b10e2162e374d16b3fd4c2aaefae92921a7e9642c6f0c914c539c8d317635e58",
+        "triangles": 259,
+        "clustering": 0.01790808455528953,
+        "cross_community_fraction": 0.48298109010011125,
+        "components": 62,
+        "largest_component": 2356
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "680db85ff131afc034d53d58dd7d214b1a124cd1ea5f6e4193b25060c486d750",
+        "triangles": 294,
+        "clustering": 0.024806083225502793,
+        "cross_community_fraction": 0.48631813125695217,
+        "components": 71,
+        "largest_component": 2338
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "621b1cde1722641030c4f71f839afdbbf23460f17e1bd640f8fc1471f4983f91",
+        "triangles": 321,
+        "clustering": 0.024826216347053277,
+        "cross_community_fraction": 0.4854282536151279,
+        "components": 76,
+        "largest_component": 2343
+      }
+    ],
+    "mixing103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "3243f2303699008a14405943e63254829f6fda9dd64cc785fc4df37128e2eeb1",
+        "triangles": 349,
+        "clustering": 0.01666159775206476,
+        "cross_community_fraction": 0.47697441601779755,
+        "components": 67,
+        "largest_component": 2356
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "65d90a9237df33c555c298c992463ae521a5842a9f1688a93147edf6d38a2cc0",
+        "triangles": 370,
+        "clustering": 0.019020768352169436,
+        "cross_community_fraction": 0.47652947719688543,
+        "components": 73,
+        "largest_component": 2343
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "535a9ab8cc2fb589f90c2eb553112556b13d9746adffdc2641a8c85000f73e30",
+        "triangles": 340,
+        "clustering": 0.01619658530188937,
+        "cross_community_fraction": 0.4745272525027809,
+        "components": 73,
+        "largest_component": 2351
+      }
+    ],
+    "mixing104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 4495,
+        "training_graph_hash": "3b5e155a0803a14eaf1848d58be0725caab0b92d3623432a7455af186f507f9c",
+        "triangles": 270,
+        "clustering": 0.015061156596552654,
+        "cross_community_fraction": 0.47875417130144604,
+        "components": 67,
+        "largest_component": 2352
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 4495,
+        "training_graph_hash": "8a55fac55946c01b96fbe72a659ba1a15a272ea534532ecb936dda5202320dce",
+        "triangles": 300,
+        "clustering": 0.016496698948292195,
+        "cross_community_fraction": 0.47252502780867633,
+        "components": 67,
+        "largest_component": 2344
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 4495,
+        "training_graph_hash": "a35629f59cc495784d977010d0a2bd263b10804b76034ddad59911fa84ecec16",
+        "triangles": 351,
+        "clustering": 0.019176430570733347,
+        "cross_community_fraction": 0.47474972191323694,
+        "components": 67,
+        "largest_component": 2349
+      }
+    ]
+  },
+  "super_bowl": {
+    "original": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "87de9ff13d36c02a18da1fc3e109751c8bf47602b038c92a58af858fa80d788f",
+        "triangles": 177,
+        "clustering": 0.030073620614745323,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 267,
+        "largest_component": 5076
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "28b401bff4cf459fd368e8356df2cc1b1141882246a584c6396ff2fa5b3304d0",
+        "triangles": 155,
+        "clustering": 0.027300309756177026,
+        "cross_community_fraction": 0.0018860299070456688,
+        "components": 262,
+        "largest_component": 5040
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "0682ca407e44c438b8d83f9e29322809853c28d83e5198f1e65e9ac40c038717",
+        "triangles": 170,
+        "clustering": 0.029593602512351908,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 262,
+        "largest_component": 5058
+      }
+    ],
+    "closure100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "3f7e4a9cc067b58fabd195bd61782f3b0aeae63b03fcabd87e2a9a827e55cae1",
+        "triangles": 1,
+        "clustering": 0.0002625152625152625,
+        "cross_community_fraction": 0.0017513134851138354,
+        "components": 262,
+        "largest_component": 5100
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "50eecaf6d4a079a51712fe647f3315030687821d4e27fdb3fd8d7226654a342e",
+        "triangles": 1,
+        "clustering": 0.0001343101343101343,
+        "cross_community_fraction": 0.0017513134851138354,
+        "components": 264,
+        "largest_component": 5049
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "505aa875eaba015f1e212f92adbd3120cea5ed156a4bad5bec749f1d503cb804",
+        "triangles": 1,
+        "clustering": 0.00014041514041514042,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 254,
+        "largest_component": 5107
+      }
+    ],
+    "closure101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "2dcb24196fb63fa14ecbfb179f3b15aa73c0a614bb301b70de8d8848c1acc06d",
+        "triangles": 1,
+        "clustering": 0.00010989010989010989,
+        "cross_community_fraction": 0.0020207463289775023,
+        "components": 282,
+        "largest_component": 5085
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "c653c11d67c7afaa4f2845fb462403fa88cbad5a7fa2014dcb93b46cf0288ba5",
+        "triangles": 1,
+        "clustering": 0.0001343101343101343,
+        "cross_community_fraction": 0.0014818806412501683,
+        "components": 262,
+        "largest_component": 5094
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "05207a6dfb18cdda758bf3dfb06529a3694903c4648bc1001109d55cd2d5dc63",
+        "triangles": 1,
+        "clustering": 0.0002564102564102564,
+        "cross_community_fraction": 0.0018860299070456688,
+        "components": 263,
+        "largest_component": 5053
+      }
+    ],
+    "closure102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "3c87e30aab8270e8ade21762c1c1f1b4b1df7efb462f4f85f5aaa1f883d822da",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.0014818806412501683,
+        "components": 248,
+        "largest_component": 5106
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "fb6d752d58ba302b2a39604d54f818efa9de9104852b60494914901ee79da552",
+        "triangles": 1,
+        "clustering": 0.00014041514041514042,
+        "cross_community_fraction": 0.0017513134851138354,
+        "components": 251,
+        "largest_component": 5113
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "97a7c8004b729b3029f89550b8ea719ee66134f021fad03ebb15e5638efee3c7",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.0014818806412501683,
+        "components": 270,
+        "largest_component": 5075
+      }
+    ],
+    "closure103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "cc34829aebe3f50b0ff2137b59a43c5f30185f1a8f5be5d0db760c05cac3ebf3",
+        "triangles": 2,
+        "clustering": 0.0003601953601953602,
+        "cross_community_fraction": 0.0018860299070456688,
+        "components": 269,
+        "largest_component": 5073
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "5d3be5136a955d8da5b716e6032a597c69871e1b8b08cd55b20e5aa548fc77c5",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 251,
+        "largest_component": 5097
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "5a210fb5acc9f209265be6d96c4d9972c77ec5116e2ff13f69bd99255187e256",
+        "triangles": 1,
+        "clustering": 0.00010378510378510379,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 245,
+        "largest_component": 5107
+      }
+    ],
+    "closure104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "980dcf2d1f782fad968d9b9d9444e1808c9d3075e4d1aac8dd0095d26d172d72",
+        "triangles": 2,
+        "clustering": 0.0002442002442002442,
+        "cross_community_fraction": 0.0018860299070456688,
+        "components": 235,
+        "largest_component": 5091
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "c0c8213c4320415f2f20542b52a3900d17d2a73680f137d2850429ab64a63812",
+        "triangles": 1,
+        "clustering": 0.0002625152625152625,
+        "cross_community_fraction": 0.001616597063182002,
+        "components": 251,
+        "largest_component": 5092
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "083ade72e126cf31bdbd988024cae72756b024c3f04db355541a7aa83a1a749c",
+        "triangles": 1,
+        "clustering": 0.0001343101343101343,
+        "cross_community_fraction": 0.0017513134851138354,
+        "components": 250,
+        "largest_component": 5102
+      }
+    ],
+    "mixing100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "17449091d7c756ecb76d54a6954c7753c88243f490babd5204c7a0ab3a9776e6",
+        "triangles": 241,
+        "clustering": 0.008722641648396786,
+        "cross_community_fraction": 0.03920247878216355,
+        "components": 298,
+        "largest_component": 4975
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "8e822c472fafaf54d36796893fdb86d0f1e340b6d312a7b107a21f7273b6a5d5",
+        "triangles": 233,
+        "clustering": 0.009180136618758472,
+        "cross_community_fraction": 0.04001077731375455,
+        "components": 323,
+        "largest_component": 4977
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "93571e59d9c1a8cd9afc16329d6ce544767798c8853cf931286a5a87b339148c",
+        "triangles": 223,
+        "clustering": 0.007618550303186833,
+        "cross_community_fraction": 0.038124747406708875,
+        "components": 314,
+        "largest_component": 4981
+      }
+    ],
+    "mixing101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "8c08f12e2179948970943d6557aaeddc452515b92f2a8165332c5f548666fea6",
+        "triangles": 265,
+        "clustering": 0.009182622541542609,
+        "cross_community_fraction": 0.03839418025057254,
+        "components": 320,
+        "largest_component": 4952
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "7972ff39a220607b5660026657eb7603116d5c9719d08b83480ed44f09b88fb4",
+        "triangles": 272,
+        "clustering": 0.009081810304986667,
+        "cross_community_fraction": 0.04068435942341372,
+        "components": 303,
+        "largest_component": 4980
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "f427722cf6eaa2032a3d40d206cd5a62bf005337442f4da654ba8883bd20764b",
+        "triangles": 266,
+        "clustering": 0.0078698233868186,
+        "cross_community_fraction": 0.03785531456284521,
+        "components": 322,
+        "largest_component": 4951
+      }
+    ],
+    "mixing102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "4817f8a10f90375aa3973200d23af0c7d60ec13797191e6050e5751de3a98725",
+        "triangles": 229,
+        "clustering": 0.009267002521868708,
+        "cross_community_fraction": 0.038124747406708875,
+        "components": 327,
+        "largest_component": 4973
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "d6fdb62b61cd22a480797741be4021dd40a1cf468fd40fa809b8755cb82c5bf5",
+        "triangles": 234,
+        "clustering": 0.008914111359615938,
+        "cross_community_fraction": 0.03933719520409538,
+        "components": 318,
+        "largest_component": 4972
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "9fd8d0e4e0a0ec816aea3423c5b030655c8379d6df21f66d7b50881c11117968",
+        "triangles": 224,
+        "clustering": 0.0082582342986209,
+        "cross_community_fraction": 0.03772059814091338,
+        "components": 312,
+        "largest_component": 4940
+      }
+    ],
+    "mixing103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "6332c80b5243e9932218aeb519924943b3fec2fa0daf194994ef75ad72a00b43",
+        "triangles": 252,
+        "clustering": 0.008517376117914465,
+        "cross_community_fraction": 0.04001077731375455,
+        "components": 325,
+        "largest_component": 4941
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "d6ed8e54441a11a59a4b00428d0159c6de93f361a4952c592a6a95cde50f2ae6",
+        "triangles": 280,
+        "clustering": 0.008527553473455369,
+        "cross_community_fraction": 0.040414926579550044,
+        "components": 332,
+        "largest_component": 4903
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "107df4513cf9a18655b1b3cd75aea26187be0b83bcc127ee5208e047bf315fb7",
+        "triangles": 260,
+        "clustering": 0.007677109626131211,
+        "cross_community_fraction": 0.040414926579550044,
+        "components": 334,
+        "largest_component": 4931
+      }
+    ],
+    "mixing104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 7423,
+        "training_graph_hash": "78770193951ec8364a70d212128d098a1c6ae95842f3319187d090fa6ebeaacb",
+        "triangles": 232,
+        "clustering": 0.008456282174961107,
+        "cross_community_fraction": 0.03906776236023171,
+        "components": 315,
+        "largest_component": 4974
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 7423,
+        "training_graph_hash": "e1d2aec50a1e03454f726641063748e44180ddb8a6c670f24faf277a8f196788",
+        "triangles": 216,
+        "clustering": 0.007164795376923451,
+        "cross_community_fraction": 0.04001077731375455,
+        "components": 322,
+        "largest_component": 4960
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 7423,
+        "training_graph_hash": "527e5eadd49e9c7c316024c8c91dd27e392a4eddcd7d0bafa8f54b99dd413886",
+        "triangles": 226,
+        "clustering": 0.0075354516625638,
+        "cross_community_fraction": 0.03974134446989088,
+        "components": 313,
+        "largest_component": 4954
+      }
+    ]
+  },
+  "abortion": {
+    "original": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "877bf8d292e27b2ecb594fd40a7a3195c62417391b145e64de53111c3ebec773",
+        "triangles": 91,
+        "clustering": 0.011629125146330556,
+        "cross_community_fraction": 0.016890380313199106,
+        "components": 93,
+        "largest_component": 4986
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "f1e08b936e8f2527875a451ba9e4abd28ee5e88c916eccaa82f8598c2e6dba33",
+        "triangles": 101,
+        "clustering": 0.011326343443993839,
+        "cross_community_fraction": 0.015100671140939598,
+        "components": 101,
+        "largest_component": 4966
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "49f3ca25e31e49661a040b16a5777c70bb1885331027a5b83e1e36568ca108aa",
+        "triangles": 81,
+        "clustering": 0.008932988861088054,
+        "cross_community_fraction": 0.015995525727069353,
+        "components": 101,
+        "largest_component": 4976
+      }
+    ],
+    "closure100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "28edd6499ec43dcbfc9bb61331a89353e3398daf397179e8104d0bd88928291f",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015548098434004474,
+        "components": 104,
+        "largest_component": 4967
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "a51726d1c05207c13ef644e72ac23ee51c2ce392164a0e7c3a85b14ec1a04168",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015883668903803133,
+        "components": 116,
+        "largest_component": 4952
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "b39b6d551cb098fdc8d72f0afc46bab6c681d4798569db79ee51074ad711181b",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015548098434004474,
+        "components": 108,
+        "largest_component": 4966
+      }
+    ],
+    "closure101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "54afec424270286daca0efeefd8c0e162aecfe334e2e67c48ec54e7303318656",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015771812080536914,
+        "components": 92,
+        "largest_component": 4976
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "749c19c38624d2a7e61a9a4e356501b8b09c61999dba881d9cfdde914560ef76",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.016554809843400447,
+        "components": 112,
+        "largest_component": 4961
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "7d04863226446850914a668e0d46e818c6dfeb996817c2d954c4b8418cbfbca5",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.016778523489932886,
+        "components": 102,
+        "largest_component": 4966
+      }
+    ],
+    "closure102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "943075326b042750a4b97819c5b436e30a3c4c742f49029b4bd8aad03a39026e",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01621923937360179,
+        "components": 102,
+        "largest_component": 4975
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "e8b200b1ebe5ddd06f46d68777b96acb893795b3ea8fdfb238df27d3e356c201",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015883668903803133,
+        "components": 91,
+        "largest_component": 4983
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "15c2d79d1225cfd7757d8495c2d4c94ab335c500ee0dea103bf241ed441bd8ac",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015100671140939598,
+        "components": 113,
+        "largest_component": 4958
+      }
+    ],
+    "closure103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "8040bfc1eca74a2d50a6c922a11bdca29d93c2f34118078494e42f22bf4b9006",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015995525727069353,
+        "components": 103,
+        "largest_component": 4963
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "5238c406936862824f090a8f8ac7843c62a381369ccac1924cb6532e53b04a66",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015100671140939598,
+        "components": 108,
+        "largest_component": 4955
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "5816efc4a91b36c56552dae3fbe3cc271e07699d544982ad8787100e50c7459a",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015436241610738255,
+        "components": 109,
+        "largest_component": 4954
+      }
+    ],
+    "closure104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "021d73b4e3dae38c1c8a7ac9a42fed3560994d6fbff1b7558bac0f32a55863c8",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015771812080536914,
+        "components": 99,
+        "largest_component": 4980
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "5e938ae9df50a95c87c816429d7e284a5086a2927fc762508d5057bf286217e7",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015883668903803133,
+        "components": 98,
+        "largest_component": 4972
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "aadd62359a4814796c3fca18d1bbfd2c07d99ac9d030bee8219882d0c6c9904f",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.015548098434004474,
+        "components": 109,
+        "largest_component": 4960
+      }
+    ],
+    "mixing100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "d9e32a825701c1008b92c067818a3713b6092d17db562c01fa7a1c9cae2522b6",
+        "triangles": 264,
+        "clustering": 0.005964544858447035,
+        "cross_community_fraction": 0.3414988814317673,
+        "components": 128,
+        "largest_component": 4918
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "368a1c8684e8734eafdc6c52b906444e9a4a341227bef8aefdd8bd17e8f64b3a",
+        "triangles": 264,
+        "clustering": 0.004862635433758656,
+        "cross_community_fraction": 0.3448545861297539,
+        "components": 150,
+        "largest_component": 4886
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "334caeb12ea019c44981dab8e52ac019911f2d3339e0dd8002da66cbab821a53",
+        "triangles": 256,
+        "clustering": 0.005588225452296173,
+        "cross_community_fraction": 0.34373601789709174,
+        "components": 119,
+        "largest_component": 4921
+      }
+    ],
+    "mixing101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "87a73a978ec6cb576a7ee4c1ee438479f55f1f5517f33eb633dc8b73edba3dde",
+        "triangles": 238,
+        "clustering": 0.006384659653002222,
+        "cross_community_fraction": 0.3354586129753915,
+        "components": 108,
+        "largest_component": 4927
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "8811beca0bb6fb4cc90793905d48c16b2f6cc932d9aa5664447c8ddba308d2b8",
+        "triangles": 251,
+        "clustering": 0.005475636607040553,
+        "cross_community_fraction": 0.3414988814317673,
+        "components": 126,
+        "largest_component": 4908
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "72aeacd850cc2559d80fea8148845336c628bc7bb5866e1b1ce52cd298e872a0",
+        "triangles": 269,
+        "clustering": 0.007422412991981188,
+        "cross_community_fraction": 0.33914988814317676,
+        "components": 133,
+        "largest_component": 4902
+      }
+    ],
+    "mixing102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "5b1cf2a19629bcc244786d98f1c862d80b659a9ea9ec9c1f3cd288873f398837",
+        "triangles": 269,
+        "clustering": 0.006261196001702614,
+        "cross_community_fraction": 0.3419463087248322,
+        "components": 112,
+        "largest_component": 4931
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "fb12556fea6bf5b4131f56efa575f5514fa9f3226e140bae8eb4a374b71354c4",
+        "triangles": 300,
+        "clustering": 0.007024720838247908,
+        "cross_community_fraction": 0.34272930648769573,
+        "components": 115,
+        "largest_component": 4931
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "019edbbfca5ba29be89af1221fe5b941cedd618aec66dd8e9f4583b16f6a1fec",
+        "triangles": 299,
+        "clustering": 0.007555377627455011,
+        "cross_community_fraction": 0.3448545861297539,
+        "components": 127,
+        "largest_component": 4924
+      }
+    ],
+    "mixing103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "7ab76f262e61ef73a257f61b1a904d67a0676a7953f9410d40f42f61e2f48393",
+        "triangles": 288,
+        "clustering": 0.004874146875705471,
+        "cross_community_fraction": 0.34105145413870247,
+        "components": 118,
+        "largest_component": 4938
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "bd51c98581a8a395f302813a35dbf253bdeb5adace239cb1182360eff6097bfc",
+        "triangles": 295,
+        "clustering": 0.0075445019584495345,
+        "cross_community_fraction": 0.3395973154362416,
+        "components": 132,
+        "largest_component": 4922
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "82e95ae3cc5dbaa2ffc01349feda0681a8e1257b777033e57e13762e5b0feb58",
+        "triangles": 289,
+        "clustering": 0.005885269399806384,
+        "cross_community_fraction": 0.3376957494407159,
+        "components": 105,
+        "largest_component": 4948
+      }
+    ],
+    "mixing104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 8940,
+        "training_graph_hash": "f4c553274c1a1b0fcd110789c49af997fa5507068fb0ef883f9be32fa013e79d",
+        "triangles": 271,
+        "clustering": 0.006219561594247105,
+        "cross_community_fraction": 0.33557046979865773,
+        "components": 113,
+        "largest_component": 4930
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 8940,
+        "training_graph_hash": "1375a2f16e3fa23010c01a57fa44705864897dca7f9e731d3be0bd9e1bc85785",
+        "triangles": 285,
+        "clustering": 0.006296836867018362,
+        "cross_community_fraction": 0.3364653243847875,
+        "components": 134,
+        "largest_component": 4911
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 8940,
+        "training_graph_hash": "5b87cf0a455af56b772d0e6dc0c96412dc0fea0f8fcfaaca2fdf4bffddb0874b",
+        "triangles": 274,
+        "clustering": 0.007178306877269674,
+        "cross_community_fraction": 0.3364653243847875,
+        "components": 105,
+        "largest_component": 4953
+      }
+    ]
+  },
+  "gun": {
+    "original": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "8dfae9d93d3e212778b73a6276aac7ccaaf53b45c9dabc1e42f0169bb2f6acc3",
+        "triangles": 508,
+        "clustering": 0.015204682406316155,
+        "cross_community_fraction": 0.010979938908610584,
+        "components": 199,
+        "largest_component": 6361
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "0b4c6a1c2ef8a2ebf357c0755ba84c8c8e7bc4e73603cdc3179cd70add15d99f",
+        "triangles": 492,
+        "clustering": 0.017235088642165216,
+        "cross_community_fraction": 0.01122760670354165,
+        "components": 171,
+        "largest_component": 6380
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "2ba93375f358e83a8237e8b5bebd9dfd2c1c7ae0fc976e119f95ca12249a86a1",
+        "triangles": 530,
+        "clustering": 0.016280950443916888,
+        "cross_community_fraction": 0.010814827045323206,
+        "components": 182,
+        "largest_component": 6381
+      }
+    ],
+    "closure100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "ff08ccdc8f9e71ab203b10115888884fe8d287b86ad87d42e49bc85c20e31ce1",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.011310162635185339,
+        "components": 201,
+        "largest_component": 6357
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "bc1be324be89c2a7718bfca0c143cd1ab2819b701599d976f4bbb1bdf58deac0",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01056715925039214,
+        "components": 196,
+        "largest_component": 6365
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "b14a1c608d1a3ad6d3298c58f511d74c961cd4946ca053efc09708d3e0670077",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010897382976966895,
+        "components": 164,
+        "largest_component": 6398
+      }
+    ],
+    "closure101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "79c307532543c0d7d3602347de34708be8e35fadcfebba6ce1980f86717a9699",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010979938908610584,
+        "components": 200,
+        "largest_component": 6364
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "d1ff96d62f190f55652f30efc7702471684292c9fb94c76fb3323bcf4d61a806",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010897382976966895,
+        "components": 194,
+        "largest_component": 6368
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "57e6e48947cd5ecf9a2025c3c9ced70af8439dcf290799b96d6bfea6a37cf737",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010814827045323206,
+        "components": 192,
+        "largest_component": 6365
+      }
+    ],
+    "closure102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "0499f2699c8770eb74735582c53b75dec4b6b60fb12f1db3770d7950443633df",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.011392718566829026,
+        "components": 190,
+        "largest_component": 6372
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "ff2724a651d1da44c590f04a2b686597a53432c2bc044776b97d835d8596e4ec",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010402047387104764,
+        "components": 171,
+        "largest_component": 6390
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "9a7c94b1efad4a66fdbf8edd8525d10cd5429668936bbdf192cb038189d93693",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010814827045323206,
+        "components": 181,
+        "largest_component": 6369
+      }
+    ],
+    "closure103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "0f726da7383cd1a8de9ce5789449252845c6b9efc426b4f9dd4afc7e00a045ad",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01122760670354165,
+        "components": 183,
+        "largest_component": 6376
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "dfb819852e41ac8255c66627473a1c8b540acaecbcb2331b92709a52c9028d18",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.010732271113679517,
+        "components": 194,
+        "largest_component": 6362
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "884d767b3c0e28d98bb3f3c6e51b1c533a7447ce56b5ab80bfdec6ea3d3a8797",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01064971518203583,
+        "components": 192,
+        "largest_component": 6371
+      }
+    ],
+    "closure104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "8f6861e40238f4d5a46602c7074ee996fb3ab6d680483885ab48c641f9c918e6",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.011392718566829026,
+        "components": 174,
+        "largest_component": 6381
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "eed9fb590242518a62cb46c844a8e84b9efc3c5db0043e599921d3fe5b22281e",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01064971518203583,
+        "components": 175,
+        "largest_component": 6389
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "d85d1655ca9bdb64529b0a0260d2f0ed5136407bd8a1a8f3d04db07ba9dcbe67",
+        "triangles": 0,
+        "clustering": 0.0,
+        "cross_community_fraction": 0.01114505077189796,
+        "components": 180,
+        "largest_component": 6382
+      }
+    ],
+    "mixing100": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "3ae5ac62c6b4f5dc71de9c7c0e890056d21c2db7faa680572c3b2935d6b12f48",
+        "triangles": 428,
+        "clustering": 0.006585985995244361,
+        "cross_community_fraction": 0.46751424089820853,
+        "components": 243,
+        "largest_component": 6233
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "47c498afd3aaf0e0df04c9b40a5df8f297c0e68b8609b1cd9474fe13eb9789fe",
+        "triangles": 473,
+        "clustering": 0.006622796101022433,
+        "cross_community_fraction": 0.47040369850573766,
+        "components": 251,
+        "largest_component": 6243
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "98ae33a7015009f7a7f567f15411a6f25bb400763d241218d4b2847bad3b6049",
+        "triangles": 459,
+        "clustering": 0.007104260966286597,
+        "cross_community_fraction": 0.46833980021464544,
+        "components": 244,
+        "largest_component": 6244
+      }
+    ],
+    "mixing101": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "339954b3b6baa0407962b504c51105098ac62eb619c3426d05bd36832a36b28c",
+        "triangles": 519,
+        "clustering": 0.007622460021584963,
+        "cross_community_fraction": 0.4713943696854619,
+        "components": 230,
+        "largest_component": 6269
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "f87b17d867d74758a12e20606fb3ee7069dddb1afb27efdeac588a4631ac0727",
+        "triangles": 511,
+        "clustering": 0.007063458680198325,
+        "cross_community_fraction": 0.474283827292991,
+        "components": 234,
+        "largest_component": 6267
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "f1c281edd274326d19bc3da4ba5c06b38b720823cbde00796246e3448f5b4d69",
+        "triangles": 543,
+        "clustering": 0.00870420534415491,
+        "cross_community_fraction": 0.46883513580450753,
+        "components": 213,
+        "largest_component": 6281
+      }
+    ],
+    "mixing102": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "cf2f2adccaa0dda6c80784fb9f572fda21a8099efed7b04dd39c09c6ec0c57cf",
+        "triangles": 517,
+        "clustering": 0.006203284085410386,
+        "cross_community_fraction": 0.46520267481218525,
+        "components": 249,
+        "largest_component": 6230
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "283090e9980139070f1f1d4019372c6c49045d9954a385f1138ac09ecf641b80",
+        "triangles": 556,
+        "clustering": 0.006581209697541441,
+        "cross_community_fraction": 0.46833980021464544,
+        "components": 245,
+        "largest_component": 6239
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "20366a0adf47c4a43d9bf4a48d99677efdf50c14bd67ca2c931d19a2bdf014be",
+        "triangles": 531,
+        "clustering": 0.006635998609755535,
+        "cross_community_fraction": 0.4685874680095765,
+        "components": 246,
+        "largest_component": 6224
+      }
+    ],
+    "mixing103": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "10422cef8e0c80a0f030b1f479221a8eb4e3c4e4ffedc25dbb62f59ec7b55a31",
+        "triangles": 531,
+        "clustering": 0.006453739710949016,
+        "cross_community_fraction": 0.4707339222323124,
+        "components": 236,
+        "largest_component": 6259
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "e8cd8092e7653d0d507a46a42b7e76e0711844b316791bc271428f93a680922f",
+        "triangles": 510,
+        "clustering": 0.00693682250203499,
+        "cross_community_fraction": 0.46949558325765706,
+        "components": 241,
+        "largest_component": 6257
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "a142412f107d70d126c9fcc164fdf1a7ac9900c81a1ae5de241d3afe5432db8b",
+        "triangles": 497,
+        "clustering": 0.007690394886229157,
+        "cross_community_fraction": 0.4713943696854619,
+        "components": 198,
+        "largest_component": 6296
+      }
+    ],
+    "mixing104": [
+      {
+        "fit_seed": 42,
+        "training_edges": 12113,
+        "training_graph_hash": "17a6d64fbcfd6a99c198f7ba0eea597c1685e305ad73ed18476007ad6094157e",
+        "triangles": 513,
+        "clustering": 0.007178420175676567,
+        "cross_community_fraction": 0.4680095764880707,
+        "components": 247,
+        "largest_component": 6233
+      },
+      {
+        "fit_seed": 43,
+        "training_edges": 12113,
+        "training_graph_hash": "c5f1f0e6631310419901aa240db4e94da0c5c3a743b8cbf1736ca34b97667a41",
+        "triangles": 520,
+        "clustering": 0.007070028715608016,
+        "cross_community_fraction": 0.4699909188475192,
+        "components": 246,
+        "largest_component": 6228
+      },
+      {
+        "fit_seed": 44,
+        "training_edges": 12113,
+        "training_graph_hash": "f483f4057d8030b68d4c7cf747f9e1d87e05eb939eb7f9251e2cd5534b4a7927",
+        "triangles": 523,
+        "clustering": 0.007417691369784045,
+        "cross_community_fraction": 0.47172459341203665,
+        "components": 253,
+        "largest_component": 6238
+      }
+    ]
+  }
+}

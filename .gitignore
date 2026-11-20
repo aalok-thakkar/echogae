@@ -1,17 +1,3 @@
-# LaTeX build
-*.aux
-*.log
-*.out
-*.toc
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.pdf
-!paper/figures/*.pdf
-!paper/build/icwsm_rev.pdf
-
 # Python
 __pycache__/
 *.pyc
@@ -19,21 +5,31 @@ __pycache__/
 env/
 .ipynb_checkpoints/
 
-# Data (raw, large)
-data/*
-!data/README.md
-!data/.gitkeep
-
-# Vendored upstream releases (cloned by scripts/setup.sh, not committed)
+# Vendored upstream releases, cloned by scripts/setup.sh at a pinned commit.
 experiments/vendor/
 
-# Ephemeral experiment scaffolding
-experiments/build/venv*
-experiments/wandb/
-experiments/logs/
+# Ephemeral local build state: isolated venv, regenerated feature caches,
+# saved fitted arrays. All of these are rebuilt by running the validation.
+experiments/build/
+experiments/validation/features/
+experiments/validation/artifacts/
 
-# Private drafts
-tasks/author_contact_drafts.md
+# LaTeX build artefacts, except the final paper PDF.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+!paper/rescience/article.pdf
+
+# Auto-generated from paper/rescience/metadata.yaml by `make`.
+paper/rescience/metadata.tex
 
 # OS
 .DS_Store
